@@ -1,7 +1,8 @@
-import styled , { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import Questrial from './assets/fonts/Questrial-Regular.ttf';
 import Montserrat from './assets/fonts/Montserrat-VariableFont_wght.ttf';
 import KronaOne from './assets/fonts/KronaOne-Regular.ttf';
+import Maragsa from './assets/fonts/Maragsâ.otf';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -19,12 +20,18 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat';
         src: url(${Montserrat}) format('truetype');
     }
+
+    @font-face{
+        font-family: 'Maragsa';
+        src: url(${Maragsa}) format('truetype');
+    }
     
     :root{
         /*----- FONTS ------*/
         --font-1: "Questrial", sans-serif;
         --font-2: "KronaOne", serif;
         --font-3: "Montserrat", sans-serif;
+        --maragsa-font: "Maragsa", serif;
         /*---- COLORS -----*/
         --almond-bg : #EADBCD;
         --black-chocolate : #1D1E16;
@@ -55,11 +62,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: var(--font-1);
+        font-family: var(--font-2);
         height: 100vh;
         color: var(--black-chocolate);
         overflow-x: hidden;
-        background: var(--almond-bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
 
