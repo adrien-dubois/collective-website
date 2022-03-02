@@ -1,13 +1,62 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, {useEffect, useState} from 'react'
+import { motion, useTransform, useViewportScroll } from 'framer-motion'
 
 /*---- COMPONENT ----*/
 import ScrollForMore from '../assets/components/ScrollForMore'
 
-const Model = () => {
+const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
+
+const firstName = {
+    animate: {
+        transition: {
+            delayChildren: .6,
+            staggerChildren: .04,
+            staggerDirection: -1,
+        }
+    }
+}
+
+const lastName = {
+    animate: {
+        transition: {
+            delayChildren: .6,
+            staggerChildren: .04,
+            staggerDirection: 1,
+        }
+    }
+}
+
+const letter = {
+    initial: {
+        y: 400,
+    },
+    animate: {
+        y: 0,
+        transition: {duration: 1, ...transition}
+    }
+}
+
+
+const Model = ({imageDetails}) => {
+
+    /*----- FOR SCALE THE IMAGE ON SCROLL -----*/
+    const { scrollYProgress } = useViewportScroll();
+    const scale = useTransform(scrollYProgress, [0, 1], [1.1, 1.25]);
+
+    const [canScroll, setCanScroll] = useState(false);
+
+    useEffect (() => {
+        if(canScroll === false){
+            document.querySelector('body').classList.add("no-scroll");
+        } else {
+            document.querySelector('body').classList.remove("no-scroll");
+        }
+    }, [canScroll])
+
   return (
-    <div className="wrapp">
-        <motion.div 
+        <motion.div
+            onAnimationComplete={() => setCanScroll(true)} 
             className='single'
             initial='initial'
             animate='animate'
@@ -16,52 +65,93 @@ const Model = () => {
             <div className='container fluid'>
                 <div className='row center top-row'>
                 <div className='top'>
+
+                    {/* DETAILS TEXT */}
                     <motion.div 
-                        initial={{ opacity: 0 }}
+                        initial={{ 
+                            opacity: 0, 
+                            y: 60 
+                        }}
+                        animate={{ 
+                            opacity: 1, 
+                            y: 40, 
+                            transition: {delay: 1.2, ...transition} 
+                        }}
                         className='details'
                     >
+                        {/* COORDINATES */}
                         <div className='location'>
                             <span>48.9184694</span>
                             <span>2.23679406</span>
                         </div>
+                        {/* TT TAG */}
                         <div className='mua'>TT: @squarelikekorea</div>
                     </motion.div>
-                    <div className='model'>
-                        <span className='first'>
-                            <span>T</span>
-                            <span>h</span>
-                            <span>e</span>
-                        </span>
-                        <span className='last'>
-                            <span>S</span>
-                            <span>q</span>
-                            <span>u</span>
-                            <span>a</span>
-                            <span>r</span>
-                            <span>e</span>
-                            <span>.</span>
-                        </span>
-                    </div>
+
+                    {/* BIG TITLE */}
+                    <motion.div className='model'>
+                        <motion.span variants={firstName} className='first'>
+                            <motion.span variants={letter} >T</motion.span>
+                            <motion.span variants={letter} >h</motion.span>
+                            <motion.span variants={letter} >e</motion.span>
+                        </motion.span>
+                        <motion.span variants={lastName} className='last'>
+                            <motion.span variants={letter} >S</motion.span>
+                            <motion.span variants={letter} >q</motion.span>
+                            <motion.span variants={letter} >u</motion.span>
+                            <motion.span variants={letter} >a</motion.span>
+                            <motion.span variants={letter} >r</motion.span>
+                            <motion.span variants={letter} >e</motion.span>
+                            <motion.span variants={letter} >.</motion.span>
+                        </motion.span>
+                    </motion.div>
+
+
                 </div>
                 </div>
                 <div className='row bottom-row'>
                 <div className='bottom'>
                     <div className='image-container-single'>
-                    <div className='thumbnail-single'>
-                        <div className='frame-single'>
-                        <img src={require("../assets/img/home.jpg")} alt='The Square' />
-                        </div>
+
+                        {/* BIG IMAGE */}
+                        <motion.div 
+                            initial={{ 
+                                y: '-50%',
+                                width: imageDetails.width, 
+                                height: imageDetails.height 
+                            }}
+                            animate={{
+                                y: 0,
+                                width: "100%",
+                                height: window.innerWidth > 1440 ? 650 : 450 ,
+                                transition: {delay: 0.2, ...transition}
+                            }}
+                            className='thumbnail-single'>
+                            <div className='frame-single'>
+                                <motion.img
+                                    src={require("../assets/img/home.jpg")} 
+                                    alt='The Square'
+                                    style={{ scale: scale }} 
+                                    initial={{ scale: 1.1 }}
+                                    animate={{
+                                        transition: {delay: 0.2, ...transition},
+                                        y: window.innerWidth > 1440 ? -600 : -400,
+                                    }} 
+                                />
+                            </div>
+                        </motion.div>
+
+
                     </div>
-                    </div>
-                </div>
+                 </div>
                 <ScrollForMore/>
-                </div>
+               </div>
             </div>
             <div className='detailed-information'>
                 <div className='container'>
                 <div className='row'>
                     <h2 className='title'>
-                    The insiration behind the artwork & <br /> what it means.
+                    The inspiration behind the artwork & <br /> what it means.
                     </h2>
                     <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -81,7 +171,6 @@ const Model = () => {
                 </div>
             </div>
         </motion.div>
-    </div>
   )
 }
 
