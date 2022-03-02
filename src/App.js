@@ -12,7 +12,7 @@ import Model from './pages/Model';
 
 /*---- STYLE ----*/
 import "./App.scss";
-import Header from './assets/components/Header';
+import Header from './components/Header';
 
 function App() {
 

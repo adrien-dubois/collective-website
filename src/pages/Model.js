@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
 
 /*---- COMPONENT ----*/
-import ScrollForMore from '../assets/components/ScrollForMore'
+import ScrollForMore from '../components/ScrollForMore'
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 

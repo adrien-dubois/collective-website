@@ -123,7 +123,13 @@ const GlobalStyle = createGlobalStyle`
         
     }
 
+    a {
+        color: var(--black-chocolate);
+        text-decoration: none;
+    }
+
 
 `;
+
 
 export default GlobalStyle;
