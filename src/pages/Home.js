@@ -2,14 +2,14 @@ import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Container, Row } from '../components/Header.components';
+import { Container, Main, Row } from '../components/Header.components';
 
 const transition = { duration: .6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const Home = ({ imageDetails, image }) => {
   return (
     <>
-      <main>
+      <Main>
         <Container>
           <Row className='center'>
             <div className='image-container'>
@@ -48,7 +48,7 @@ const Home = ({ imageDetails, image }) => {
             </div>
           </Row>
         </Container>
-      </main>
+      </Main>
     </>
   )
 }
