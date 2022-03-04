@@ -212,17 +212,3 @@ main {
     }
   }
 }
-
-/*----- MENU PART -----*/
-.menu__item {
-	cursor: default;
-	position: relative;
-  top: -120px;
-	overflow: hidden;
-	text-align: center;
-	box-shadow: 0 -1px var(--color-border);
-}
-
-.menu__item:last-child {
-	box-shadow: 0 1px var(--color-border), 0 -1px var(--color-border);
-}

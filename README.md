@@ -10,3 +10,4 @@ This the repository of the website of our frellance collective.
 - `Framer Motion` 6.2.8
 - `Styled Components` 5.3.3
 - `react-progressive-image` 0.6.0
+- `GSAP` 3.9.1

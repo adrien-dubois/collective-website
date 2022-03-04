@@ -48,13 +48,14 @@ export const HeaderDiv = styled.header`
   }
 `;
 
-export const Menu = styled.div`
+export const MenuIcon = styled.div`
   cursor: pointer;
   border-radius: 100%;
   border: 1px solid var(--black-chocolate);
   height: 80px;
   width: 80px;
   display: flex;
+  z-index: 1000;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
@@ -105,12 +106,27 @@ export const NavMenu = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 90vh;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    z-index: 90;
     position: absolute;
-    top: 120px;
-    left: ${({click}) => (click ? 0 : '-100%')};
+    top: 80px;
+    left: ${({click}) => (click ? '-12%' : '-100%')};
     opacity: ${({click}) =>(click ? '1' : 0)};
     transition: all 0.5s ease;
     background: var(--almond-bg);
+`;
+
+export const MenuWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 13rem);
+    position: relative;
+    justify-content: center;
+
+    @media screen and (min-width: 53em) {
+      height: 100vh;
+    }
 `;

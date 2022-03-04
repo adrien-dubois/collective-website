@@ -77,7 +77,17 @@ const GlobalStyle = createGlobalStyle`
         --black-color: #000;
         --white-alabaster: #f4f3e6;
         --white-antique: #FAECD9;
-        --black-smoky : #0b0c09;
+        /*---- MENU -----*/
+        --color-text: #1D1E16;
+        --color-bg: #EADBCD;
+        --color-link: #1D1E16;
+        --color-link-hover: #1D1E16;
+        --color-border: #a7927b;
+        --marquee-bg: #1D1E16;
+        --marquee-text: #f4f3e6;
+        --menu-focus: #775e41;
+
+
 
     }
 
