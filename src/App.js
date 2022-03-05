@@ -13,6 +13,7 @@ import Model from './pages/Model';
 /*---- STYLE ----*/
 import "./App.scss";
 import Header from './components/Header';
+import Collectif from './pages/Collectif';
 
 function App() {
 
@@ -45,6 +46,9 @@ function App() {
           </AnimatePresence>
         )}
       />
+      <Route exact path="/collectif">
+          <Collectif/>
+      </Route>
     </Router>
   );
 }

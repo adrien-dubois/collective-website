@@ -43,6 +43,7 @@ const Model = ({imageDetails}) => {
     /*----- FOR SCALE THE IMAGE ON SCROLL -----*/
     const { scrollYProgress } = useViewportScroll();
     const scale = useTransform(scrollYProgress, [0, 1], [1.1, 1.25]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1.1, 0]);
 
     const [canScroll, setCanScroll] = useState(false);
 
@@ -131,7 +132,10 @@ const Model = ({imageDetails}) => {
                                 <motion.img
                                     src={require("../assets/img/home.jpg")} 
                                     alt='The Square'
-                                    style={{ scale: scale }} 
+                                    style={{ 
+                                        scale: scale,
+                                        opacity: opacity
+                                    }} 
                                     initial={{ scale: 1.1 }}
                                     animate={{
                                         transition: {delay: 0.2, ...transition},

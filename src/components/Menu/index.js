@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuWrapper } from "../Header.components";
+import { MenuWrapper } from "../General.components";
 import MenuItem from "./MenuItem";
 // import "./index.css"
 
@@ -7,7 +7,7 @@ const menus = [
     {
         link: {
             name: "Accueil",
-            url: "/"
+            url: "/model/the-square"
         },
         marquee: [
             {
@@ -35,7 +35,7 @@ const menus = [
     {
         link: {
             name: "Le Collectif",
-            url: "#"
+            url: "/collectif"
         },
         marquee: [
             {

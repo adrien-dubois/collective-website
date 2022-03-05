@@ -7,7 +7,7 @@ import {
   MenuIcon, 
   NavMenu, 
   Row 
-} from "./Header.components";
+} from "./General.components";
 import { IconContext } from "react-icons/lib";
 import Menu from "./Menu";
 

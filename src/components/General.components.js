@@ -102,7 +102,7 @@ export const Main = styled.main`
   }
 `;
 
-export const NavMenu = styled.nav`
+export const NavMenu = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,8 +111,8 @@ export const NavMenu = styled.nav`
     height: 100vh;
     z-index: 90;
     position: absolute;
-    top: 80px;
-    left: ${({click}) => (click ? '-12%' : '-100%')};
+    top: 50px;
+    left: ${({click}) => (click ? '-12%' : '-135%')};
     opacity: ${({click}) =>(click ? '1' : 0)};
     transition: all 0.5s ease;
     background: var(--almond-bg);

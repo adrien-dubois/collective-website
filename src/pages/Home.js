@@ -2,7 +2,7 @@ import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Container, Main, Row } from '../components/Header.components';
+import { Container, Main, Row } from '../components/General.components';
 
 const transition = { duration: .6, ease: [0.43, 0.13, 0.23, 0.96] };
 

@@ -11,3 +11,4 @@ This the repository of the website of our frellance collective.
 - `Styled Components` 5.3.3
 - `react-progressive-image` 0.6.0
 - `GSAP` 3.9.1
+- `React-Intersection-Oberver` 8.33.1
