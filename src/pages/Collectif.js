@@ -1,17 +1,29 @@
+import Blog from 'components/Collective/Blog'
+import Home from 'components/Collective/Home'
+import Milestones from 'components/Collective/Milestones'
+import Portfolio from 'components/Collective/Portfolio'
+import Pricing from 'components/Collective/Pricing'
+import Services from 'components/Collective/Services'
+import Skills from 'components/Collective/Skills'
+import Team from 'components/Collective/Team'
+import Video from 'components/Collective/Video'
+import Footer from 'components/Footer'
 import React from 'react'
-import { Container, Main, Row } from '../components/General.components'
 
 const Collectif = () => {
-  return (
-    <Main>
-        <Container className='fluid'>
-            <Row className='space-between'>
-
-            <p>Collectif</p>
-            </Row>
-        </Container>
-    </Main>
+  return ( <div>
+      <Home/>
+      <Services/>
+      <Portfolio/>
+      <Milestones/>
+      <Blog/>
+      <Video/>
+      <Pricing/>
+      <Team/>
+      <Skills/>
+      <Footer/>
+  </div>
   )
 }
 
-export default Collectif
+export default Collectif;
