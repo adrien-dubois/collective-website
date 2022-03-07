@@ -3,7 +3,6 @@ import Questrial from './assets/fonts/Questrial-Regular.ttf';
 import Montserrat from './assets/fonts/Montserrat-VariableFont_wght.ttf';
 import KronaOne from './assets/fonts/KronaOne-Regular.ttf';
 import Maragsa from './assets/fonts/Maragsâ.otf';
-import { UbuntuFont } from "./fontCSS";
 
 const grain = keyframes`
   0%,
@@ -41,8 +40,6 @@ const grain = keyframes`
 
 const GlobalStyle = createGlobalStyle`
 
-    ${UbuntuFont};
-
     @font-face{
         font-family: 'Questrial';
         src: url(${Questrial}) format('truetype');
@@ -69,10 +66,12 @@ const GlobalStyle = createGlobalStyle`
         --font-2: "KronaOne", serif;
         --font-3: "Montserrat", sans-serif;
         --maragsa-font: "Maragsa", serif;
-        --ubuntu-font: "Ubuntu", sans-serif;
+        --ubuntu-font: 'Ubuntu', sans-serif;
+        --poppins-font: 'Poppins', sans-serif;
         /*---- COLORS -----*/
         --almond-bg : #EADBCD;
         --black-chocolate : #1D1E16;
+        --light-chocolate: #414332;
         --white-color: #FFF;
         --black-color: #000;
         --white-alabaster: #f4f3e6;

@@ -29,7 +29,7 @@ const Header = () => {
           <Container>
             <Row className='space-between'>
               <div className='logo'>
-                <Link to='/' >The Square.</Link>
+                <a href='/' >The Square.</a>
               </div>
 
               <MenuIcon onClick={handleClick}>

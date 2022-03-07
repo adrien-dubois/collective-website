@@ -42,13 +42,18 @@ function App() {
                 path='/model/:id'
                 render={() => <Model imageDetails={imageDetails} />}
               />
+              <Route
+                exact
+                path='/collectif'
+                component={Collectif}
+                
+              />
             </Switch>
           </AnimatePresence>
         )}
       />
-      <Route exact path="/collectif">
-          <Collectif/>
-      </Route>
+      
+      
     </Router>
   );
 }

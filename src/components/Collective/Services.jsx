@@ -1,8 +1,58 @@
 import React from 'react'
+import Play from '../../assets/img/collective/play.png';
+import service1 from '../../assets/img/collective/service1.png';
+import service2 from '../../assets/img/collective/service2.png';
+import service3 from '../../assets/img/collective/service3.png';
+import { Section } from './Styles/Services.elements';
+import Title from './Title';
+
 
 function Services() {
+  const data = [
+    {
+      type: "Site web",
+      text: "Esse nulla sint quis incididunt do sit. Ad laboris sunt excepteur aliqua incididunt ea. Ex nisi laborum duis do nulla laboris ullamco elit. Do culpa magna laboris minim consectetur pariatur ex laborum. Elit excepteur tempor laboris aliqua cupidatat cupidatat ipsum. Ut adipisicing ea ea enim adipisicing mollit voluptate.",
+      image: service2,
+    },
+    {
+      type: "Design",
+      text: "Reprehenderit aliqua ea incididunt aliqua culpa nisi labore ut amet consequat Lorem nostrud ex sit. Tempor et magna elit in est pariatur eu do sit est aliquip. Eu mollit ullamco sint officia et veniam occaecat minim nulla exercitation id. Incididunt laboris ullamco dolor fugiat sunt. Est sit mollit excepteur deserunt .",
+      image: service1,
+    },
+
+    {
+      type: "Support",
+      text: "Ex nisi anim labore officia consequat adipisicing duis. Proident officia ut veniam amet ex Lorem deserunt nulla labore laboris dolor anim. Cillum cupidatat Lorem commodo sunt do pariatur fugiat adipisicing consectetur et pariatur ut qui. Magna irure ex culpa anim. Amet amet consequat enim enim cillum pariatur culpa irure ipsum est .",
+      image: service3,
+    },
+    
+  ];
+  
   return (
-    <div>Services</div>
+    <Section id="services">
+      <Title value="services" />
+      <div className="services">
+        {
+          data.map(({type, text, image}, index) => {
+            return (
+              <div className="services__service">
+                <div className="services__service__image">
+                  <img src={image} alt='service' />  
+                </div>
+                <div className="services__service__title">
+                  <span>0{index + 1}</span>
+                  <h2>{type}</h2>  
+                </div> 
+                <p className="services__service__description">
+                  {text}  
+                </p>
+                <img src={Play} alt='Play'/>
+              </div>
+            )
+          })
+        }  
+      </div>
+    </Section>
   )
 }
 

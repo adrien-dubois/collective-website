@@ -1,8 +1,11 @@
 import React from 'react'
+import { Div } from './Styles/Title.elements'
 
-function Title() {
+function Title({value}) {
   return (
-    <div>Title</div>
+    <Div>
+      <h1>{value}</h1>
+    </Div>
   )
 }
 
