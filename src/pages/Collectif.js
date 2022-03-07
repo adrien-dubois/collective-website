@@ -1,7 +1,6 @@
 import Blog from 'components/Collective/Blog'
 import Home from 'components/Collective/Home'
 import Milestones from 'components/Collective/Milestones'
-import Portfolio from 'components/Collective/Portfolio'
 import Pricing from 'components/Collective/Pricing'
 import Services from 'components/Collective/Services'
 import Skills from 'components/Collective/Skills'
@@ -14,7 +13,6 @@ const Collectif = () => {
   return ( <div>
       <Home/>
       <Services/>
-      <Portfolio/>
       <Milestones/>
       <Blog/>
       <Video/>

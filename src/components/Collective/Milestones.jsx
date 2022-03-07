@@ -1,8 +1,11 @@
 import React from 'react'
+import { Section } from './Styles/Milestones.elements'
 
 function Milestones() {
   return (
-    <div>Milestones</div>
+    <Section>
+      
+    </Section>
   )
 }
 

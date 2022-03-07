@@ -12,12 +12,12 @@ function Services() {
     {
       type: "Site web",
       text: "Esse nulla sint quis incididunt do sit. Ad laboris sunt excepteur aliqua incididunt ea. Ex nisi laborum duis do nulla laboris ullamco elit. Do culpa magna laboris minim consectetur pariatur ex laborum. Elit excepteur tempor laboris aliqua cupidatat cupidatat ipsum. Ut adipisicing ea ea enim adipisicing mollit voluptate.",
-      image: service2,
+      image: service1,
     },
     {
       type: "Design",
       text: "Reprehenderit aliqua ea incididunt aliqua culpa nisi labore ut amet consequat Lorem nostrud ex sit. Tempor et magna elit in est pariatur eu do sit est aliquip. Eu mollit ullamco sint officia et veniam occaecat minim nulla exercitation id. Incididunt laboris ullamco dolor fugiat sunt. Est sit mollit excepteur deserunt .",
-      image: service1,
+      image: service2,
     },
 
     {
