@@ -5,20 +5,20 @@ export const Section = styled.section`
     background-color: var(--white-alabaster);
     padding-left: 0 10rem;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     .background{
         position: absolute;
-        left: 0;
-        bottom: -30%;
+        left: -8%;
+        bottom: 0;
         img{
-            height: 32rem;
+            height: 28rem;
             z-index: 2;
         }
     }
     .milestones{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        color: var(--black-chocolate);
+        color: var(--light-chocolate);
         align-items: center;
         height: 100%;
         .milestone{

@@ -16,7 +16,7 @@ function Milestones() {
      amount: "18"
     },
     {image: <FaRegThumbsUp/>,
-     data: "Fans LinkedIn",
+     data: "Likes",
      amount: "2400"
     }
   ];
@@ -28,7 +28,7 @@ function Milestones() {
       color: 'var(--light-chocolate)' 
     }}>
 
-      <Section>
+      <Section id="milestone">
         <div className="background">
           <img src={MilestoneBg} alt="Blob milestone" />
         </div>

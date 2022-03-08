@@ -2,13 +2,14 @@ import React from 'react'
 import { Section } from './Styles/Blog.elements'
 import Title from './Title';
 import placeholder from "../../assets/img/collective/placeholder.png"
+import { BsArrowRightCircle } from "react-icons/bs"
 
 function Blog() {
   const blogsData = [
     {
       titre:"MDN se refait une beauté",
       type:"News",
-      description: "Deserunt fugiat nostrud ex laborum ullamco labore cupidatat dolor pariatur. Id elit aliquip officia nulla excepteur enim Lorem enim veniam cillum in et occaecat cupidatat. Adipisicing pariatur enim esse ipsum aute. Sit sit ad id veniam aliqua do aliquip anim anim cillum eiusmod magna cupidatat."
+      description: "Deserunt fugiat nostrud ex laborum ullamco labore cupidatat dolor pariatur. Id elit aliquip officia nulla excepteur enim Lorem enim veniam cillum in et occaecat cupidatat. Adipisicing pariatur enim esse ipsum aute. Sit sit ad id ..."
     },
     {
       titre:"Nouvelle réalisation",
@@ -18,13 +19,12 @@ function Blog() {
     {
       titre:"PHP 8 est sorti : le nouveau compilateur JIT assure de meilleures performances",
       type:"Code",
-      description: "Dolor Lorem incididunt occaecat magna id Lorem magna. Minim mollit tempor eiusmod consequat eiusmod do Lorem sunt pariatur irure ut nisi. Quis in qui ex excepteur magna occaecat ea culpa in laborum. Laboris id dolor ullamco veniam irure irure do et fugiat est. Aute do laboris veniam id duis."
+      description: "Dolor Lorem incididunt occaecat magna id Lorem magna. Minim mollit tempor eiusmod consequat eiusmod do Lorem sunt pariatur irure ut nisi. Quis in qui ex excepteur magna occaecat ea culpa in laborum. Laboris id dolor ullamco ..."
     },
   ];
   return (
     <Section id='blog'>
       <Title value="news"/>
-      <div className="decoration"></div>
       <div className="blogs">
         {
           blogsData.map(({titre, type, description}) => {
@@ -35,9 +35,17 @@ function Blog() {
                 </div> 
                 <div className="title">
                   <h3>{titre}</h3>  
-                </div> 
+                </div>
+                <span className="type">{type}</span>
+                <div className="description">
+                  <p>{description}</p>  
+                </div>
+                <div className="more">
+                  <BsArrowRightCircle width={40} />
+                  <span>Lire plus...</span>
+                </div>
               </div>
-            )
+            );
           })
         }  
       </div>

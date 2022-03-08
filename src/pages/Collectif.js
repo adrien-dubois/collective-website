@@ -5,7 +5,6 @@ import Pricing from 'components/Collective/Pricing'
 import Services from 'components/Collective/Services'
 import Skills from 'components/Collective/Skills'
 import Team from 'components/Collective/Team'
-import Video from 'components/Collective/Video'
 import Footer from 'components/Footer'
 import React from 'react'
 
@@ -15,7 +14,6 @@ const Collectif = () => {
       <Services/>
       <Milestones/>
       <Blog/>
-      <Video/>
       <Pricing/>
       <Team/>
       <Skills/>
