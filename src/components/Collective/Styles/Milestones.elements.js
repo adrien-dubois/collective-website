@@ -1,19 +1,11 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-    height: 50vh;
+    height: 35vh;
     background-color: var(--white-alabaster);
     padding-left: 0 10rem;
     position: relative;
     overflow: hidden;
-    .background{
-        position: absolute;
-        left: -8%;
-        bottom: 0;
-        img{
-            height: 28rem;
-            z-index: 2;
-        }
     }
     .milestones{
         display: grid;
@@ -29,13 +21,17 @@ export const Section = styled.section`
             justify-content: center;
             gap: 2rem;
             p {
-                font-size: 5rem;
-                font-weight: bolder;
+                font-size: 2rem;
+                font-weight: 300;
                 line-height: 3rem;
             }
             span {
                 text-transform: uppercase;
+                font-style: italic;
                 color: var(--light-chocolate);
+                font-family: var(--ubuntu-font);
+                font-weight: 500;
+                font-size: 1.2rem;
             }
 
         }

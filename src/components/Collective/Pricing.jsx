@@ -9,17 +9,17 @@ function Pricing() {
   const plans = [
     {
       name: "Site vitrine",
-      description:"Ea ex non veniam adipisicing nostrud magna amet pariatur est incididunt cillum cillum."
+      description:"01"
     },
 
     {
-      name: "Site E-Commerce",
-      description:"Voluptate ea aliqua elit ut irure aliquip est enim esse id dolor dolore eu."
+      name: "E-Commerce",
+      description:"02"
     },
 
     {
-      name: "Site sur mesure",
-      description:"Aliquip magna ullamco tempor fugiat laboris cillum Lorem cillum excepteur."
+      name: "Sur-Mesure",
+      description:"03"
     },
 
   ]
@@ -29,12 +29,12 @@ function Pricing() {
     {value: "Responsive design (Mobile & tablette)", type: "Site vitrine"},
     {value: "Médias (photos / vidéos", type: "Site vitrine"},
     {value: "Formulaire de contact", type: "Site vitrine"},
-    {value: "Base de donnée de produits", type: "Site E-Commerce"},
-    {value: "Comptes clients", type: "Site E-Commerce"},
-    {value: "Accès à un backoffice de gestion", type: "Site E-Commerce"},
-    {value: "Accompagnement personnalisé", type: "Site sur mesure"},
-    {value: "Méthode Agile (SCRUM)", type: "Site sur mesure"},
-    {value: "Stack Symfony & React", type: "Site sur mesure"},
+    {value: "Base de donnée de produits", type: "E-Commerce"},
+    {value: "Comptes clients", type: "E-Commerce"},
+    {value: "Accès à un backoffice de gestion", type: "E-Commerce"},
+    {value: "Accompagnement personnalisé", type: "Sur-Mesure"},
+    {value: "Méthode Agile (SCRUM)", type: "Sur-Mesure"},
+    {value: "Stack Symfony & React", type: "Sur-Mesure"},
     {value: "Conformité RGPD", type: "Site vitrine"},
     {value: "Mise en ligne & hébergement (12mois)", type: "Site vitrine"},
     {value: "Certificat SSL (https://)", type: "Site vitrine"},
@@ -59,7 +59,8 @@ function Pricing() {
                 <div className="pricing__plan__name">
                   <h2>{name}</h2>
                   <div className="pricing__plan__name__description">
-                    <p>{description}</p>  
+                    <span>{description}</span>
+                    <p>Square Pack</p>
                   </div>
                 </div> 
                 <div className="pricing__plan__content">
@@ -75,14 +76,14 @@ function Pricing() {
                             ) : (
                             <li className='line'>{value}</li>
                             )
-                          ) : name === "Site E-Commerce" ? (
+                          ) : name === "E-Commerce" ? (
                             type === "Site vitrine" || type === name ? (
                             <li>{value}</li>
                             ) : (
                             <li className='line'>{value}</li>
                             )
                           ) : (
-                            name === "Site sur mesure" && <li>{value}</li>
+                            name === "Sur-Mesure" && <li>{value}</li>
                           )}
 
                         </Fragment>

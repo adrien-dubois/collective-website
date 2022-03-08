@@ -70,6 +70,7 @@ const GlobalStyle = createGlobalStyle`
         --poppins-font: 'Poppins', sans-serif;
         /*---- COLORS -----*/
         --almond-bg : #EADBCD;
+        --almond-dark: #bc8b5e;
         --black-chocolate : #1D1E16;
         --light-chocolate: #414332;
         --white-color: #FFF;
