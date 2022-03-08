@@ -1,6 +1,16 @@
 import React from "react";
-
 import { motion } from "framer-motion";
+import styled, { keyframes } from "styled-components";
+
+const move = keyframes`
+  0% { transform:translateY(-5px); }
+  50% { transform:translateY(5px) ; }
+  100% { transform:translateY(-5px); }
+`;
+
+const Div = styled.div`
+  animation: ${move} 4s ease infinite;
+`;
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -15,7 +25,7 @@ const ScrollForMore = () => {
       }}
       className='scroll-for-more'
     >
-      <div className='icon'>
+      <Div className='icon'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='23.539'
@@ -35,7 +45,7 @@ const ScrollForMore = () => {
             </g>
           </g>
         </svg>
-      </div>
+      </Div>
       <div className='text'>
         Scroll <br />
         for more

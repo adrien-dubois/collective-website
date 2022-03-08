@@ -177,6 +177,7 @@ main {
         left: 200px;
         z-index: 20;
         .icon {
+          margin-left: 2.2rem;
           svg {
             height: auto;
             width: 28px;
@@ -186,6 +187,8 @@ main {
           margin-top: 8px;
           color: var(--white-antique);
           text-transform: uppercase;
+          text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.699);
+          text-align: center;
         }
       }
     }
