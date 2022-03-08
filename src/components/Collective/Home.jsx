@@ -1,5 +1,4 @@
 import React from 'react'
-import Play from '../../assets/img/collective/play.png'
 import { Section } from './Styles/Home.elements'
 
 
@@ -14,10 +13,10 @@ function Home() {
           </div>
           <div className="subtitle">
             <p>  
-              Fugiat excepteur qui irure ut enim dolor. Nostrud ut cillum ipsum enim do anim. Et quis qui ullamco consequat nulla tempor adipisicing fugiat ipsum proident eiusmod commodo. Labore nostrud non non reprehenderit. Mollit proident sit voluptate pariatur amet id irure ex.  
+              Fugiat excepteur qui irure ut enim dolor. Nostrud ut cillum ipsum enim do anim. Et quis qui ullamco consequat nulla tempor adipisicing fugiat ipsum proident eiusmod commodo. Labore nostrud non non reprehenderit. Mollit proident sit voluptate pariatur amet id irure ex. Exercitation elit adipisicing eiusmod labore officia magna. Qui est id consectetur veniam. Eiusmod deserunt magna proident Lorem reprehenderit culpa non duis. Aliquip ex pariatur irure et duis duis cillum. Dolor velit nostrud amet anim ullamco ullamco aliqua est laboris veniam exercitation eu qui. Laboris nisi deserunt eu magna dolor voluptate. 
             </p> 
           </div>
-          <img src={Play} alt="Play button" />
+
         </div>
       </div>
       <div className="info">

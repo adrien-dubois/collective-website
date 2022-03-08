@@ -27,7 +27,7 @@ function Pricing() {
   const datas = [
     {value: "Design & Intégration", type: "Site vitrine"},
     {value: "Responsive design (Mobile & tablette)", type: "Site vitrine"},
-    {value: "Médias (photos / vidéos", type: "Site vitrine"},
+    {value: "Médias (photos / vidéos)", type: "Site vitrine"},
     {value: "Formulaire de contact", type: "Site vitrine"},
     {value: "Base de donnée de produits", type: "E-Commerce"},
     {value: "Comptes clients", type: "E-Commerce"},
@@ -65,7 +65,7 @@ function Pricing() {
                 </div> 
                 <div className="pricing__plan__content">
                   <ul className={`pricing__plan__content__features ${name}`}>
-                    {datas.map(({value,type}, index2) => {
+                    {datas.map(({value,type}, index2) => {    
                       return(
 
                         <Fragment key={index2}>
@@ -91,7 +91,7 @@ function Pricing() {
                     })}  
                   </ul>
                   <div className="pricing__plan__content__actions">
-                    <span>Contactez nous</span>  
+                    <a href='#'>Contactez nous</a>  
                   </div>
                 </div> 
               </div>

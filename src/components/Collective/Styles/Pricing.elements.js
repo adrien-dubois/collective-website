@@ -76,6 +76,41 @@ export const Section = styled.section`
                         margin-top: 1.2rem;
                     }
                 }
+
+
+
+                
+            }
+            &__content{
+                &__features{
+                    text-align: center;
+                    color: var(--light-chocolate);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6rem;
+                    .line {
+                        text-decoration: line-through;
+                    }
+                    margin-bottom: 2rem;
+                }
+
+                &__actions{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                    a{
+                        text-transform: uppercase;
+                        padding: 4px 6px;
+                        border: 1px solid var(--light-chocolate);
+                        transition: all .4s ease;
+                    }
+                    a:hover{
+                        background: var(--light-chocolate);
+                        color: var(--almond-dark);
+                    }
+                }
             }
         }
     }
