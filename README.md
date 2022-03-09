@@ -12,3 +12,5 @@ This the repository of the website of our frellance collective.
 - `react-progressive-image` 0.6.0
 - `GSAP` 3.9.1
 - `React-Intersection-Oberver` 8.33.1
+- `React Slick` 0.28.1
+- `Slick Carousel` 1.8.1

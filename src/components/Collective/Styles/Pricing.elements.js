@@ -102,13 +102,13 @@ export const Section = styled.section`
                     gap: 0.5rem;
                     a{
                         text-transform: uppercase;
-                        padding: 4px 6px;
-                        border: 1px solid var(--light-chocolate);
+                        padding: 6px 8px;
+                        border-radius: 5px;
                         transition: all .4s ease;
                     }
                     a:hover{
                         background: var(--light-chocolate);
-                        color: var(--almond-dark);
+                        color: var(--white-antique);
                     }
                 }
             }
