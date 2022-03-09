@@ -105,11 +105,11 @@ const GlobalStyle = createGlobalStyle`
     {
       border-radius: 10px;
       box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-      background-color: #E1CBB7;
+      background-color: var(--almond-dark);
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background-color:#CEAB8A;
+        background-color:var(--light-chocolate);
       }
 
     * {
