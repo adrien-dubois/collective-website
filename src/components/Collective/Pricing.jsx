@@ -49,7 +49,7 @@ function Pricing() {
       </div>
       <div className="pricing__title">
         <p>Nos différentes formules</p>
-        <h2>Trouvez la formule qui vous conviens selon vos besoins & vos envies.</h2>  
+        <h2>Trouvez la formule qui vous conviens selon vos besoins</h2>  
       </div>
       <div className="pricing">
         {

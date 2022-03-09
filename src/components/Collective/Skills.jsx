@@ -1,8 +1,11 @@
 import React from 'react'
+import { Section } from './Styles/Skills.elements'
 
 function Skills() {
   return (
-    <div>Skills</div>
+    <Section id="skills">
+      
+    </Section>
   )
 }
 
