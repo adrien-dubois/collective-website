@@ -16,13 +16,13 @@ export default function Collectif() {
     <motion.div initial="hidden" animate="visible" >
         <ScrollToTop/>
         <Home/>
-        <Services/>
-        <Milestones/>
-        <Blog/>
-        <Pricing/>
-        <Team/>
-        <Skills/>
-        <Footer/>
+        {/* <Services/> */}
+        {/* <Milestones/> */}
+        {/* <Blog/> */}
+        {/* <Pricing/> */}
+        {/* <Team/> */}
+        {/* <Skills/> */}
+        {/* <Footer/> */}
     </motion.div>
   );
 };

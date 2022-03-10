@@ -124,7 +124,7 @@ const GlobalStyle = createGlobalStyle`
 
     html {
         overscroll-behavior: contain;
-        
+        height: 100%;
         @media (prefers-reduced-motion: no-preference) {
             scroll-behavior: smooth;
         }
@@ -151,8 +151,14 @@ const GlobalStyle = createGlobalStyle`
         &.no-scroll {
             overflow-y: hidden;
         }
-        
+        @media screen and (min-width: 280px) and (max-width: 1080px) {
+        ::-webkit-scrollbar {
+            display: none;
+          }
+        }
     }
+
+    
 
     a {
         color: var(--black-chocolate);
