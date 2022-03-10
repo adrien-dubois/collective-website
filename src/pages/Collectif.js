@@ -7,21 +7,22 @@ import Services from 'components/Collective/Services'
 import Skills from 'components/Collective/Skills'
 import Team from 'components/Collective/Team'
 import Footer from 'components/Footer/Footer'
+import { motion } from 'framer-motion'
 import React from 'react'
 
-const Collectif = () => {
-  return ( <div>
-      <Home/>
-      <Services/>
-      <Milestones/>
-      <Blog/>
-      <Pricing/>
-      <Team/>
-      <Skills/>
-      <Footer/>
-      <ScrollToTop/>
-  </div>
-  )
-}
 
-export default Collectif;
+export default function Collectif() {
+  return ( 
+    <motion.div initial="hidden" animate="visible" >
+        <ScrollToTop/>
+        <Home/>
+        <Services/>
+        <Milestones/>
+        <Blog/>
+        <Pricing/>
+        <Team/>
+        <Skills/>
+        <Footer/>
+    </motion.div>
+  );
+};

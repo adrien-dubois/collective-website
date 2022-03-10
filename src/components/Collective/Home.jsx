@@ -1,12 +1,21 @@
 import React from 'react'
 import { Section } from './Styles/Home.elements'
-
+import { motion } from "framer-motion"
+import { homeAnimations, homeInfoAnimation } from "Animation"
 
 function Home() {
   return (
 
     <Section id="home">
-      <div className="home">
+      <motion.div 
+        variants={homeAnimations}
+        transition={{ 
+          delay: 0.3, 
+          duration: 0.6, 
+          type: "tween" 
+        }}
+        className="home"
+       >
         <div className="content">
           <div className="title">
             <h1>Le collectif</h1>
@@ -18,8 +27,16 @@ function Home() {
           </div>
 
         </div>
-      </div>
-      <div className="info">
+      </motion.div>
+      <motion.div 
+        className="info"
+        transition={{
+          delay: 0.3, 
+          duration: 0.6, 
+          type:"tween"
+        }}
+        variants = {homeInfoAnimation}
+      >
         <div className="grid">
 
           <div className="col">
@@ -55,7 +72,7 @@ function Home() {
           </div>
 
         </div>  
-      </div>
+      </motion.div>
     </Section>
 
   )

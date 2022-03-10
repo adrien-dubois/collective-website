@@ -5,9 +5,15 @@ import service2 from '../../assets/img/collective/service2.png';
 import service3 from '../../assets/img/collective/service3.png';
 import { Section } from './Styles/Services.elements';
 import Title from './Title';
+import { useScroll } from "components/Collective/useScroll";
+import { motion } from 'framer-motion';
+import { servicesAnimations } from 'Animation';
 
 
 function Services() {
+
+  const [element, controls] = useScroll();
+
   const data = [
     {
       type: "Site web",
@@ -29,13 +35,22 @@ function Services() {
   ];
   
   return (
-    <Section id="services">
+    <Section id="services" ref={element}>
       <Title value="services" />
       <div className="services">
         {
           data.map(({type, text, image}, index) => {
             return (
-              <div className="services__service">
+              <motion.div 
+                className="services__service"
+                variants={servicesAnimations}
+                animate={controls}
+                transition={{
+                  delay: 0.03,
+                  type: "tween",
+                  duration: "0.8",
+                }}
+                >
                 <div className="services__service__image">
                   <img src={image} alt='service' />  
                 </div>
@@ -47,7 +62,7 @@ function Services() {
                   {text}  
                 </p>
                 <img src={Play} alt='Play'/>
-              </div>
+              </motion.div>
             )
           })
         }  

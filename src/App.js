@@ -23,38 +23,38 @@ function App() {
   };
 
   return (
-    <Router>
-      <GlobalStyle/>
-      <GoToTop/>
-      <Header/>
-      <Route
-        render={({ location }) => (
-          
-          <AnimatePresence initial={false} exitBeforeEnter>
-            <Switch location={location} key={location.pathname}>
-              <Route
-                exact
-                path='/'
-                render={() => <Home imageDetails={imageDetails} />}
-              />
-              <Route
-                exact
-                path='/model/:id'
-                render={() => <Model imageDetails={imageDetails} />}
-              />
-              <Route
-                exact
-                path='/collectif'
-                component={Collectif}
+      <Router>
+        <GlobalStyle/>
+        <GoToTop/>
+        <Header/>
+        <Route
+          render={({ location }) => (
+            
+            <AnimatePresence initial={false} exitBeforeEnter>
+              <Switch location={location} key={location.pathname}>
+                <Route
+                  exact
+                  path='/'
+                  render={() => <Home imageDetails={imageDetails} />}
+                />
+                <Route
+                  exact
+                  path='/model/:id'
+                  render={() => <Model imageDetails={imageDetails} />}
+                />
                 
-              />
-            </Switch>
-          </AnimatePresence>
-        )}
-      />
-      
-      
-    </Router>
+              </Switch>
+            </AnimatePresence>
+          )}
+        />
+        <Route
+          exact
+          path='/collectif'
+          component={Collectif}
+          
+        />
+        
+      </Router>
   );
 }
 

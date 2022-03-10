@@ -3,6 +3,10 @@ import { Section } from './Styles/Milestones.elements'
 import { FaRegUser, FaRegThumbsUp } from "react-icons/fa"
 import { IoRocketOutline } from "react-icons/io5"
 import { IconContext } from 'react-icons'
+import { useScroll } from "./useScroll"
+import { motion } from 'framer-motion'
+import { milestoneAnimations } from 'Animation'
+
 
 function Milestones() {
   const milestone = [
