@@ -14,3 +14,4 @@ This the repository of the website of our frellance collective.
 - `React-Intersection-Oberver` 8.33.1
 - `React Slick` 0.28.1
 - `Slick Carousel` 1.8.1
+- `React Countup` 6.1.1

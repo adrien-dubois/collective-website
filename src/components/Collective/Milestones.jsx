@@ -4,11 +4,16 @@ import { FaRegUser, FaRegThumbsUp } from "react-icons/fa"
 import { IoRocketOutline } from "react-icons/io5"
 import { IconContext } from 'react-icons'
 import { useScroll } from "./useScroll"
-import { motion } from 'framer-motion'
+import {  motion } from 'framer-motion'
 import { milestoneAnimations } from 'Animation'
+import VisibilitySensor from 'react-visibility-sensor'
+import CountUp from "react-countup";
 
 
 function Milestones() {
+
+  const [element, controls] = useScroll();
+  
   const milestone = [
     {image: <FaRegUser/>,
      data: "Clients",
@@ -31,16 +36,31 @@ function Milestones() {
       color: 'var(--light-chocolate)' 
     }}>
 
-      <Section id="milestone">
+      <Section id="milestone" ref={element}>
         <div className="milestones">
           {
             milestone.map(({image, data, amount}) => {
               return(
-              <div className="milestone">
+              <motion.div 
+                className="milestone"
+                variants={milestoneAnimations}
+                animate={controls}
+                transition={{
+                  delay: 0.09,
+                  type: 'tween',
+                  duration: '0.8',
+                }}
+              >
                 {image}
                 <span>{data}</span>
-                <p>{amount}</p>
-              </div>
+                <CountUp duration={1.5} end={amount} redraw={true}>
+                  {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                          <p ref={countUpRef} />
+                      </VisibilitySensor>
+                  )}
+              </CountUp>
+              </motion.div>
               );
             })
           }  

@@ -3,8 +3,14 @@ import { Section } from './Styles/Pricing.elements'
 import pricing1 from "../../assets/img/collective/pricing1.png"
 import pricing2 from "../../assets/img/collective/pricing2.png"
 import Title from './Title'
+import { useScroll } from './useScroll'
+import { motion } from 'framer-motion'
+import { pricingAnimations } from 'Animation'
+
 
 function Pricing() {
+
+  const [element, controls] = useScroll();
 
   const plans = [
     {
@@ -41,7 +47,7 @@ function Pricing() {
     {value: "Support de votre site web", type: "Site vitrine"}
   ];
   return (
-    <Section id="pricing">
+    <Section id="pricing" ref={element}>
       <Title value="Formules" />
       <div className="background">
         <img src={pricing1} alt="Design" className='bg1' /> 
@@ -55,7 +61,17 @@ function Pricing() {
         {
           plans.map(({name, description}, index) => {
             return(
-              <div className="pricing__plan" key={index}>
+              <motion.div 
+                className="pricing__plan" 
+                key={index}
+                variants={pricingAnimations}
+                animate={controls}
+                transition= {{
+                  delay: 0.09,
+                  type: 'tween',
+                  duration: 0.8
+                }}
+              >
                 <div className="pricing__plan__name">
                   <h2>{name}</h2>
                   <div className="pricing__plan__name__description">
@@ -94,7 +110,7 @@ function Pricing() {
                     <a href='#'>Contactez nous</a>  
                   </div>
                 </div> 
-              </div>
+              </motion.div>
             )
           })
         }  

@@ -21,7 +21,7 @@ export const Section = styled.section`
     }
     .pricing__title{
         position: relative;
-        z-index: 1000;
+        z-index: 10;
         margin: 6rem 10rem;
         p{
             color: var(--black-chocolate);
@@ -34,7 +34,7 @@ export const Section = styled.section`
     }
     .pricing{
         position: relative;
-        z-index: 1000;
+        z-index: 10;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0 10rem;

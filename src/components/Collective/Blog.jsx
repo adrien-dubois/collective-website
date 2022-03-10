@@ -3,8 +3,15 @@ import { Section } from './Styles/Blog.elements'
 import Title from './Title';
 import placeholder from "../../assets/img/collective/placeholder.png"
 import { BsArrowRightCircle } from "react-icons/bs"
+import { useScroll } from './useScroll';
+import { motion } from 'framer-motion';
+import { blogsAnimations } from 'Animation';
+
 
 function Blog() {
+
+  const [element, controls] = useScroll();
+
   const blogsData = [
     {
       titre:"MDN se refait une beauté",
@@ -23,13 +30,22 @@ function Blog() {
     },
   ];
   return (
-    <Section id='blog'>
+    <Section id='blog' ref={element}>
       <Title value="news"/>
       <div className="blogs">
         {
           blogsData.map(({titre, type, description}) => {
             return (
-              <div className="blog">
+              <motion.div 
+                className="blog"
+                variants={blogsAnimations}
+                animate={controls}
+                transition={{
+                  delay: 0.09,
+                  type: 'tween',
+                  duration: 0.8
+                }}
+              >
                 <div className="image">
                   <img src={placeholder} alt="placeholder" />
                 </div> 
@@ -44,7 +60,7 @@ function Blog() {
                   <BsArrowRightCircle width={40} />
                   <span>Lire plus...</span>
                 </div>
-              </div>
+              </motion.div>
             );
           })
         }  

@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const FooterContainer = styled.footer`
+
+export const FooterContainer = styled(motion.footer)`
     height: 10vh;
     position: relative;
     padding: 1.2rem calc(2.5rem + 2.5vw);

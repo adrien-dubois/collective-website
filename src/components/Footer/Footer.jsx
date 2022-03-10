@@ -6,10 +6,25 @@ import {
   LeftText, 
   RightText 
 } from './Footer.elements';
+import { useScroll } from 'components/Collective/useScroll';
+import { footerAnimations } from 'Animation';
+
 
 const Footer = () => {
+
+  const [element, controls] = useScroll();
+
   return (
-    <FooterContainer>
+    <FooterContainer 
+      ref={element}
+      variants={footerAnimations}
+      animate={controls}
+      transition={{
+        delay: 0.08,
+        type: 'tween',
+        duration: 0.8,
+      }}
+    >
       <LeftText>
             ©2022 made with ❤ <span>by The Square.</span>
       </LeftText>

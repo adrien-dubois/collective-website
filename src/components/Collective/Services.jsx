@@ -46,7 +46,7 @@ function Services() {
                 variants={servicesAnimations}
                 animate={controls}
                 transition={{
-                  delay: 0.03,
+                  delay: 0.09,
                   type: "tween",
                   duration: "0.8",
                 }}

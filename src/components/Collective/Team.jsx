@@ -6,9 +6,15 @@ import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css"
 import "../../../node_modules/slick-carousel/slick/slick-theme.css"
 import Cards from './Cards';
+import { useScroll } from './useScroll'
+import { motion } from 'framer-motion'
+import { teamAnimations } from 'Animation';
+
 
 const Team = () => {
   
+  const [element, controls] = useScroll();
+
   const settings = {
     dots: true,
     infinite: true,
@@ -18,7 +24,7 @@ const Team = () => {
   };
 
   return (
-    <Section id="team">
+    <Section id="team" ref={element}>
       <div className="background">
         <img src={team1} alt="Bubble team" className='design1'/>  
         <img src={team2} alt="Bubble team" className='design2'/>  
@@ -27,7 +33,16 @@ const Team = () => {
           <p>Les membres de The Square.</p>
           <h2>Découvrez l'équipe de freelances du collectif</h2>
         </TeamTitle>
-      <div className="container">
+      <motion.div 
+        className="container"
+        variants={teamAnimations}
+        animate={controls}
+        transition= {{
+          delay: 0.09,
+          type: 'tween',
+          duration: 0.8
+        }}
+      >
         <Carousel>
           <Slider {...settings}>
                 <Cards
@@ -65,7 +80,7 @@ const Team = () => {
                 
           </Slider>
         </Carousel>
-      </div>
+      </motion.div>
     </Section>
   )
 }
