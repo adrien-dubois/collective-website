@@ -33,7 +33,7 @@ export const Container = styled.div`
             width: 1rem;
             height: 1rem;
             transform: translate3d(-50%, -50%, 0);
-            background: var(--almond-dark);
+            background: var(--light-chocolate);
             border-radius: 100%;
             z-index: 2000;
             
@@ -44,15 +44,15 @@ export const Container = styled.div`
                 right: 100%;
                 width: 4rem;
                 height: 0.4rem;
-                background-color: var(--almond-dark);
+                background-color: var(--light-chocolate);
             }
         }
 
         &__track{
             position: relative;
-            min-width: max(200rem, 100%) 0 0;
+            min-width: max(200rem, 200%);
             padding: 1.5rem max(100rem, 100%) 0 0;
-            height: 6rem;
+            height: 8rem;
 
             &__list{
                 list-style: none;
@@ -67,7 +67,7 @@ export const Container = styled.div`
                     position: relative;
                     display: block;
                     min-width: 8rem;
-                    padding: 2.5rem 2rem 0.5rem;
+                    padding: 2.5rem 1rem 0.5rem;
                     text-align: center;
                     color: inherit;
                     text-decoration: none;
@@ -100,8 +100,8 @@ export const Container = styled.div`
                     }
                     &.is-active{
                         span{
-                            transform: scale(1.4);
-                            color: var(--almond-dark);
+                            transform: scale(1.2) rotate(-90deg);
+                            color: var(--light-chocolate);
                         }
                         &::after{
                             display: none;
