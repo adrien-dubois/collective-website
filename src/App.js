@@ -5,15 +5,16 @@ import { AnimatePresence } from 'framer-motion';
 /*---- Components ----*/
 import GlobalStyle from './GlobalStyle';
 import GoToTop from './GoToTop';
+import Header from './components/Header';
 
 /*---- PAGES ----*/
 import Home from './pages/Home';
 import Model from './pages/Model';
+import Collectif from './pages/Collectif';
+import Portfolio from 'pages/Portfolio';
 
 /*---- STYLE ----*/
 import "./App.scss";
-import Header from './components/Header';
-import Collectif from './pages/Collectif';
 
 function App() {
 
@@ -51,7 +52,12 @@ function App() {
           exact
           path='/collectif'
           component={Collectif}
-          
+        />
+
+        <Route
+          exact
+          path='/portfolio'
+          component={Portfolio}
         />
         
       </Router>

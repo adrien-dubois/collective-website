@@ -69,6 +69,7 @@ const GlobalStyle = createGlobalStyle`
         --ubuntu-font: 'Ubuntu', sans-serif;
         --poppins-font: 'Poppins', sans-serif;
         /*---- COLORS -----*/
+        //BG 1920 1059
         --almond-bg : #EADBCD;
         --almond-dark: #bc8b5e;
         --black-chocolate : #1D1E16;

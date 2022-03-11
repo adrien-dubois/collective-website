@@ -63,7 +63,7 @@ const menus = [
     {
         link: {
             name: "Portfolio",
-            url: "#"
+            url: "/portfolio"
         },
         marquee: [
             {
