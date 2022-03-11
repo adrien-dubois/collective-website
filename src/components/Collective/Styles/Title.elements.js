@@ -12,4 +12,7 @@ export const Div = styled.div`
         font-family: var(--poppins-font);
         font-weight: 100;
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        display: none;
+    }
 `;

@@ -92,4 +92,63 @@ export const Section = styled.section`
             }
         }
     }
+
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+        overflow-x: hidden;
+        padding: 2rem 0;
+        height: max-content;
+        .background{
+            display: none;
+        }
+        .skill__title{
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            h2{
+                font-size: 1.2rem;
+            }
+        }
+        .skills{
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            &__bars{
+                padding: .2rem;
+                gap: 0;
+                align-items: center;
+                justify-content: center;
+                &__bar{
+                    .container{
+                        gap: 1.2rem;
+                        span{
+                            font-size: .8rem;
+                        }
+                        progress{
+                            width: 12rem;
+                            height: .5rem;
+                            &::-webkit-progress-bar{
+                                height: 0.3rem;
+                            }
+                        }
+                    }
+                    h3{
+                        font-size: .8rem;
+                    }
+                }
+            }
+            &__content{
+                text-align: center;
+                padding: 0.2rem;
+                margin-top: 1.2rem;
+                .title{
+                    font-size: .9rem;
+                }
+                .description{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
 `;

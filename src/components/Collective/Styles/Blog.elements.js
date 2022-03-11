@@ -52,4 +52,33 @@ export const Section = styled.section`
             }
         }
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        margin: 2rem 0;
+        .decoration{
+            display: none;
+        }
+        .blogs{
+            grid-template-columns: 1fr;
+            margin: 0 1rem;
+            padding: 0 2rem;
+            .title{
+                h3{
+                    font-size: 1.2rem;
+                }
+            }
+            .type{
+                margin: 1rem 0;
+            }
+            .description{
+                font-size: .8rem;
+            }
+            .more{
+                margin-top: 1rem;
+                span{
+                    padding-top: 1rem;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
 `;

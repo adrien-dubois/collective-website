@@ -45,4 +45,22 @@ export const Section = styled.section`
             }
         }
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        .services{
+            margin: 2rem 0;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 0 2rem;
+            &__service{
+                &__title{
+                    h2{
+                        font-size: 2rem;
+                    }
+                }
+                &__description{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
 `;

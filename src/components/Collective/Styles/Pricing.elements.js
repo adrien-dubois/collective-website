@@ -114,4 +114,69 @@ export const Section = styled.section`
             }
         }
     }
-    `;
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        padding: 1rem;
+        .pricing__title{
+            margin: 0;
+            padding: 0 2rem;
+            text-align: center;
+            p{
+                margin-bottom: .7rem;
+                font-size: .8rem;
+            }
+            h2{
+                font-size: 1.2rem;
+            }
+        }
+        .background{
+            display: none;
+        }
+        .pricing{
+            grid-template-columns: 1fr;
+            padding: 1rem;
+            gap: 4rem;
+            &__plan{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                &__name{
+                    height: 10rem;
+                    width: 10rem;
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                    &__description{
+                        span{
+                            font-size: .8rem;
+                        }
+                        p{
+                            font-size: .7rem;
+                        }
+                    }
+                }
+                &__content{
+                    &__features{
+                        font-size: .8rem;
+                    }
+                    &__actions{
+                        a{
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .pricing__plan__name__description{
+                        span{
+                            font-size: .7rem;
+                        }
+                    }
+                    .pricing__plan__content{
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+`;

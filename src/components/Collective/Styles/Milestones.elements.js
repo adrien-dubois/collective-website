@@ -36,4 +36,20 @@ export const Section = styled.section`
 
         }
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        padding: 5rem 2rem;
+        min-height: 100vh;
+        height: 100%;
+        .milestones{
+            grid-template-columns: 1fr;
+            gap: 5rem;
+            .milestone{
+                &:nth-child(2){
+                    padding: 1.5rem 0;
+                    border-top: 2px solid var(--black-chocolate);
+                    border-bottom: 2px solid var(--black-chocolate);
+                }
+            }
+        }
+    }
 `;

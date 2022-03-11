@@ -11,15 +11,18 @@ export const FooterContainer = styled(motion.footer)`
     align-items: center;
     justify-content: space-evenly;
 
-    @media only Screen and (max-width: 48em) {
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+        height: max-content;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         div {
             &:first-child{
                 margin-bottom: 1rem;
             }
         }
     }
+
 `;
 
 export const LeftText = styled.p`
@@ -32,7 +35,7 @@ export const LeftText = styled.p`
 
 export const CenterText = styled.div`
 
-color: var(--light-chocolate);
+    color: var(--light-chocolate);
 
     .social-network {
       position: relative;
@@ -57,6 +60,10 @@ color: var(--light-chocolate);
         color: var(--almond-dark);
       }
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+        text-align: center;
+        margin-top: 1rem;
+    }
 `;
 
 export const RightText = styled.div`
@@ -77,5 +84,10 @@ export const RightText = styled.div`
     a:hover{
         background: transparent;
         color: var(--almond-dark);
+    }
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+        
+        margin-top: 1rem;
+        
     }
 `;

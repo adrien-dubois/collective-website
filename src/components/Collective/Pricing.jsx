@@ -107,7 +107,7 @@ function Pricing() {
                     })}  
                   </ul>
                   <div className="pricing__plan__content__actions">
-                    <a href='#'>Contactez nous</a>  
+                    <a href='# '>Contactez nous</a>  
                   </div>
                 </div> 
               </motion.div>

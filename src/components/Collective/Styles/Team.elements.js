@@ -22,6 +22,14 @@ export const Section = styled.section`
         align-items: center;
         padding: 5rem 0;
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        .background{
+            display: none;
+        }
+        .container{
+            padding: 4rem 0;
+        }
+    }
 `;
 
 export const TeamTitle = styled.div`
@@ -36,6 +44,17 @@ export const TeamTitle = styled.div`
     h2{
         font-size: 1.8rem;
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+        margin: 1rem .5rem;
+        text-align: center;
+        p{
+            font-size: .7rem;
+            margin-bottom: 1rem;
+        }
+        h2{
+            font-size: 1.1rem;
+        }
+    }
 `;
 
 export const Carousel = styled.div`
@@ -44,11 +63,10 @@ export const Carousel = styled.div`
     flex-direction: column;
     margin-top: -5rem;
     z-index: 5;
-}
 
-    @media only Screen and (max-width: 40em) {
-        width: 90vw;
-        .slick-slider .slick-arrow {
+    @media screen and (min-width: 280px) and (max-width: 1080px){
+        width: 80vw;
+        .slick-slider .slick-arrow{
             display: none;
         }
     }
@@ -76,4 +94,6 @@ export const Carousel = styled.div`
         padding: 0;
         margin-bottom: 3rem;
     }
+
+    
 `;
