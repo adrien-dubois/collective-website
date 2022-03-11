@@ -32,11 +32,11 @@ export default class Home extends Component {
 
                 {/* DRAGGABLE ELEMENT */}
                 <div className="nav__projects__track" data-draggable>
-                    <ul className="nav__projects__list">
+                    <ul className="nav__projects__track__list">
 
                         {/* LINK */}
                         <li>
-                            <a href="#home" className="nav__projects__link" data-link>
+                            <a href="#home" className="nav__projects__track__list__link" data-link>
                                 <span>
                                     Portfolio
                                 </span>
@@ -45,7 +45,7 @@ export default class Home extends Component {
 
                         {/* LINK */}
                         <li>
-                            <a href="#section_1" className="nav__projects__link" data-link>
+                            <a href="#section_1" className="nav__projects__track__list__link" data-link>
                                 <span>
                                     Site Vitrine
                                 </span>
@@ -54,16 +54,16 @@ export default class Home extends Component {
 
                         {/* LINK */}
                         <li>
-                            <a href="#section_2" className="nav__projects__link" data-link>
+                            <a href="#section_2" className="nav__projects__track__list__link" data-link>
                                 <span>
-                                    E-Commerce
+                                    E-Shop
                                 </span>
                             </a>
                         </li>
 
                         {/* LINK */}
                         <li>
-                            <a href="#section_3" className="nav__projects__link" data-link>
+                            <a href="#section_3" className="nav__projects__track__list__link" data-link>
                                 <span>
                                     Foodtruck
                                 </span>
@@ -72,7 +72,7 @@ export default class Home extends Component {
 
                         {/* LINK */}
                         <li>
-                            <a href="#section_4" className="nav__projects__link" data-link>
+                            <a href="#section_4" className="nav__projects__track__list__link" data-link>
                                 <span>
                                     Blog
                                 </span>
@@ -81,7 +81,7 @@ export default class Home extends Component {
 
                         {/* LINK */}
                         <li>
-                            <a href="#section_5" className="nav__projects__link" data-link>
+                            <a href="#section_5" className="nav__projects__track__list__link" data-link>
                                 <span>
                                     80's Flix
                                 </span>
