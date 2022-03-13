@@ -10,8 +10,11 @@ This the repository of the website of our frellance collective.
 - `Framer Motion` 6.2.8
 - `Styled Components` 5.3.3
 - `react-progressive-image` 0.6.0
+- `Spring` 9.4.3
 - `GSAP` 3.9.1
 - `React-Intersection-Oberver` 8.33.1
 - `React Slick` 0.28.1
 - `Slick Carousel` 1.8.1
 - `React Countup` 6.1.1
+- `React Visibility Sensor` 5.1.1
+- `Copy to clipboard` 3.3.1

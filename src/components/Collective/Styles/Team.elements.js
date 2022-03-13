@@ -33,8 +33,7 @@ export const Section = styled.section`
 `;
 
 export const TeamTitle = styled.div`
-    position: relative;
-    z-index: 1000;
+    z-index: 500;
     margin: 6rem 10rem;
     p{
         color: var(--light-chocolate);

@@ -3,6 +3,10 @@ import gsap from 'gsap'
 import Draggable from 'gsap/Draggable'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
+/*--- ANIMATIONS ---*/
+import { motion } from 'framer-motion'
+import { homeAnimations } from 'Animation'
+
 /*--- REACT THINGS ---*/
 import React, { Component } from 'react'
 import Projects from './Projects'
@@ -13,6 +17,7 @@ import {
     SectionHome, 
     SectionProject
 } from './Styles/Home.elements'
+
 
 
 export default class Home extends Component {
@@ -235,18 +240,29 @@ export default class Home extends Component {
             <main>
 
                 <SectionHome id="section_0" className='section'>
-                    <div className="home">
-                        <div className="content">
-                            <div className="title">
-                                <h1>Portfolio <br/>  The Square.</h1>
-                            </div>
-                            <div className="subtitle">
-                                <p>
-                                    Voici une sélection de nos projets, Nostrud in Lorem et non incididunt anim. Fugiat eu fugiat consequat labore sunt reprehenderit ut elit et sunt laborum. Ullamco nisi sint enim consequat consequat minim magna pariatur consectetur. Aute ullamco in magna cillum aliqua voluptate in consectetur consectetur. Do nisi voluptate sunt fugiat consectetur enim commodo veniam commodo. Cupidatat id occaecat consequat dolore ullamco quis dolor. Consectetur do adipisicing anim irure proident ad. Dolor fugiat irure ea ut veniam aliqua. Commodo in incididunt labore elit fugiat eiusmod nostrud nisi mollit excepteur. Elit est veniam ea ullamco est proident labore occaecat cupidatat eu aliquip laborum. Magna voluptate nisi ullamco Lorem culpa voluptate deserunt irure sit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                  <div className="home">
+                      <motion.div 
+                        className="content"
+                        variants={homeAnimations}
+                        transition={{
+                          delay: 0.3, 
+                          duration: 0.6, 
+                          type:"tween"
+                        }}
+                      >
+                          <div className="title">
+                              <h1>Portfolio <br/>  The Square.</h1>
+                          </div>
+                          <div className="subtitle">
+                              <p>
+                                  Voici une sélection de nos projets, Nostrud in Lorem et non incididunt anim. Fugiat eu fugiat consequat labore sunt reprehenderit ut elit et sunt laborum. Ullamco nisi sint enim consequat consequat minim magna pariatur consectetur. Aute ullamco in magna cillum aliqua voluptate in consectetur consectetur. Do nisi voluptate sunt fugiat consectetur enim commodo veniam commodo. Cupidatat id occaecat consequat dolore ullamco quis dolor. Consectetur do adipisicing anim irure proident ad. Dolor fugiat irure ea ut veniam aliqua. Commodo in incididunt labore elit fugiat eiusmod nostrud nisi mollit excepteur. Elit est veniam ea ullamco est proident labore occaecat cupidatat eu aliquip laborum. Magna voluptate nisi ullamco Lorem culpa voluptate deserunt irure sit.
+                              </p>
+                          </div>
+                      </motion.div>
+                  </div>
+                  <div className="info">
+                    <img src='./assets/img/logo1.png' alt='square logo'/>
+                  </div>
                 </SectionHome>
 
                 <SectionProject className='section' id='section_1'>

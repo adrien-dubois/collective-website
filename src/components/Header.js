@@ -28,7 +28,10 @@ const Header = () => {
           <Container>
             <Row className='space-between'>
               <div className='logo'>
-                <a href='/' >The Square.</a>
+                <a href='/' >
+                  {/* <img src='./assets/img/logo1.png' alt="logo the square"/> */}
+                  The Square.
+                </a>
               </div>
 
               <MenuIcon onClick={handleClick}>

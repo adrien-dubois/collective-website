@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@use-gesture/react": "^10.2.7",
+    "copy-to-clipboard": "^3.3.1",
     "framer-motion": "^2.0.0-beta.77",
     "gsap": "^3.9.1",
     "react": "^16.14.0",

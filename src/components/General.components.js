@@ -44,6 +44,15 @@ export const HeaderDiv = styled.header`
   > ${Container} {
     > ${Row} {
       height: 128px;
+      .logo{
+        a{
+          img{
+            width: 45px;
+            height: auto;
+            margin-right: 5px;
+          }
+        }
+      }
     }
   }
 `;
@@ -55,7 +64,7 @@ export const MenuIcon = styled.div`
   height: 80px;
   width: 80px;
   display: flex;
-  z-index: 1000;
+  z-index: 2000;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
@@ -109,7 +118,7 @@ export const NavMenu = styled.div`
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    z-index: 90;
+    z-index: 1000;
     position: absolute;
     top: 0;
     left: ${({click}) => (click ? '-12%' : '-135%')};

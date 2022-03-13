@@ -27,7 +27,7 @@ export const projectsDatas = [
         date: "janvier 22",
         languages: ["HTML", "CSS3", "PHP", "Symfony"],
         infos: "Minim laboris ipsum tempor duis do in eu duis esse nulla. Lorem ex nisi mollit adipisicing et sint minim laboris dolore minim. Est occaecat quis exercitation Lorem esse aliqua consectetur dolore officia.",
-        img: "./assets/img/projet-3.jpg",
+        img: "./assets/img/projet-1.jpg",
         link: "https://the-square.net",
     },
     {
@@ -37,7 +37,7 @@ export const projectsDatas = [
         date: "janvier 22",
         languages: ["HTML", "CSS3", "PHP", "Symfony"],
         infos: "Nostrud adipisicing adipisicing anim id aliqua labore cupidatat non qui enim pariatur sit. Adipisicing esse culpa nulla laboris sunt culpa voluptate laboris veniam reprehenderit consequat sunt dolore. Eu eu officia amet ut occaecat est ut. Ad eiusmod veniam excepteur Lorem ipsum.",
-        img: "./assets/img/projet-3.jpg",
+        img: "./assets/img/projet-4.jpg",
         link: "https://the-square.net",
     },
     {
@@ -47,7 +47,7 @@ export const projectsDatas = [
         date: "janvier 22",
         languages: ["HTML", "CSS3", "PHP", "Symfony"],
         infos: "Nostrud adipisicing adipisicing anim id aliqua labore cupidatat non qui enim pariatur sit. Adipisicing esse culpa nulla laboris sunt culpa voluptate laboris veniam reprehenderit consequat sunt dolore. Eu eu officia amet ut occaecat est ut. Ad eiusmod veniam excepteur Lorem ipsum.",
-        img: "./assets/img/projet-3.jpg",
+        img: "./assets/img/projet-5.jpg",
         link: "https://the-square.net",
     }
 ]

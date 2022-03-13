@@ -7,16 +7,16 @@ function Home() {
   return (
 
     <Section id="home">
-      <motion.div 
-        variants={homeAnimations}
-        transition={{ 
-          delay: 0.3, 
-          duration: 0.6, 
-          type: "tween" 
-        }}
-        className="home"
-       >
-        <div className="content">
+      <div className="home">
+        <motion.div 
+          className="content"
+          variants={homeAnimations}
+          transition={{ 
+            delay: 0.3, 
+            duration: 0.6, 
+            type: "tween" 
+          }}
+        >
           <div className="title">
             <h1>Le collectif</h1>
           </div>
@@ -26,8 +26,8 @@ function Home() {
             </p> 
           </div>
 
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
       <motion.div 
         className="info"
         transition={{

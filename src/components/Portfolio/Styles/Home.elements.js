@@ -149,6 +149,17 @@ export const SectionHome = styled.section`
                 }
             }
         }
+        .info{
+            position: absolute;
+            bottom: 20%;
+            right: 20%;
+            /* border: 1px solid black; */
+            img{
+                width: 400px;
+                height: auto;
+                filter: opacity(90%);
+            }
+        }
 `;
 
 export const SectionProject = styled.section`
