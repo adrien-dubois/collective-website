@@ -48,6 +48,35 @@ export const Section = styled.section`
     }
   }
 
+  @media screen and (min-width: 1090px) and (max-width: 1370px){
+
+      .home{
+        .content{
+          .title{
+            h1{
+              font-size: 2.7rem;
+              line-height: 3rem;
+            }
+          }
+          .subtitle{
+            p{
+              font-size: .9rem;
+            }
+          }
+        }
+      }
+      .info{
+        padding: 0.5rem;
+        .grid{
+          gap: 1rem;
+          .col{
+          strong, p{
+            font-size: .9rem;
+          }
+        }
+      }
+  }
+
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     .home{
       .content{

@@ -50,7 +50,7 @@ export const Container = styled.div`
 
         &__track{
             position: relative;
-            min-width: max(200rem, 200%);
+            min-width: max(200rem, 200%) ;
             padding: 1.5rem max(100rem, 100%) 0 0;
             height: 8rem;
 
@@ -133,8 +133,10 @@ export const SectionHome = styled.section`
                 gap: 1.2rem;
                 padding-left: 20rem;
                 width: 60%;
+                color: var(--black-chocolate);
                 .title{
                     h1{
+                        font-family: var(--ubuntu-font);
                         font-size: 4.8rem;
                         line-height: 5.3rem;
                     }
@@ -157,4 +159,8 @@ export const SectionProject = styled.section`
     justify-content: center;
     align-items: center;
 	background-color: var(--almond-bg);
+
+    &:nth-child(2n+0){
+        background-color: var(--black-chocolate);
+    }
 `;

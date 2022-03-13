@@ -5,6 +5,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 
 /*--- REACT THINGS ---*/
 import React, { Component } from 'react'
+import Projects from './Projects'
 
 /*--- STYLED COMPONENTS ---*/
 import { 
@@ -21,7 +22,7 @@ export default class Home extends Component {
         /*----  REGISTER PLUGIN ----*/
         gsap.registerPlugin(ScrollTrigger, Draggable);
 
-        const sections = gsap.utils.toArray('section');
+        const sections = gsap.utils.toArray('.section');
         // Get the track marker & the links
         const track = document.querySelector('[data-draggable]');
         const navLinks = gsap.utils.toArray('[data-link]');
@@ -122,25 +123,27 @@ export default class Home extends Component {
               duration: 2
             }, 0.5)
     
+            
             // Adding a new timeline to add an active class to the nav link for the current section
-            const sectionTl2 = gsap.timeline({
-              scrollTrigger: {
-                trigger: section,
-                start: 'top 5px',
-                end: () => `bottom top`,
-                toggleActions: 'play none play reverse',
-                onToggle: ({ isActive }) => {
-                  const sectionLink = navLinks[index]
-                  
-                  if (isActive) {
-                    sectionLink.classList.add('is-active')
-                  } else {
-                    sectionLink.classList.remove('is-active')
-                  }
-                }
+
+            ScrollTrigger.create ({
+              trigger: section,
+              start: 'top 20%',
+
+              onEnter: () => {
+                navLinks.forEach((e) => {
+                  e.classList.remove('is-active');
+                });
+                navLinks[index].classList.add('is-active');
+              },
+              onEnterBack: () =>{
+                navLinks.forEach((e) =>{
+                  e.classList.remove('is-active');
+                });
+                navLinks[index].classList.add('is-active');
               }
             })
-    
+      
           })
         }
     
@@ -247,23 +250,23 @@ export default class Home extends Component {
                 </SectionHome>
 
                 <SectionProject className='section' id='section_1'>
-                    Site vitrine
+                  <Projects projectNumber={0} />
                 </SectionProject>
 
                 <SectionProject className='section' id='section_2'>
-                    E-Shop
+                  <Projects projectNumber={1} />
                 </SectionProject>
 
                 <SectionProject className='section' id='section_3'>
-                    Foodtruck
+                  <Projects projectNumber={2} />
                 </SectionProject>
 
                 <SectionProject className='section' id='section_4'>
-                    Blog
+                  <Projects projectNumber={3} />
                 </SectionProject>
 
                 <SectionProject className='section' id='section_5'>
-                    80's Flix
+                  <Projects projectNumber={4} />
                 </SectionProject>
 
             </main>
