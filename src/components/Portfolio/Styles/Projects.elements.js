@@ -212,7 +212,7 @@ export const Section = styled.section`
                     }
                     &:hover {
                         color: var(--almond-dark);
-                        background: var(--almond-bg);
+                        background: ${(props) => props.theme.button};
                         letter-spacing: 1px;
                     }
                 }
@@ -230,6 +230,7 @@ export const lightTheme = {
     secondaryColor: "var(--almond-dark)",
     titleColor: "var(--light-chocolate)",
     square: "var(--almond-bg)",
+    button: "var(--almond-bg)"
 }
 
 export const darkTheme = {
@@ -238,4 +239,5 @@ export const darkTheme = {
     secondaryColor: "var(--almond-bg)",
     titleColor: "#F3D0A0",
     square: "#414332",
+    button: "var(--black-chocolate)"
 }

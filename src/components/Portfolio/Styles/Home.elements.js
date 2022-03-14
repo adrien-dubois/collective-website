@@ -134,19 +134,7 @@ export const SectionHome = styled.section`
                 padding-left: 20rem;
                 width: 60%;
                 color: var(--black-chocolate);
-                .title{
-                    h1{
-                        font-family: var(--ubuntu-font);
-                        font-size: 4.8rem;
-                        line-height: 5.3rem;
-                    }
-                }
-                .subtitle{
-                    p{
-                        width: 70%;
-                        margin-bottom: 2rem;
-                    }
-                }
+                
             }
         }
         .info{
@@ -155,7 +143,7 @@ export const SectionHome = styled.section`
             right: 20%;
             /* border: 1px solid black; */
             img{
-                width: 400px;
+                width: 300px;
                 height: auto;
                 filter: opacity(90%);
             }

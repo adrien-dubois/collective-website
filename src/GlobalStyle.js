@@ -159,6 +159,11 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
+    body.loading{
+      overflow: hidden;
+      height: 100vh;
+    }
+
     
 
     a {
