@@ -1,14 +1,17 @@
 import ScrollToTop from 'components/Collective/ScrollToTop'
 import Footer from 'components/Footer/Footer'
+import Gallery from 'components/Portfolio/Gallery'
 import Home from 'components/Portfolio/Home'
 import Loader from 'components/Portfolio/Loader'
-import { motion } from 'framer-motion'
+import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
+import "../components/Portfolio/Styles/banner.scss"
+
 
 
 const Portfolio = () => {
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
       loading
@@ -21,19 +24,22 @@ const Portfolio = () => {
     document.head.appendChild(style);
 
   return (
-    <>
-      {loading ? (
-        <div>
-          <Loader setLoading={setLoading}/>
-        </div>
-      ) : (
-      <motion.div initial="hidden" animate="visible" >
-        <ScrollToTop/>
-        <Home />
-        <Footer/>
-      </motion.div>
-      )}
-    </>
+    <AnimateSharedLayout type='crossfade'>
+      <AnimatePresence>
+        {loading ? (
+          <div>
+            <Loader setLoading={setLoading}/>
+          </div>
+        ) : (
+        <motion.div initial="hidden" animate="visible" >
+          <ScrollToTop/>
+          <Gallery/>
+          {/* <Home /> */}
+          {/* <Footer/> */}
+        </motion.div>
+        )}
+      </AnimatePresence>
+    </AnimateSharedLayout>
   );
 }
 

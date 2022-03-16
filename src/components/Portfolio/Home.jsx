@@ -6,6 +6,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 /*--- ANIMATIONS ---*/
 import { motion } from 'framer-motion'
 import { homeAnimations } from 'Animation'
+import "./Styles/banner.scss"
 
 /*--- REACT THINGS ---*/
 import React, { Component } from 'react'
@@ -242,9 +243,9 @@ export default class Home extends Component {
 
                 <SectionHome id="section_0" className='section'>
                   <div className="home">
-                      <div className="content">
-                         <Banner/>
-                      </div>
+                    <div className="content">
+                      <Banner/>
+                    </div>
                   </div>
                   <div className="info">
                     <img src='./assets/img/logo-sq.png' alt='square logo'/>

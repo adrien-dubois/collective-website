@@ -124,17 +124,7 @@ export const SectionHome = styled.section`
         .home{
             height: 100%;
             .content{
-                position: absolute;
-                top: 15%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1.2rem;
-                padding-left: 20rem;
-                width: 60%;
-                color: var(--black-chocolate);
-                
+               padding-top: 10rem;
             }
         }
         .info{

@@ -33,7 +33,7 @@ const Div = styled.div`
         justify-content: center;
         align-items: center;
         transition: 0.4s ease-in-out;
-        z-index: 100;
+        z-index: 300;
         svg{
             color: var(--white-antique);
             font-size: 1.3rem;
