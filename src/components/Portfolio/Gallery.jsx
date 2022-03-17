@@ -1,108 +1,109 @@
-import React, { useEffect, useRef } from 'react'
-import Article from './Article'
+import React, { useState } from 'react'
 import { Div } from './Styles/Gallery.elements'
 
-const thumbs = [
+const images = [
     {
-        link: {
-            name: "Site Vitrine",
-            subtitle: "Your Website",
-            url: "https://the-sqaure.net"
-        },
-        image: {
-            crop: 'full-vitrine2.png',
-            full: 'full-vitrine.png'
-        }
+        
+        title: "Site Vitrine",
+        subtitle: "Your Website",
+        url: "https://the-square.net",
+        src: 'full-vitrine2.png',
+        full: 'full-vitrine.png',
+        category: 'React'
     },
 
     {
-        link:{
-            name: "E-Shop",
-            subtitle: "Vape Swap Club",
-            url: "http://vape-swap-club.white-umbrella.fr/",
-        },
-        image: {
-            crop: "full-vape2.png",
-            full: "full-vape.png",
-        }
+        title: "E-Shop",
+        subtitle: "Vape Swap Club",
+        url: "http://vape-swap-club.white-umbrella.fr/",
+        src: "full-vape2.png",
+        full: "full-vape.png",
+        category: 'PHP / HTML / CSS / JS'
     },
 
     {
-        link:{
-            name: "Foodtruck",
-            subtitle: "Chick & truck",
-            url: "http://foodtruck.white-umbrella.fr/",
-        },
-        image: {
-            crop: "full-truck2.png",
-            full: "full-truck.png",
-        }
+        title: "Foodtruck",
+        subtitle: "Chick & truck",
+        url: "http://foodtruck.white-umbrella.fr/",
+        src: "full-truck2.png",
+        full: "full-truck.png",
+        category: 'Symfony'
     },
 
     {
-        link:{
-            name: "Blog",
-            subtitle: "Diggerz Delight",
-            url: "https://the-square.net",
-        },
-        image: {
-            crop: "full-blog2.png",
-            full: "full-blog.png",
-        }
+        title: "Blog",
+        subtitle: "Diggerz Delight",
+        url: "https://the-square.net",
+        src: "full-blog2.png",
+        full: "full-blog.png",
+        category: 'Symfony / React'
     },
 
     {
-        link:{
-            name: "Imddb Like",
-            subtitle: "80's Flix",
-            url: "http://oflix.white-umbrella.fr/",
-        },
-        image: {
-            crop: "full-flix2.png",
-            full: "full-flix.png",
-        }
+        title: "Imddb Like",
+        subtitle: "80's Flix",
+        url: "http://oflix.white-umbrella.fr/",
+        src: "full-flix2.png",
+        full: "full-flix.png",
+        category: 'Symfony'
     }
 ]
 
-const Gallery = () => {
+function GalleryItem({
+    src,
+    title,
+    subtitle,
+    category,
+    url,
+    full,
+    updateActiveImage,
+    index
+}){
+    return(
+        <div className="gallery-item-wrapper">
+            <div />
+                <div className="gallery-item">
+                    <div className="gallery-item-info">
+                        <h1 className="gallery-item-info__title">{title}</h1>
+                        <h6 className="gallery-item-info__subtitle">{subtitle}</h6>
+                        <p className="gallery-item-info__category">{category}</p>
+                    </div>
+                    <div 
+                        className="gallery-item-image"
+                        style={{ backgroundImage: `url(/assets/img/${src})` }}
+                    >
+                    </div>
+                </div>
+            <div />
+        </div>
+    )
+}
 
-    const ref = useRef(null)
+export default function Gallery() {
+    const [activeImage, setActiveImage] = useState(1);
 
-    useEffect (() => {
-        let element = ref.current
+  return (<Div id="gallery">
+          <div className="section-wrapper gallery-wrap">
+              <div className="gallery">
 
-        const rotate = () => {
-            element.style.transform = `translateX(${-window.scrollY}px)`
-            
-        }
-        window.addEventListener('scroll', rotate)
-        return () => {
-            window.removeEventListener('scroll', rotate)
-        };
-    }, [])
+                  <div className="gallery-counter">
+                        <span>{activeImage}</span>
+                        <span className="divider"/>
+                        <span>{images.length}</span>
+                  </div>
 
-  return (
-    <Div >
-        <h1 className="page-title">
-            The Square.
-            <span className="page-title__offset">Portfolio projects</span>
-        </h1>
-
-        <section className="content">
-            <div className="slideshow" >
-
-                <ul className="slideshow-list" ref={ref}>
-
-                    {thumbs.map((thumb, index) => (
-                        <Article link={thumb.link} image={thumb.image} key={index} />
-                    ))}
- 
-                </ul>
-            </div>
-        </section>
-        
-    </Div>
+                  {images.map((image, index) => (
+                      <GalleryItem 
+                      
+                        key={image.src}
+                        index={index}
+                        {...image}
+                        updateActiveImage={(index) => setActiveImage(index + 1)}
+                      />
+                  ))}
+              </div>
+          </div>
+      </Div>
   )
 }
 
-export default Gallery
