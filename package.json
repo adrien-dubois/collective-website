@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-three/fiber": "^7.0.26",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@use-gesture/react": "^10.2.7",
+    "classnames": "^2.3.1",
     "copy-to-clipboard": "^3.3.1",
     "framer-motion": "^2.0.0-beta.77",
     "gsap": "^3.9.1",
+    "locomotive-scroll": "^4.1.4",
     "react": "^16.14.0",
     "react-countup": "^6.1.1",
     "react-dom": "^16.13.1",
@@ -25,7 +26,6 @@
     "sass": "^1.49.9",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
-    "three": "^0.138.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

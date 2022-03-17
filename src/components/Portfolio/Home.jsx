@@ -19,6 +19,7 @@ import {
     SectionProject
 } from './Styles/Home.elements'
 import Banner from './Banner'
+import Gallery from './Gallery'
 
 
 
@@ -241,7 +242,7 @@ export default class Home extends Component {
 
             <main>
 
-                <SectionHome id="section_0" className='section'>
+                {/* <SectionHome  className='section'>
                   <div className="home">
                     <div className="content">
                       <Banner/>
@@ -250,7 +251,10 @@ export default class Home extends Component {
                   <div className="info">
                     <img src='./assets/img/logo-sq.png' alt='square logo'/>
                   </div>
-                </SectionHome>
+                </SectionHome> */}
+                <div id="section_0">
+                  <Gallery />
+                </div>
 
                 <SectionProject className='section' id='section_1'>
                   <Projects projectNumber={0} />

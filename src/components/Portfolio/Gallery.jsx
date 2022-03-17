@@ -1,5 +1,14 @@
-import React, { useState } from 'react'
+import React, { 
+    useEffect, 
+    useRef, 
+    useState 
+} from 'react'
 import { Div } from './Styles/Gallery.elements'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import useOnScreen from 'useOnScreen'
+import cn from 'classnames';
+
 
 const images = [
     {
@@ -59,9 +68,21 @@ function GalleryItem({
     updateActiveImage,
     index
 }){
+    const ref = useRef(null);
+    const onScreen = useOnScreen(ref, 0.5);
+
+    useEffect(() => {
+        if(onScreen){
+            updateActiveImage(index);
+        }
+    }, [onScreen, index]);
+
     return(
-        <div className="gallery-item-wrapper">
-            <div />
+        <div 
+            className={cn("gallery-item-wrapper", {'is-reveal': onScreen})}
+            ref={ref}
+        >
+            <div></div>
                 <div className="gallery-item">
                     <div className="gallery-item-info">
                         <h1 className="gallery-item-info__title">{title}</h1>
@@ -71,20 +92,43 @@ function GalleryItem({
                     <div 
                         className="gallery-item-image"
                         style={{ backgroundImage: `url(/assets/img/${src})` }}
-                    >
-                    </div>
+                    ></div>
                 </div>
-            <div />
+            <div></div>
         </div>
-    )
+    );
 }
 
-export default function Gallery() {
+export default function Gallery({ src }) {
     const [activeImage, setActiveImage] = useState(1);
+    const ref = useRef(null);
 
-  return (<Div id="gallery">
+    useEffect(() => {
+
+        let sections = gsap.utils.toArray('.gallery-item-wrapper');
+        gsap.to(sections, {
+            xPercent: -100 * (sections.length-1),
+            ease: 'none',
+            scrollTrigger:{
+                start: 'top top',
+                trigger: ref.current,
+                scroller: '#main-container',
+                pin: true,
+                scrub: 0.5,
+                end: () => `+=${ref.current.offsetWidth}`
+            },
+        });
+        ScrollTrigger.refresh();
+        
+    }, [])
+
+    const handleUpdateActiveImage = (index) => {
+        setActiveImage(index + 1);
+      };
+
+  return (<Div data-scroll-section id="gallery">
           <div className="section-wrapper gallery-wrap">
-              <div className="gallery">
+              <div className="gallery" ref={ref}>
 
                   <div className="gallery-counter">
                         <span>{activeImage}</span>
@@ -95,10 +139,10 @@ export default function Gallery() {
                   {images.map((image, index) => (
                       <GalleryItem 
                       
-                        key={image.src}
+                        key={src}
                         index={index}
                         {...image}
-                        updateActiveImage={(index) => setActiveImage(index + 1)}
+                        updateActiveImage={handleUpdateActiveImage}
                       />
                   ))}
               </div>

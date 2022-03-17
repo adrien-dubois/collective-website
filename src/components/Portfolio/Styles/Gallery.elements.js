@@ -3,13 +3,12 @@ import styled from 'styled-components';
 export const Div = styled.section`
         position: relative;
         width: 100%;
-        background-color: var(--almond-dark);
+        background-color: var(--almond-bg);
         color: var(--light-chocolate);
-        padding: 100px 0;
         display: block;
-        height: 100vh;
+        height: 90vh;
     .gallery-wrap{
-
+        background-color: var(--almond-bg);
         .gallery-counter{
             position: absolute;
             top: 10%;
@@ -37,6 +36,7 @@ export const Div = styled.section`
             height: 80vh;
             padding: 10vh 0;
             width: 400%;
+            background-color: var(--almond-bg);
             display: flex;
             flex-wrap: nowrap;
         }
@@ -51,7 +51,7 @@ export const Div = styled.section`
             bottom: 10%;
             z-index: 1;
             transform: translateX(-20%);
-            color: var(--light-chocolate);
+            color: var(--almond-dark);
 
             &__title{
                 line-height: 6vw;
@@ -66,7 +66,7 @@ export const Div = styled.section`
                 color: transparent;
                 font-weight: 400;
                 font-size: 6vw;
-                -webkit-text-stroke: 2px var(--light-chocolate);
+                -webkit-text-stroke: 2px var(--almond-dark);
             }
             &__category{
                 position: relative;
@@ -84,6 +84,13 @@ export const Div = styled.section`
             display: grid;
             grid-template-columns: 20vw 1fr 200px;
             width: 100vw;
+
+            &.is-reveal {
+                .gallery-item-image {
+                    transform: scale(1);
+                    filter: none;
+                }
+            }
         }
 
         .gallery-item-image{
@@ -93,7 +100,9 @@ export const Div = styled.section`
             width: 100%;
             height: 100%;
             will-change: transform;
-            transform: scale(1);
+            transform: scale(0.7);
+            transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+            filter: grayscale(100%) sepia(20%) brightness(80%);
         }
     }
 `;

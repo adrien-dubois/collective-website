@@ -18,3 +18,5 @@ This the repository of the website of our frellance collective.
 - `React Countup` 6.1.1
 - `React Visibility Sensor` 5.1.1
 - `Copy to clipboard` 3.3.1
+- `Locomotive Scroll` 4.1.4
+- `Classnames` 2.3.1

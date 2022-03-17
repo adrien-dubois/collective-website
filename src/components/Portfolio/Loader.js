@@ -5,12 +5,15 @@ const Loader = ({ setLoading }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
           setLoading(false);
-        }, 4000);
+        }, 3000);
         return () => clearTimeout(timer);
       });
   return (
     <Div>
-        Loader
+        <div className="loader-wrapper absolute">
+          <h1>Portfolio</h1>
+          <h2>The Square.</h2>
+        </div>
     </Div>
   )
 }
