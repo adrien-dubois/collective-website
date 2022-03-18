@@ -38,6 +38,24 @@ export const Section = styled.section`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0 10rem;
+
+        .btn-cta-price{
+            grid-row: 2;
+            grid-column: 2;
+            justify-self: center;
+            a{
+                text-transform: uppercase;
+                padding: 14px 12px;
+                border-radius: 15px;
+                background: var(--almond-dark);
+                transition: all .4s ease;
+            }
+            a:hover{
+                background: transparent;
+                color: var(--light-chocolate);
+                letter-spacing: 1px;
+            }
+        }
         &__plan{
             display: flex;
             flex-direction: column;
@@ -89,27 +107,9 @@ export const Section = styled.section`
                     flex-direction: column;
                     gap: 0.6rem;
                     .line {
-                        text-decoration: line-through;
+                        display: none;
                     }
                     margin-bottom: 2rem;
-                }
-
-                &__actions{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 0.5rem;
-                    a{
-                        text-transform: uppercase;
-                        padding: 6px 8px;
-                        border-radius: 5px;
-                        transition: all .4s ease;
-                    }
-                    a:hover{
-                        background: var(--light-chocolate);
-                        color: var(--white-antique);
-                    }
                 }
             }
         }

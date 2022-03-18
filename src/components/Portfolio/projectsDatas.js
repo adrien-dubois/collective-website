@@ -2,7 +2,7 @@ export const projectsDatas = [
 
     {
         id: 1,
-        theme: 'dark',
+        theme: 'light',
         title: "Site Vitrine",
         date: "janvier 22",
         languages: ["React", "Styled Components"],
@@ -12,7 +12,7 @@ export const projectsDatas = [
     },
     {
         id: 2,
-        theme: 'light',
+        theme: 'dark',
         title: "E-Shop",
         date: "janvier 22",
         languages: ["HTML", "CSS", "PHP"],
@@ -22,7 +22,7 @@ export const projectsDatas = [
     },
     {
         id: 3,
-        theme: 'dark',
+        theme: 'light',
         title: "Foodtruck",
         date: "janvier 22",
         languages: ["HTML", "CSS3", "PHP", "Symfony"],
@@ -32,7 +32,7 @@ export const projectsDatas = [
     },
     {
         id: 4,
-        theme: 'light',
+        theme: 'dark',
         title: "Blog",
         date: "janvier 22",
         languages: ["HTML", "CSS3", "PHP", "Symfony"],
@@ -42,7 +42,7 @@ export const projectsDatas = [
     },
     {
         id: 5,
-        theme: 'dark',
+        theme: 'light',
         title: "80's Flix",
         date: "janvier 22",
         languages: ["HTML", "CSS3", "PHP", "Symfony"],

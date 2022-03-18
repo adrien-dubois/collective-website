@@ -56,7 +56,7 @@ const AnimatedLetters = ({ title }) => (
 
 const BannerRowTop = ({ title }) => {
   return (
-    <div className={"banner-row"}>
+    <div className={"banner-row center"}>
       <div className="row-col">
         <AnimatedLetters title={title} />
       </div>
@@ -69,10 +69,7 @@ const BannerRowTop = ({ title }) => {
           delay: 0.4
         }}
       >
-        <span className="row-message">
-          We are specialised in setting up the foundation of your brand and
-          setting you up for success.
-        </span>
+        
       </motion.div>
     </div>
   );

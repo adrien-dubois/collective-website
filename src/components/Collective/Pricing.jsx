@@ -106,14 +106,15 @@ function Pricing() {
                       );
                     })}  
                   </ul>
-                  <div className="pricing__plan__content__actions">
-                    <a href='# '>Contactez nous</a>  
-                  </div>
+                  
                 </div> 
               </motion.div>
             )
           })
-        }  
+        } 
+        <div className="btn-cta-price">
+          <a href='# '>Contactez nous</a>  
+        </div> 
       </div>
     </Section>
   )

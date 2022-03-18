@@ -6,8 +6,8 @@ import React, {
 import { Div } from './Styles/Gallery.elements'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import useOnScreen from 'useOnScreen'
 import cn from 'classnames';
+import useOnScreen from 'useOnScreen'
 
 
 const images = [
@@ -102,33 +102,39 @@ function GalleryItem({
 export default function Gallery({ src }) {
     const [activeImage, setActiveImage] = useState(1);
     const ref = useRef(null);
-
+    
     useEffect(() => {
+        
+        gsap.registerPlugin(ScrollTrigger);
 
-        let sections = gsap.utils.toArray('.gallery-item-wrapper');
-        gsap.to(sections, {
-            xPercent: -100 * (sections.length-1),
+        let sections = gsap.utils.toArray('.gallery-item-wrapper')
+        
+
+           gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
             ease: 'none',
             scrollTrigger:{
                 start: 'top top',
                 trigger: ref.current,
-                scroller: '#main-container',
                 pin: true,
-                scrub: 0.5,
-                end: () => `+=${ref.current.offsetWidth}`
+                scrub: 1,
+                snap:1 / (sections.length - 1),
+                end: "+=5000",
             },
-        });
-        ScrollTrigger.refresh();
+           });
         
-    }, [])
+
+        ScrollTrigger.refresh();
+   
+    }, []);
 
     const handleUpdateActiveImage = (index) => {
         setActiveImage(index + 1);
       };
 
-  return (<Div data-scroll-section id="gallery">
-          <div className="section-wrapper gallery-wrap">
-              <div className="gallery" ref={ref}>
+  return (<>
+          <Div ref={ref}>
+              <div className="gallery">
 
                   <div className="gallery-counter">
                         <span>{activeImage}</span>
@@ -146,8 +152,8 @@ export default function Gallery({ src }) {
                       />
                   ))}
               </div>
-          </div>
-      </Div>
+          </Div>
+      </>
   )
 }
 

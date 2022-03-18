@@ -3,6 +3,7 @@ import Questrial from './assets/fonts/Questrial-Regular.ttf';
 import Montserrat from './assets/fonts/Montserrat-VariableFont_wght.ttf';
 import KronaOne from './assets/fonts/KronaOne-Regular.ttf';
 import Maragsa from './assets/fonts/Maragsâ.otf';
+import Baron from './assets/fonts/BaronNeue.otf';
 
 const grain = keyframes`
   0%,
@@ -44,6 +45,11 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Questrial';
         src: url(${Questrial}) format('truetype');
     }
+
+    @font-face{
+        font-family: 'Baron';
+        src: url(${Baron}) format('truetype');
+    }
     
     @font-face{
         font-family: 'KronaOne';
@@ -68,6 +74,7 @@ const GlobalStyle = createGlobalStyle`
         --maragsa-font: "Maragsa", serif;
         --ubuntu-font: 'Ubuntu', sans-serif;
         --poppins-font: 'Poppins', sans-serif;
+        --baron-font: 'Baron', sans-serif;
         /*---- COLORS -----*/
         //BG 1920 1059
         --almond-bg : #EADBCD;
