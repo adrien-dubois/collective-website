@@ -118,12 +118,19 @@ export default function Gallery({ src }) {
                 trigger: ref.current,
                 pin: true,
                 scrub: 1,
-                snap:1 / (sections.length - 1),
-                end: "+=5000",
+                snap: 1 / (sections.length - 1),
+                end: "+=3500",
             },
            });
-        
 
+           gsap.to("[data-speed]", {
+            scrollTrigger: {
+                scrub: true
+            },
+               x: (i, target) => ScrollTrigger.maxScroll(window) * target.dataset.speed ,
+               ease: 'none'
+           });
+        
         ScrollTrigger.refresh();
    
     }, []);
@@ -132,28 +139,41 @@ export default function Gallery({ src }) {
         setActiveImage(index + 1);
       };
 
-  return (<>
-          <Div ref={ref}>
-              <div className="gallery">
+  return (
+    <>
+      <Div ref={ref}>
 
-                  <div className="gallery-counter">
-                        <span>{activeImage}</span>
-                        <span className="divider"/>
-                        <span>{images.length}</span>
-                  </div>
+        <h1 
+            className="page-title"
+            data-speed="0.05"
+        >
+        The Square.
+            <span 
+                className="page-title__offset"
+                data-speed="0.05"
+            >
+                    Portfolio projects
+            </span>
+        </h1>
+        <div className="gallery">
 
-                  {images.map((image, index) => (
-                      <GalleryItem 
-                      
-                        key={src}
-                        index={index}
-                        {...image}
-                        updateActiveImage={handleUpdateActiveImage}
-                      />
-                  ))}
-              </div>
-          </Div>
-      </>
-  )
+          <div className="gallery-counter">
+            <span>{activeImage}</span>
+            <span className="divider" />
+            <span>{images.length}</span>
+          </div>
+
+          {images.map((image, index) => (
+            <GalleryItem
+              key={src}
+              index={index}
+              {...image}
+              updateActiveImage={handleUpdateActiveImage}
+            />
+          ))}
+        </div>
+      </Div>
+    </>
+  );
 }
 

@@ -31,6 +31,26 @@ export const Div = styled.section`
             }
         }
 
+        .page-title{
+            position: absolute;
+            top: 9rem;
+            left: 5vw;
+            white-space: nowrap;
+            font-size: calc(4vw + 8rem);
+            line-height: .975;
+            color: #555;
+            opacity: .1;
+
+            font-family: var(--poppins-font);
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            &__offset{
+                display: block;
+                margin-left: 15%;
+            }
+        }
         .gallery{
             overscroll-behavior: none;
             height: 80vh;
@@ -39,6 +59,7 @@ export const Div = styled.section`
             background-color: var(--almond-dark);
             display: flex;
             flex-wrap: nowrap;
+
         }
         .gallery-item{
             width: 100%;
@@ -48,9 +69,10 @@ export const Div = styled.section`
         .gallery-item-info{
             position: absolute;
             bottom: 10%;
+            left: -9%;
             z-index: 1;
             transform: translateX(-20%);
-            color: var(--almond-bg);
+            color: var(--light-chocolate);
 
             &__title{
                 line-height: 6vw;
@@ -66,7 +88,7 @@ export const Div = styled.section`
                 color: transparent;
                 font-weight: 400;
                 font-size: 6vw;
-                -webkit-text-stroke: 2px var(--almond-bg);
+                -webkit-text-stroke: 2px var(--light-chocolate);
                 -webkit-font-smoothing: antialiased;
             }
             &__category{
@@ -101,6 +123,8 @@ export const Div = styled.section`
             transform-origin: center;
             width: 100%;
             height: 100%;
+            position: absolute;
+            right: -18%;
             will-change: transform;
             transform: scale(0.7);
             transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);

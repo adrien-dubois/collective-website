@@ -46,9 +46,9 @@ const Home = () => {
         let sectionTl = gsap.timeline({
           scrollTrigger: {
             trigger: section,
-            snap: 1 / (contains.length - 1),
             start: () => 'top center',
             end: () => `+=${window.innerHeight}`,
+            snap: 1 / (contains.length - 1),
             toggleActions: 'play reverse play reverse'
           }
         })
@@ -76,7 +76,7 @@ const Home = () => {
     return (
 
       
-      <Div>
+      <Div id="contains">
 
           <SectionProject className='section'>
             <Projects projectNumber={0} />

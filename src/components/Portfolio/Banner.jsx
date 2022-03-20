@@ -31,7 +31,7 @@ const Banner = () => {
       className="banner"
       variants={banner}
     >
-      <BannerRowTop title={"Portfolio"} />
+      <BannerRowTop title={"Portfolio."} />
     </motion.div>
   );
 };
