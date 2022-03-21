@@ -17,6 +17,7 @@ This the repository of the website of our frellance collective.
 - `Slick Carousel` 1.8.1
 - `React Countup` 6.1.1
 - `React Visibility Sensor` 5.1.1
-- `Copy to clipboard` 3.3.1
+- `Copy to clipboard` 5.0.4
 - `Locomotive Scroll` 4.1.4
 - `Classnames` 2.3.1
+- `EmailJS` 3.4.0

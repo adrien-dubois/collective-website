@@ -138,6 +138,10 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
+    main {
+      position: relative;
+    }
+
     body {
         font-family: var(--font-2);
         color: var(--black-chocolate);
