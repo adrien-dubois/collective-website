@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
-import { Form } from './ContactForm.elements'
+import { ButtonForm, Form } from './ContactForm.elements'
 
 const ContactForm = () => {
 
     const [name, setName] = useState("");
-    const [company, setCompani] = useState("");
+    const [company, setCompany] = useState("");
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -151,7 +151,7 @@ const ContactForm = () => {
 
         </div>
 
-            <input 
+            <ButtonForm 
             type="submit" 
             className="button hover" 
             value="envoyer"

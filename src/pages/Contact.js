@@ -62,6 +62,12 @@ const Contact = () => {
 
                 <SocialNetwork />
 
+                <div className="credits">
+                    <p>
+                        ©2022 made with ❤ <span>by The Square.</span>
+                    </p>
+                </div>
+
             </div>
         </Div>
     </main>
