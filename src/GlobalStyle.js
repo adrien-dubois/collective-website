@@ -2,7 +2,7 @@ import { createGlobalStyle, keyframes } from "styled-components";
 import Questrial from './assets/fonts/Questrial-Regular.ttf';
 import Montserrat from './assets/fonts/Montserrat-VariableFont_wght.ttf';
 import KronaOne from './assets/fonts/KronaOne-Regular.ttf';
-import Maragsa from './assets/fonts/Maragsâ.otf';
+import Maragsa from './assets/fonts/Maragsa.otf';
 import Baron from './assets/fonts/BaronNeue.otf';
 
 const grain = keyframes`

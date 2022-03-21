@@ -3,7 +3,6 @@ import ContactForm from 'components/Contact/ContactForm/ContactForm';
 import CopyToClipboard from "react-copy-to-clipboard";
 import React from 'react'
 import SocialNetwork from 'components/SocialNetwork/SocialNetwork';
-import Footer from 'components/Footer/Footer';
 
 const Contact = () => {
   return (
