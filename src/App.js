@@ -1,5 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { 
+  BrowserRouter as Router, 
+  Route, 
+  Switch 
+} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 /*---- Components ----*/
@@ -12,6 +16,7 @@ import Home from './pages/Home';
 import Model from './pages/Model';
 import Collectif from './pages/Collectif';
 import Portfolio from 'pages/Portfolio';
+import Contact from 'pages/Contact';
 
 /*---- STYLE ----*/
 import "./App.scss";
@@ -58,6 +63,12 @@ function App() {
           exact
           path='/portfolio'
           component={Portfolio}
+        />
+
+        <Route
+          exact
+          path='/contact'
+          component={Contact}
         />
         
       </Router>

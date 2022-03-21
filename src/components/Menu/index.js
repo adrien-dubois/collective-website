@@ -91,7 +91,7 @@ const menus = [
     {
         link: {
             name: "Contact",
-            url: "#"
+            url: "/contact"
         },
         marquee: [
             {
