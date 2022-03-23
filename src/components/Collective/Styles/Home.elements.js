@@ -24,12 +24,33 @@ export const Section = styled.section`
         h1 {
           font-size: 5rem;
           line-height: 5.3rem;
+          font-family: var(--maragsa-font);
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
         }
       }
-      .subTitle {
+      .sub-title{
+        h3{
+          font-size: 2rem;
+          font-family: var(--ubuntu-font);
+          font-weight: 600;
+          text-transform: uppercase;
+          font-style: italic;
+        }
+      }
+      .subtitle {
+        color: var(--light-chocolate);
+        width: 80%;
+        padding: 14px 12px;
+        border-radius: 25px;
+        background: #ffffff60;
         p {
-          width: 70%;
           margin-bottom: 2rem;
+
+        }
+        span{
+          margin-top: 5px;
+          font-style: italic;
         }
       }
     }

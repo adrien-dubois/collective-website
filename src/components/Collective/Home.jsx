@@ -20,10 +20,19 @@ function Home() {
           <div className="title">
             <h1>Le collectif</h1>
           </div>
+          <div className="sub-title">
+            <h3>
+              Une équipe complète à votre service
+            </h3>
+          </div>
           <div className="subtitle">
             <p>  
-              Fugiat excepteur qui irure ut enim dolor. Nostrud ut cillum ipsum enim do anim. Et quis qui ullamco consequat nulla tempor adipisicing fugiat ipsum proident eiusmod commodo. Labore nostrud non non reprehenderit. Mollit proident sit voluptate pariatur amet id irure ex. Exercitation elit adipisicing eiusmod labore officia magna. Qui est id consectetur veniam. Eiusmod deserunt magna proident Lorem reprehenderit culpa non duis. Aliquip ex pariatur irure et duis duis cillum. Dolor velit nostrud amet anim ullamco ullamco aliqua est laboris veniam exercitation eu qui. Laboris nisi deserunt eu magna dolor voluptate. 
-            </p> 
+            Combinaison entre freelance et entreprise, un collectif concentre des compétences variées et complémentaires au sein d’une seule et même entité : c’est le cas de The Square., formation de 4 développeurs aux parcours différents, issus de la même école de développement.
+            </p>
+            <span> 
+              “ Conscients que la technicité de notre métier n’a de sens que si elle est fondée sur une approche humaine, nous basons notre travail sur une écoute active et attentive des besoins, avec pour objectifs performance du site et qualité de l’expérience utilisateur (UX design) ”.
+            </span>
+            
           </div>
 
         </motion.div>
