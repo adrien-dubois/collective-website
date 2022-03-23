@@ -117,9 +117,9 @@ const Model = ({imageDetails}) => {
                         {/* BIG IMAGE */}
                         <motion.div 
                             initial={{ 
-                                y: '-50%',
-                                width: imageDetails.width, 
-                                height: imageDetails.height 
+                                y: '-40%',
+                                width: window.innerWidth > 1280 ? imageDetails.width : 500,
+                                height: window.innerWidth > 1280 ? imageDetails.height : 400,
                             }}
                             animate={{
                                 y: 0,
@@ -139,7 +139,7 @@ const Model = ({imageDetails}) => {
                                     initial={{ scale: 1.1 }}
                                     animate={{
                                         transition: {delay: 0.2, ...transition},
-                                        y: window.innerWidth > 1440 ? -600 : -400,
+                                        y: window.innerWidth > 1440 ? -600 : -300,
                                     }} 
                                 />
                             </div>

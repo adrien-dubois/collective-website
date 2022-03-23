@@ -127,6 +127,13 @@ main {
           .mua {
             text-transform: uppercase;
           }
+
+          @media screen and (max-width: 1280px) {
+            font-size: .9rem;
+          }
+          @media screen and (max-width: 780px){
+            display: none;
+          }
         }
 
         /*---- BIG TITLE ----*/
@@ -145,9 +152,21 @@ main {
             @media (max-width: 1440px) {
               font-size: 128px;
             }
+            @media screen and (max-width: 1280px){
+              font-size: 110px;
+            }
+            @media screen and (max-width: 780px){
+              display: flex;
+              margin-top: 5px;
+              font-size: 80px;
+              justify-content: center;
+            }
           }
         }
       }
+      // @media screen and(max-width: 1440px){
+      //   height: 30vh;
+      // }
     }
     .bottom-row {
       height: 50vh;
@@ -168,6 +187,10 @@ main {
               position: absolute;
               width: 100%;
             }
+          }
+
+          @media screen and(max-width: 780px){
+            display: none;
           }
         }
       }
@@ -190,6 +213,13 @@ main {
           text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.699);
           text-align: center;
         }
+
+        @media screen and (max-width: 1215px){
+          display: none;
+        }
+      }
+      @media screen and (max-width: 780px){
+        height: 0;
       }
     }
   }
@@ -200,6 +230,7 @@ main {
   height: 600px;
   .container {
     .row {
+      
       justify-content: space-between;
       align-items: flex-start;
       h2 {
@@ -214,4 +245,26 @@ main {
       }
     }
   }
+  // @media screen and(max-width: 1280px){
+  //   padding-top: 130px;
+  // }
+  @media screen and (max-width: 980px) and (min-width: 780px) {
+      margin-top: 100px;
+  }
+  @media screen and (max-width: 780px){
+    margin-top: 10px;
+    padding-top: 10px;
+    .container{
+      .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        p{
+          width: 90%;
+        }
+      }
+    }
+  }
+  
 }

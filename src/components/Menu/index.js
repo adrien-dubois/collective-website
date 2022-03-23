@@ -11,7 +11,7 @@ const menus = [
         },
         marquee: [
             {
-                name: "Homepage",
+                name: "Accueil",
                 url: "1.jpg"
             },
 
@@ -21,12 +21,12 @@ const menus = [
             },
 
             {
-                name: "Index",
+                name: "Accueil",
                 url: "3.jpg"
             },
             
             {
-                name: "Landing Page",
+                name: "Accueil",
                 url: "4.jpg"
             }
         ]
@@ -44,17 +44,17 @@ const menus = [
             },
 
             {
-                name: "Équipe",
+                name: "Collectif",
                 url: "2.jpg"
             },
 
             {
-                name: "Team",
+                name: "Collectif",
                 url: "3.jpg"
             },
             
             {
-                name: "About us",
+                name: "Collectif",
                 url: "4.jpg"
             }
         ]
@@ -67,7 +67,7 @@ const menus = [
         },
         marquee: [
             {
-                name: "Projets",
+                name: "Portfolio",
                 url: "1.jpg"
             },
 
@@ -77,12 +77,12 @@ const menus = [
             },
 
             {
-                name: "Réalisations",
+                name: "Portfolio",
                 url: "3.jpg"
             },
             
             {
-                name: "Exemples",
+                name: "Portfolio",
                 url: "4.jpg"
             }
         ]
@@ -95,7 +95,7 @@ const menus = [
         },
         marquee: [
             {
-                name: "Écrivez nous",
+                name: "Contact",
                 url: "1.jpg"
             },
 
@@ -105,12 +105,12 @@ const menus = [
             },
 
             {
-                name: "The Square",
+                name: "Contact",
                 url: "3.jpg"
             },
             
             {
-                name: "E-Mail",
+                name: "Contact",
                 url: "4.jpg"
             }
         ]

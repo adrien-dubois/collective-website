@@ -32,6 +32,15 @@ export const Row = styled.div`
   &.center {
     justify-content: center;
   }
+
+  .image-container{
+    .thumbnail{
+      @media screen and (max-width: 1280px) {
+        margin-top: 5rem;
+      }
+    }
+  }
+
 `;
 
 export const HeaderDiv = styled.header`
@@ -51,6 +60,9 @@ export const HeaderDiv = styled.header`
             height: auto;
             margin-right: 5px;
           }
+        }
+        @media screen and (max-width: 500px) {
+          opacity: 0;
         }
       }
     }
@@ -73,6 +85,13 @@ export const MenuIcon = styled.div`
     color: var(--almond-bg);
     background: var(--black-chocolate);
   }
+
+  
+  @media screen and (max-width: 500px) {
+    height: 50px;
+    width: 50px;
+    font-size: .7rem;
+    }
 `;
 
 export const Main = styled.main`
@@ -125,6 +144,15 @@ export const NavMenu = styled.div`
     opacity: ${({click}) =>(click ? '1' : 0)};
     transition: all 0.5s ease;
     background: var(--almond-bg);
+
+    @media screen and (max-width: 1280px){
+      width: 110vw;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: ${({click}) => (click ? '-5%' : '-135%')};
+    }
+
 `;
 
 export const MenuWrapper = styled.div`

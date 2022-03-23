@@ -55,13 +55,13 @@ S.Marquee = styled(animated.div)`
   height: 100%;
   pointer-events: none;
   background: var(--marquee-bg);
-  /* transform: translate3d(0, 101%, 0); */
+  transform: translate3d(0, 101%, 0);
 `;
 
 S.MarqueeInnerWrapper = styled(animated.div)`
   width: 100%;
   height: 100%;
-  /* transform: translate3d(0, -101%, 0); */
+  transform: translate3d(0, -101%, 0);
 `;
 
 S.MarqueeInner = styled.div`

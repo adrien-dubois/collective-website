@@ -17,8 +17,8 @@ const Home = ({ imageDetails, image }) => {
                 className='thumbnail'
                 ref={image}
                 style={{
-                  width: imageDetails.width,
-                  height: imageDetails.height,
+                  width: window.innerWidth > 1280 ? imageDetails.width : 500,
+                  height: window.innerWidth > 1280 ? imageDetails.height : 400,
                 }}>
                 <div className='frame'>
                   <Link to={`/model/the-square`}>
