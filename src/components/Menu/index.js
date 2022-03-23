@@ -7,7 +7,7 @@ const menus = [
     {
         link: {
             name: "Accueil",
-            url: "/model/the-square"
+            url: window.innerWidth > 1100 ? "/model/the-square" : "/"
         },
         marquee: [
             {

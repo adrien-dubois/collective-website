@@ -33,7 +33,8 @@ function App() {
         <GlobalStyle/>
         <GoToTop/>
         <Header/>
-        <Route
+        {window.innerWidth > 1100 ? 
+        (<Route
           render={({ location }) => (
             
             <AnimatePresence initial={false} exitBeforeEnter>
@@ -53,6 +54,24 @@ function App() {
             </AnimatePresence>
           )}
         />
+        ) : (
+          <Route
+          render={({ location }) => (
+            
+            <AnimatePresence initial={false} exitBeforeEnter>
+              <Switch location={location} key={location.pathname}>
+                <Route
+                  exact
+                  path='/'
+                  render={() => <Model imageDetails={imageDetails} />}
+                />
+                
+              </Switch>
+            </AnimatePresence>
+          )}
+        />
+        )}
+        
         <Route
           exact
           path='/collectif'

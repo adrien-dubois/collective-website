@@ -135,6 +135,7 @@ export const Section = styled.section`
             grid-template-columns: 1fr;
             padding: 1rem;
             gap: 4rem;
+            display: block;
             &__plan{
                 display: flex;
                 flex-direction: column;
