@@ -2,6 +2,7 @@ import React from 'react';
 import { 
     CARD, 
     ContactButton, 
+    Div, 
     Divider, 
     Image,
     Info,
@@ -9,6 +10,8 @@ import {
     Subtitle,
     Text
 } from './Styles/Cards.elements';
+import { MdLaunch } from "react-icons/md"
+import { IconContext } from 'react-icons/lib';
 
 
 const Cards = ({
@@ -21,16 +24,21 @@ const Cards = ({
 }) => {
     const Avatar = require(`../../assets/img/avatar/${image}.jpg`);
   return (
-    <CARD lastone={lastone}>
-        <Info>
-            <Name>{name}</Name>
-            <Subtitle>{subtitle}</Subtitle>
-            <Divider></Divider>
-            <Text>{text}</Text>
-            <ContactButton><a href={`mailto: ${email}`}>Contact</a></ContactButton>
-        </Info>
-            <Image img={Avatar} />
-    </CARD>
+    <IconContext.Provider value={{ color: 'var(--light-chocolate)', size: '2.3rem' }} >
+        <CARD lastone={lastone}>
+            <Info>
+                <Name>{name}</Name>
+                <Subtitle>{subtitle}</Subtitle>
+                <Divider></Divider>
+                <Text>{text}</Text>
+                <Div>
+                    <MdLaunch/>
+                    <ContactButton><a href={`${email}`} target="_blank" noopener noreferer >Portfolio </a></ContactButton> 
+                </Div>
+            </Info>
+                <Image img={Avatar} />
+        </CARD>
+    </IconContext.Provider>
   );
 };
 

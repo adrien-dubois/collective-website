@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
+    overflow-x: hidden;
     position: absolute;
     width: 100vw;
     height: 95vh;
@@ -18,6 +19,7 @@ export const Div = styled.div`
       @media screen and (max-width: 740px){
         width: 50%;
         grid-area: d;
+        margin-top: 2rem;
       }
       @media screen and (min-width: 1200px){
         font-size: 2rem;
@@ -26,14 +28,8 @@ export const Div = styled.div`
       .content {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-20%);
       }
-    }
-
-    .logo {
-        position: absolute;
-        top: 2rem;
-        right: 3rem;
     }
 
     &:after {
@@ -53,7 +49,7 @@ export const Div = styled.div`
             top: 520px;
             right: -140px;
         }
-        @media screen and (max-width: 430px){
+        @media screen and (max-width: 540px){
             display: none;
         }
     }
@@ -77,7 +73,7 @@ export const Div = styled.div`
             grid-template-areas: 
                 'a b c'
                 'd d d'
-                'e e f';
+                'f f f';
         }
         @media screen and (max-width: 540px){
             grid-template-rows: repeat(3, 60px);
@@ -85,7 +81,7 @@ export const Div = styled.div`
             grid-template-areas: 
                 'b b b c c c'
                 'd d d d d d'
-                'e e e e f f';
+                'f f f f f f';
         }
         @media screen and (max-height: 500px){
             display: none;
@@ -124,6 +120,10 @@ export const Div = styled.div`
                     @media screen and (min-width: 1200px){
                         font-size: 1.2rem;
                     }
+
+                    @media screen and (max-width: 740px) {
+                        font-size: .8rem;
+                    }
                 }
             }
         }
@@ -155,6 +155,10 @@ export const Div = styled.div`
                         &:hover{
                             transform: translateX(5px);
                         }
+
+                        @media screen and (max-width: 740px) {
+                            font-size: .8rem;
+                        }
                     }
                     @media screen and (max-height: 640px){
                         display: none;
@@ -172,6 +176,10 @@ export const Div = styled.div`
             .content p{
                 transition: 0.25s;
 
+                @media screen and (max-width: 740px) {
+                    font-size: .8rem;
+                }
+
                 &:hover{
                     transform: translateX(5px);
                 }
@@ -185,10 +193,11 @@ export const Div = styled.div`
             text-align: center;
 
             @media screen and (max-width: 740px){
-                transform: translateY(20px);
+                transform: translateY(10px);
                 font-size: .7rem;
                 margin-right: 1rem;
                 grid-area: f;
+                margin-top: 2rem;
             }
 
             p{
@@ -203,4 +212,5 @@ export const Div = styled.div`
 
 
     }
+
 `;

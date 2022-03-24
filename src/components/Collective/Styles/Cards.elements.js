@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Image = styled.div`
     width: 100%;
     height: 100%;
@@ -83,9 +84,23 @@ export const Text = styled.h4`
     margin: 0 .8rem;
 `;
 
-export const ContactButton = styled.button`
+
+export const Div = styled.div`
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* height: 3rem; */
     position: absolute;
-    bottom: 4rem;
+    bottom:  4rem;
+    svg { 
+        margin: .2rem auto;
+        position: absolute;
+        bottom: 32px;
+        right: -40px;
+    }
+`;
+
+export const ContactButton = styled.button`
     background-color: var(--almond-dark);
     border: none;
     font-size: 1.25rem;
@@ -98,6 +113,8 @@ export const ContactButton = styled.button`
         text-transform: uppercase;
         font-family: var(--ubuntu-font);
         font-weight: bold;
+        line-height: 0;
+        margin-bottom: 5px;
     }
 
     &:hover{

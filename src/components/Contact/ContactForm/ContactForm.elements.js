@@ -7,10 +7,20 @@ export const Form = styled.form`
     max-width: 350px;
 
     @media screen and (max-width: 740px){
-      margin: 2rem 0 0 30%;
+      margin: 15% 0 0 30%;
     }
     @media screen and (max-width: 440px){
       margin-left: 2rem;
+    }
+    @media screen and (max-width: 540px){
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 330px){
+        margin-left: 2rem;
+        margin-top: 28%;
     }
 
     h2 {
@@ -26,6 +36,10 @@ export const Form = styled.form`
             top: -22px;
             left: 133px;
             z-index: -1;
+
+            @media screen and (max-width: 740px){
+                display: none;
+            }
         }
     }
 
@@ -91,7 +105,7 @@ export const Form = styled.form`
             width: 100%;
             border-bottom: 1px solid var(--almond-dark);
 
-            @media screen and(max-width: 540px){
+            @media screen and (max-width: 540px){
                 width: 75%;
             }
 
@@ -174,4 +188,8 @@ export const ButtonForm = styled.input`
             color: var(--almond-dark);
             background: transparent;
         }
+    @media screen and (max-width: 540px) {
+        width: 80%;
+        margin: 20px auto 0 auto;
+    }
 `;

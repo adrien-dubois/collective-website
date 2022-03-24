@@ -96,6 +96,7 @@ export const Section = styled.section`
       position: initial;
       bottom: -6rem;
       padding: 4rem;
+      border-radius: 15px;
       .grid{
         grid-template-columns: 1fr;
         .col{

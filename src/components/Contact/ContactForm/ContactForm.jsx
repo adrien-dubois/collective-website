@@ -101,7 +101,7 @@ const ContactForm = () => {
 
   return (
     <Form>
-        <h2>contactez-nous</h2>
+        <h2>dites-nous tout!</h2>
         <div className="form-content">
             <input
             type="text"

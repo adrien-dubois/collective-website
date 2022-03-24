@@ -9,8 +9,6 @@ const Contact = () => {
     <main>
         <Div>
 
-            <img src={process.env.PUBLIC_URL + '/assets/img/logo-sq.png'} alt="logo" className="logo" width={65} height={65} />
-
             <ContactForm/>
             <div className="contact-infos">
 

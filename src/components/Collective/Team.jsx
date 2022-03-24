@@ -50,7 +50,7 @@ const Team = () => {
                     name="Gaëlle Ruf"
                     subtitle="Tech Lead"
                     image="gaelle"
-                    email="gaelle@the-square.net"
+                    email="https://cropup.fr"
                 />
                 
                 <Cards
@@ -74,7 +74,7 @@ const Team = () => {
                     name="Adrien Dubois"
                     subtitle="Développeur / Webdesigner"
                     image="adrien"
-                    email="adrien@the-square.net"
+                    email="https://white-umbrella.fr"
                     lastone
                 />
                 
