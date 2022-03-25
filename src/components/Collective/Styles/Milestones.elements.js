@@ -38,13 +38,11 @@ export const Section = styled.section`
     }
 
     @media screen and (min-width: 1080px) and (max-width: 1600px) {
-        width: 110vw;
         margin: 2rem 0;
         height: 45vh;
     }
 
     @media screen and (min-width: 280px) and (max-width: 1080px) {
-        width: initial;
         height: 35vh;
         padding: 5rem 2rem;
         min-height: 100vh;

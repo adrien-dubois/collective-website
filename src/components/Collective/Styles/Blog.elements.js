@@ -54,14 +54,16 @@ export const Section = styled.section`
     }
 
     @media screen and (min-width: 1080px) and (max-width: 1600px) {
-        width: 110vw;
-
         .blogs{
+            margin: 5rem 10rem;
             .blog{
                 .title{
                    h3{
                        font-size: 1.5rem;
                    }
+                }
+                .type{
+                    margin: .5rem 0;
                 }
                 .description{
                     height: 35%;
@@ -74,7 +76,6 @@ export const Section = styled.section`
     }
 
     @media screen and (min-width: 280px) and (max-width: 1080px) {
-        width: initial;
         margin: 2rem 0;
         .decoration{
             display: none;

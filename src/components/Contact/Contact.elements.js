@@ -160,7 +160,7 @@ export const Div = styled.div`
                             font-size: .8rem;
                         }
                     }
-                    @media screen and (max-height: 640px){
+                    @media screen and (max-width: 640px){
                         display: none;
                     }
             }
@@ -184,7 +184,7 @@ export const Div = styled.div`
                     transform: translateX(5px);
                 }
             }
-            @media screen and (max-height: 640px){
+            @media screen and (max-width: 640px){
                 display: none;
             }
         }

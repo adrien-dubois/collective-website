@@ -24,7 +24,11 @@ export const Section = styled.section`
     }
 
     @media screen and (min-width: 1080px) and (max-width: 1600px) {
-        width: 110vw;
+        .background{
+            .design2{
+                display: none;
+            }
+        }
         .container {
             height: 100vh;
         }

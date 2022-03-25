@@ -72,6 +72,7 @@ const GlobalStyle = createGlobalStyle`
         //BG 1920 1059
         --almond-bg : #EADBCD;
         --almond-dark: #bc8b5e;
+        --marigold-bg: #E79E39;
         --black-chocolate : #1D1E16;
         --light-chocolate: #414332;
         --white-color: #FFF;

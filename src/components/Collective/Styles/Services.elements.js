@@ -46,12 +46,8 @@ export const Section = styled.section`
         }
     }
 
-    @media screen and (min-width: 1080px) and (max-width: 1600px) {
-        width: 110vw;
-    }
 
     @media screen and (min-width: 280px) and (max-width: 1080px) {
-        width: initial;
         .services{
             margin: 2rem 0;
             grid-template-columns: 1fr;

@@ -5,7 +5,7 @@ export const Div = styled.section`
         color: var(--light-chocolate);
         height: 100vh;
         overscroll-behavior: none;
-        background-color: var(--almond-dark);
+        background-color: var(--black-chocolate);
     
         .gallery-counter{
             position: absolute;
@@ -14,7 +14,7 @@ export const Div = styled.section`
             z-index: 1;
             mix-blend-mode: difference;
             line-height: 16px;
-            color: var(--light-chocolate);
+            color: var(--marigold-bg);
             font-family: var(--ubuntu-font);
             font-weight: 600;
             font-size: 1rem;
@@ -56,7 +56,7 @@ export const Div = styled.section`
             height: 80vh;
             padding: 10vh 0;
             width: 400%;
-            background-color: var(--almond-dark);
+            background-color: var(--black-chocolate);
             display: flex;
             flex-wrap: nowrap;
 
@@ -72,9 +72,10 @@ export const Div = styled.section`
             left: -9%;
             z-index: 1;
             transform: translateX(-20%);
-            color: var(--light-chocolate);
-
+            color: var(--almond-bg);
+            
             &__title{
+                /* text-shadow: 4px 4px 6px rgba(0, 0, 0, .4); */
                 line-height: 6vw;
                 font-family: var(--poppins-font);
                 font-weight: 600;
@@ -88,7 +89,7 @@ export const Div = styled.section`
                 color: transparent;
                 font-weight: 400;
                 font-size: 6vw;
-                -webkit-text-stroke: 2px var(--light-chocolate);
+                -webkit-text-stroke: 2px var(--marigold-bg);
                 -webkit-font-smoothing: antialiased;
             }
             &__category{
@@ -98,6 +99,7 @@ export const Div = styled.section`
                 font-weight: 400;
                 font-size: 24px;
                 margin-top: 2vh;
+                /* text-shadow: 4px 4px 6px rgba(0, 0, 0, .4); */
                 -webkit-font-smoothing: antialiased;
             }
         }
@@ -119,7 +121,7 @@ export const Div = styled.section`
 
         .gallery-item-image{
             background-size: cover;
-            background-position: center;
+            background-position: top;
             transform-origin: center;
             width: 100%;
             height: 100%;

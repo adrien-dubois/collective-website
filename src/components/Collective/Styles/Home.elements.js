@@ -70,7 +70,6 @@ export const Section = styled.section`
   }
 
   @media screen and (min-width: 1080px) and (max-width: 1600px){
-    width: 110vw;
     .home {
       .content{
         width: 90%;
@@ -82,12 +81,12 @@ export const Section = styled.section`
         bottom: -12rem;
         right: 7.5rem;
         padding: 1.5rem;
+        border-radius: 15px;
     }
   }
 
 
   @media screen and (min-width: 280px) and (max-width: 1080px) {
-    width: initial;
     .home{
       .content{
         position: initial;

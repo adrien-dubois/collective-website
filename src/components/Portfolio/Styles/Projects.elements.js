@@ -196,8 +196,8 @@ export const Section = styled.section`
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: var(--white-antique);
-                    background: var(--almond-dark);
+                    color: ${(props) => props.theme.textBtn};
+                    background: ${(props) => props.theme.btnBg};
                     height: 55px;
                     width: 126px;
                     border-radius: 50px;
@@ -211,7 +211,7 @@ export const Section = styled.section`
                         font-size: .85rem;
                     }
                     &:hover {
-                        color: var(--almond-dark);
+                        color: ${(props) => props.theme.textBtnHover};
                         background: ${(props) => props.theme.button};
                         letter-spacing: 1px;
                     }
@@ -230,14 +230,20 @@ export const lightTheme = {
     secondaryColor: "var(--almond-dark)",
     titleColor: "var(--light-chocolate)",
     square: "var(--almond-bg)",
-    button: "var(--almond-bg)"
+    button: "var(--almond-bg)",
+    textBtn: "var(--white-antique)",
+    textBtnHover: "var(--almond-dark)",
+    btnBg: "var(--almond-dark)"
 }
 
 export const darkTheme = {
     background: "var(--light-chocolate)",
     primaryColor: "var(--white-antique)",
     secondaryColor: "var(--almond-bg)",
-    titleColor: "#F3D0A0",
+    titleColor: "var(--marigold-bg)",
     square: "#414332",
-    button: "var(--black-chocolate)"
+    button: "var(--dark-chocolate)",
+    textBtn: "var(--marigold-bg)",
+    textBtnHover: "var(--marigold-bg)",
+    btnBg: "#37392B"
 }

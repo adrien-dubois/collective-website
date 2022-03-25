@@ -94,7 +94,6 @@ export const Section = styled.section`
     }
 
     @media screen and (min-width: 1080px) and (max-width: 1600px) {
-        width: 110vw;
         height: max-content;
         .background{
             .design1{
@@ -130,7 +129,6 @@ export const Section = styled.section`
     }
 
     @media screen and (min-width: 280px) and (max-width: 1080px){
-        width: initial;
         overflow-x: hidden;
         padding: 2rem 0;
         height: max-content;
