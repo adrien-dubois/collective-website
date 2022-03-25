@@ -114,7 +114,13 @@ export const Section = styled.section`
             }
         }
     }
+
+    @media screen and (min-width: 1080px) and (max-width: 1600px) {
+        width: 110vw;
+    }
+
     @media screen and (min-width: 280px) and (max-width: 1080px) {
+        width: initial;
         padding: 1rem;
         .pricing__title{
             margin: 0;

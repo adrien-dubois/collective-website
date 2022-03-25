@@ -69,9 +69,25 @@ export const Section = styled.section`
     }
   }
 
+  @media screen and (min-width: 1080px) and (max-width: 1600px){
+    width: 110vw;
+    .home {
+      .content{
+        width: 90%;
+        top: 5%;
+      }
+    }
+    .info {
+        position: absolute;
+        bottom: -12rem;
+        right: 7.5rem;
+        padding: 1.5rem;
+    }
+  }
 
 
   @media screen and (min-width: 280px) and (max-width: 1080px) {
+    width: initial;
     .home{
       .content{
         position: initial;

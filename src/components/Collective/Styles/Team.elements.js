@@ -22,6 +22,14 @@ export const Section = styled.section`
         align-items: center;
         padding: 5rem 0;
     }
+
+    @media screen and (min-width: 1080px) and (max-width: 1600px) {
+        width: 110vw;
+        .container {
+            height: 100vh;
+        }
+    }
+
     @media screen and (min-width: 280px) and (max-width: 1080px) {
         .background{
             display: none;
@@ -43,6 +51,11 @@ export const TeamTitle = styled.div`
     h2{
         font-size: 1.8rem;
     }
+
+    @media screen and (min-width: 1080px) and (max-width: 1600px){
+        margin: 2rem 10rem;
+    }
+
     @media screen and (min-width: 280px) and (max-width: 1080px){
         margin: 1rem .5rem;
         text-align: center;
@@ -51,7 +64,7 @@ export const TeamTitle = styled.div`
             margin-bottom: 1rem;
         }
         h2{
-            font-size: 1.1rem;
+            display: none;
         }
     }
 `;

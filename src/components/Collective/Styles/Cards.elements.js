@@ -28,12 +28,19 @@ export const CARD = styled.div`
         background-position: ${({lastone}) => (lastone ? '0 -230px' : '0 -25px')} ;
     }
 
-    
+    @media screen and (min-width: 1080px) and (max-width: 1600px){
 
-    @media only Screen and (max-width: 450px){
+    }
+
+     @media screen and (min-width: 280px) and (max-width: 1080px){
         box-shadow: none;
         margin: 0 -2rem;
-        height: 570px; 
+        height: 466px;
+        width: 333px; 
+        
+        &:hover ${Image}{
+            transform: scale(0.5 , 0.35) translateY(-700px);
+        }
     }
  
 `;
@@ -54,6 +61,10 @@ export const Name = styled.h3`
     position: absolute;
     top: 6.5rem;
     letter-spacing: 2px;
+
+     @media screen and (min-width: 280px) and (max-width: 1080px){
+        top: 3.9rem;
+    }
 `;
 
 export const Subtitle = styled.h4`
@@ -61,6 +72,10 @@ export const Subtitle = styled.h4`
     color: var(--light-chocolate);
     position: absolute;
     top: 9.2rem;
+
+     @media screen and (min-width: 280px) and (max-width: 1080px){
+        top: 6.2rem;   
+    }
 `;
 
 export const Divider = styled.div`
@@ -71,6 +86,10 @@ export const Divider = styled.div`
     border-radius: 150%/60px 70px 0 0;
     position: absolute;
     top: 12.2rem;
+
+     @media screen and (min-width: 280px) and (max-width: 1080px){
+        display: none;   
+    }
 `;
 
 export const Text = styled.h4`
@@ -82,6 +101,10 @@ export const Text = styled.h4`
     font-style: italic;
     text-align: center;
     margin: 0 .8rem;
+
+     @media screen and (min-width: 280px) and (max-width: 1080px){
+        top: 8.7rem;   
+    }
 `;
 
 
@@ -97,6 +120,10 @@ export const Div = styled.div`
         position: absolute;
         bottom: 32px;
         right: -40px;
+    }
+
+     @media screen and (min-width: 280px) and (max-width: 1080px){
+        bottom: .5rem;   
     }
 `;
 
@@ -121,7 +148,8 @@ export const ContactButton = styled.button`
         background: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
     }
 
-    @media only Screen and (max-width: 450px) {
+     @media screen and (min-width: 280px) and (max-width: 1080px) {
+        padding: .8rem 1.4rem;
         bottom: 5rem;
     }
 `;

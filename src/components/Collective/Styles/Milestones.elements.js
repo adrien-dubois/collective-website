@@ -36,7 +36,13 @@ export const Section = styled.section`
 
         }
     }
+
+    @media screen and (min-width: 1080px) and (max-width: 1600px) {
+        width: 110vw;
+    }
+
     @media screen and (min-width: 280px) and (max-width: 1080px) {
+        width: initial;
         padding: 5rem 2rem;
         min-height: 100vh;
         height: 100%;
