@@ -93,7 +93,44 @@ export const Section = styled.section`
         }
     }
 
+    @media screen and (min-width: 1080px) and (max-width: 1600px) {
+        width: 110vw;
+        height: max-content;
+        .background{
+            .design1{
+                display: none;
+                z-index: 0;
+            }
+        }
+        .skills{
+            gap: 2rem;
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &__bars{
+                &__bar{
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                    .container{
+                        padding: 0 16px;
+                    }
+                }
+            }
+            &__content{
+                width: 70%;
+                text-align: center;
+                .description{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
     @media screen and (min-width: 280px) and (max-width: 1080px){
+        width: initial;
         overflow-x: hidden;
         padding: 2rem 0;
         height: max-content;
@@ -139,11 +176,13 @@ export const Section = styled.section`
                 }
             }
             &__content{
+                width: 90%;
                 text-align: center;
                 padding: 0.2rem;
                 margin-top: 1.2rem;
                 .title{
                     font-size: .9rem;
+                    font-weight: 400;
                 }
                 .description{
                     font-size: .8rem;

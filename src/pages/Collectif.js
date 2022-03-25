@@ -15,11 +15,11 @@ export default function Collectif() {
   return ( 
     <motion.div initial="hidden" animate="visible" >
         <ScrollToTop/>
-        {/* <Home/> */}
-        {/* <Services/> */}
-        {/* <Milestones/> */}
-        {/* <Blog/> */}
-        {/* <Pricing/> */}
+        <Home/>
+        <Services/>
+        <Milestones/>
+        <Blog/>
+        <Pricing/>
         <Team/>
         <Skills/>
         <Footer/>
