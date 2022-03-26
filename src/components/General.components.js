@@ -43,57 +43,6 @@ export const Row = styled.div`
 
 `;
 
-export const HeaderDiv = styled.header`
-  font-size: 16px;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  font-weight: "700";
-
-  > ${Container} {
-    > ${Row} {
-      height: 128px;
-      .logo{
-        a{
-          img{
-            width: 45px;
-            height: auto;
-            margin-right: 5px;
-          }
-        }
-        @media screen and (max-width: 500px) {
-          opacity: 0;
-        }
-      }
-    }
-  }
-`;
-
-export const MenuIcon = styled.div`
-  cursor: pointer;
-  border-radius: 100%;
-  border: 1px solid var(--black-chocolate);
-  height: 80px;
-  width: 80px;
-  display: flex;
-  z-index: 2000;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    color: var(--almond-bg);
-    background: var(--black-chocolate);
-  }
-
-  
-  @media screen and (max-width: 500px) {
-    height: 50px;
-    width: 50px;
-    font-size: .7rem;
-    }
-`;
-
 export const Main = styled.main`
   > ${Container} {
     position: relative;
@@ -128,31 +77,6 @@ export const Main = styled.main`
       }
     }
   }
-`;
-
-export const NavMenu = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    left: ${({click}) => (click ? '-12%' : '-135%')};
-    opacity: ${({click}) =>(click ? '1' : 0)};
-    transition: all 0.5s ease;
-    background: var(--almond-bg);
-
-    @media screen and (max-width: 1280px){
-      width: 110vw;
-    }
-
-    @media screen and (max-width: 1024px) {
-      left: ${({click}) => (click ? '-5%' : '-135%')};
-    }
-
 `;
 
 export const MenuWrapper = styled.div`

@@ -10,7 +10,7 @@ const Title = () => {
   )
 }
 
-const Div = styled.div`
+const Div = styled.section`
     width: 100vw;
     height: 100vh;
     display: flex;

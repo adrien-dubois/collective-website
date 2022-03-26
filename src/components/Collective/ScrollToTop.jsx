@@ -7,11 +7,19 @@ function ScrollToTop() {
     window.addEventListener("scroll", ()=> {
         window.pageYOffset>100 ? setVisible(true) : setVisible(false);
     })
+
+    const ScrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
   return (
     <Div>
-        <a href='# ' className={`${visible ? "block" : "none"}`}>
+        <span className={`${visible ? "block" : "none"}`} onClick={() => ScrollUp()} >
             <FaChevronUp/>    
-        </a>
+        </span>
     </Div>
   )
 }
@@ -22,8 +30,9 @@ const Div = styled.div`
         opacity: 0;
         visibility: hidden;
     }
-    a{
+    span{
         position: fixed;
+        cursor: pointer;
         bottom: 40px;
         right: 40px;
         background-color: var(--almond-dark);

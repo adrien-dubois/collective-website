@@ -226,24 +226,95 @@ main {
 }
 
 .detailed-information {
-  margin-top: 200px;
-  height: 600px;
+  margin-top: 250px;
+  min-height: 100vh;
   .container {
+    height: 30%;
     .row {
-      
       justify-content: space-between;
       align-items: flex-start;
-      h2 {
-        font-size: 28px;
-      }
+      margin-bottom: 3rem;
       p {
-        font-family: "Helvetica Neue";
-        font-size: 16;
+        font-family: var(--font-2);
+        font-size: .9rem;
         line-height: 28px;
-        font-weight: 400;
+        font-weight: 600;
         width: 800px;
+        position: relative;
+
+        
       }
+      .stack-title{
+        p{
+            font-family: var(--poppins-font);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-style: italic;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            &::before{
+              position: absolute;
+              content: 'collectif';
+              font-family: var(--font-2);
+              font-size: 3rem;
+              line-height: 28px;
+              font-weight: 600;
+              width: 800px;
+              opacity: .05;
+              bottom: -52%;
+              left: 1%;
+            }
+        }
+        h2{
+            font-size: 1.4rem;
+            font-weight: 200;
+        }
+      }
+      
     }
+  }
+  .stack-content{
+    position: relative;
+    padding: 4rem 4rem 2rem 4rem;
+    margin: 0 4rem 4rem 4rem;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.301); 
+      &__div{
+
+        h2{
+          text-transform: uppercase;
+          margin-left: 5rem;
+          font-style: italic;
+          font-family: var(--poppins-font);
+          text-shadow: 6px 6px 8px rgba(0, 0, 0, .4);
+        }
+       &__icons{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 3rem;
+         margin: 5rem 8rem 2rem 8rem;
+     
+         &__pictos{
+           display: grid;
+           justify-content: center;
+         }
+       }
+       .separator{
+         margin: 0 5rem 3rem 5rem;
+         border-top: 3px dotted var(--black-chocolate);
+   
+         
+       }
+
+       &:last-child{
+         .separator{
+           display: none;
+         }
+       }
+      }
+
+    
   }
   // @media screen and(max-width: 1280px){
   //   padding-top: 130px;

@@ -1,10 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
+import { languages, tools, design, certifs } from "../components/Pictos.js"
 
 /*---- COMPONENT ----*/
 import ScrollForMore from '../components/ScrollForMore'
+import Title from 'components/Collective/Title.jsx';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
 
 
 const firstName = {
@@ -153,26 +156,92 @@ const Model = ({imageDetails}) => {
             </div>
             <div className='detailed-information'>
                 <div className='container'>
-                <div className='row'>
-                    <h2 className='title'>
-                    The inspiration behind the artwork & <br /> what it means.
-                    </h2>
-                    <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                    It has roots in a piece of classical Latin literature from 45 BC,
-                    making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of
-                    the more obscure Latin words, consectetur, from a Lorem Ipsum
-                    passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes
-                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-                    Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-                    BC. This book is a treatise on the theory of ethics, very popular
-                    during the Renaissance. The first line of Lorem Ipsum, "Lorem
-                    ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                    </p>
+                    <div className='row'>
+                        <div className="stack-title">
+                            <p>The Square.</p>
+                            {/* <h2>Collectif de freelances </h2> */}
+                        </div>
+                        <p>
+                        Aliquip et excepteur minim laborum id consectetur cillum nisi dolore eiusmod. Cillum proident labore Lorem adipisicing consectetur. Deserunt nisi nostrud officia sunt dolore minim labore in. Quis dolore Lorem pariatur laborum irure amet cupidatat ut velit.
+
+                        Ipsum exercitation commodo veniam laboris sit nostrud Lorem officia magna. Excepteur adipisicing sint id aliquip officia pariatur velit in est. Dolore officia proident ex esse quis aliquip voluptate elit officia dolore. Mollit culpa ullamco ex ipsum quis pariatur tempor voluptate et. Nulla et nisi est cillum proident sit minim.
+                        </p>
+                    </div>
                 </div>
+                
+                {/* <Title value="the square."/> */}
+                <div className="stack-content">
+
+                    <div className='stack-content__div'>
+                        <h2>Langages & Frameworks</h2>
+                        <div className="stack-content__div__icons">
+                                {languages.map((picto, index) => (
+                                    <div className="stack-content__div__icons__pictos">
+                                        <img 
+                                            src={require(`../assets/img/pictos/${picto.src}`)}
+                                            alt={picto.alt}
+                                            index={index}
+                                            width={100}
+                                        />
+                                    </div>
+                                ))}
+                        </div>
+                        <hr className='separator' />
+                    </div>
+
+                    <div className='stack-content__div'>
+                        <h2>Softwares & Tools</h2>
+                        <div className="stack-content__div__icons">
+                                {tools.map((picto, index) => (
+                                    <div className="stack-content__div__icons__pictos">
+                                        <img 
+                                            src={require(`../assets/img/pictos/${picto.src}`)}
+                                            alt={picto.alt}
+                                            index={index}
+                                            width={100}
+                                        />
+                                    </div>
+                                ))}
+                        </div>
+                        <hr className='separator' />
+                    </div>
+
+                    <div className='stack-content__div'>
+                        <h2>Web Design</h2>
+                        <div className="stack-content__div__icons">
+                                {design.map((picto, index) => (
+                                    <div className="stack-content__div__icons__pictos">
+                                        <img 
+                                            src={require(`../assets/img/pictos/${picto.src}`)}
+                                            alt={picto.alt}
+                                            index={index}
+                                            width={100}
+                                        />
+                                    </div>
+                                ))}
+                        </div>
+                        <hr className='separator' />
+                    </div>
+
+                    <div className='stack-content__div'>
+                        <h2>Certifications</h2>
+                        <div className="stack-content__div__icons">
+                                {certifs.map((picto, index) => (
+                                    <div className="stack-content__div__icons__pictos">
+                                        <img 
+                                            src={require(`../assets/img/pictos/${picto.src}`)}
+                                            alt={picto.alt}
+                                            index={index}
+                                            width={120}
+                                        />
+                                    </div>
+                                ))}
+                        </div>
+                        <hr className='separator' />
+                    </div>
                 </div>
+
+
             </div>
         </motion.div>
   )

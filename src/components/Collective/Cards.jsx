@@ -33,7 +33,7 @@ const Cards = ({
                 <Text>{text}</Text>
                 <Div>
                     <MdLaunch/>
-                    <ContactButton><a href={`${email}`} target="_blank" noopener noreferer >Portfolio </a></ContactButton> 
+                    <ContactButton><a href={`${email}`} target="_blank" rel='noopener noreferer' >Portfolio </a></ContactButton> 
                 </Div>
             </Info>
                 <Image img={Avatar} />
