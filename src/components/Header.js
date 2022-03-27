@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import { IconContext } from "react-icons/lib";
 import Menu from "./Menu";
 import styled from 'styled-components'
+import { keyframes } from "styled-components";
 
 
 const Header = () => {
@@ -51,6 +52,12 @@ const Header = () => {
   );
 };
 
+const smooth = keyframes`
+  0% { opacity: 0; }
+  50% { opacity: .5; }
+  100% {opacity: 1;}
+`;
+
 const Container = styled.div`
   flex-grow: 1;
   margin: 0 auto;
@@ -87,15 +94,12 @@ const HeaderDiv = styled.header`
   background: transparent;
 
   &.actived{
-    background: hsla(29, 41%, 55%, 1);
+    animation: ${smooth} 1.2s ease-in;
+    background: -moz-linear-gradient(top,  rgba(188,139,94,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(188,139,94,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(188,139,94,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc8b5e', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 
-    background: linear-gradient(270deg, hsla(29, 41%, 55%, 1) 0%, hsla(29, 41%, 86%, 1) 100%, hsla(29, 41%, 84%, 1) 100%);
-
-    background: -moz-linear-gradient(270deg, hsla(29, 41%, 55%, 1) 0%, hsla(29, 41%, 86%, 1) 100%, hsla(29, 41%, 84%, 1) 100%);
-
-    background: -webkit-linear-gradient(270deg, hsla(29, 41%, 55%, 1) 0%, hsla(29, 41%, 86%, 1) 100%, hsla(29, 41%, 84%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BC8B5E", endColorstr="#EADBCD", GradientType=1 );
   }
 
   > ${Container} {

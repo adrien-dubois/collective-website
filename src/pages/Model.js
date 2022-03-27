@@ -4,7 +4,7 @@ import { languages, tools, design, certifs } from "../components/Pictos.js"
 
 /*---- COMPONENT ----*/
 import ScrollForMore from '../components/ScrollForMore'
-import Title from 'components/Collective/Title.jsx';
+import ScrollToTop from 'components/Collective/ScrollToTop.jsx';
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -66,6 +66,7 @@ const Model = ({imageDetails}) => {
             animate='animate'
             exit='exit'
         >
+            <ScrollToTop/>
             <div className='container fluid'>
                 <div className='row center top-row'>
                 <div className='top'>
@@ -169,7 +170,6 @@ const Model = ({imageDetails}) => {
                     </div>
                 </div>
                 
-                {/* <Title value="the square."/> */}
                 <div className="stack-content">
 
                     <div className='stack-content__div'>

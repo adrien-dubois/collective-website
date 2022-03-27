@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react'
 import "./Styles/banner.scss"
+import { FaChevronDown } from "react-icons/fa"
+import { BsMouse, BsArrowDownShort } from 'react-icons/bs';
+import { IconContext } from 'react-icons';
 
 const banner = {
   animate: {
@@ -26,12 +29,20 @@ const letterAnimation = {
 
 const Banner = () => {
 
+  const [playMarquee, setPlayMarquee] = useState(false)
+
+  useEffect(() => {
+    setPlayMarquee(true)
+  }, [])
+
   return (
     <motion.div 
       className="banner"
       variants={banner}
     >
-      <BannerRowTop title={"Portfolio."} />
+      <BannerRowTop title={"Gallerie"} />
+      <BannerRowCenter title={"Portfolio"}/>
+      <BannerRowBottom title={"Projets"} />
     </motion.div>
   );
 };
@@ -56,7 +67,7 @@ const AnimatedLetters = ({ title }) => (
 
 const BannerRowTop = ({ title }) => {
   return (
-    <div className={"banner-row center"}>
+    <div className={"banner-row"}>
       <div className="row-col">
         <AnimatedLetters title={title} />
       </div>
@@ -69,8 +80,62 @@ const BannerRowTop = ({ title }) => {
           delay: 0.4
         }}
       >
-        
+        <span className="row-message">
+          Voici une séléction de nos divers projets, qui pourront vous donner un apercu de notre travail en tant que Freelances.
+        </span>
       </motion.div>
+    </div>
+  );
+};
+
+const BannerRowBottom = ({ title }) => {
+  return (
+    <IconContext.Provider value={{ size: '1.8rem' }}>
+      <div className={"banner-row center"}>
+        <motion.div 
+          className="scroll"
+          initial={{scale: 0}}
+          animate={{scale: 1}}
+          transition= {{ease: [0.6, 0.01, -0.05, 0.95], duration: 1, delay: 1}}
+        >
+          <motion.span
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{
+              ease: 'easeInOut',
+              duration: 1,
+              delay: 1.8
+            }}
+          >
+            
+            <BsMouse/>
+
+          </motion.span>
+          <motion.span
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{
+              ease: 'easeInOut',
+              duration: 1,
+              delay: 1.8
+            }}
+          >
+            <BsArrowDownShort/>
+
+          </motion.span>
+        </motion.div>
+        <AnimatedLetters title={title} />
+      </div>
+    </IconContext.Provider>
+  );
+};
+
+const BannerRowCenter = ({ title }) => {
+  return (
+    <div className={`banner-row center marquee`}>
+      <div className="marquee__inner">
+        <AnimatedLetters title={title} />
+      </div>
     </div>
   );
 };
