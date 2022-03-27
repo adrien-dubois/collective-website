@@ -95,11 +95,10 @@ const HeaderDiv = styled.header`
 
   &.actived{
     animation: ${smooth} 1.2s ease-in;
-    background: -moz-linear-gradient(top,  rgba(188,139,94,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(188,139,94,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(188,139,94,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc8b5e', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
+    background: -moz-linear-gradient(top,  rgba(188,139,94,1) 0%, rgba(225,204,184,0) 81%, rgba(234,219,205,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(188,139,94,1) 0%,rgba(225,204,184,0) 81%,rgba(234,219,205,0) 100%); 
+    background: linear-gradient(to bottom,  rgba(188,139,94,1) 0%,rgba(225,204,184,0) 81%,rgba(234,219,205,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc8b5e', endColorstr='#00eadbcd',GradientType=0 );
   }
 
   > ${Container} {

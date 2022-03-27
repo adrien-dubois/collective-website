@@ -160,12 +160,16 @@ const Model = ({imageDetails}) => {
                     <div className='row'>
                         <div className="stack-title">
                             <p>The Square.</p>
-                            {/* <h2>Collectif de freelances </h2> */}
+                            <h2>"Unique, performant, sécurisé, durable, évolutif…
+                            <br/>    
+                             Un site web sur-mesure permet un déploiement digital à fort potentiel." </h2>
                         </div>
                         <p>
-                        Aliquip et excepteur minim laborum id consectetur cillum nisi dolore eiusmod. Cillum proident labore Lorem adipisicing consectetur. Deserunt nisi nostrud officia sunt dolore minim labore in. Quis dolore Lorem pariatur laborum irure amet cupidatat ut velit.
-
-                        Ipsum exercitation commodo veniam laboris sit nostrud Lorem officia magna. Excepteur adipisicing sint id aliquip officia pariatur velit in est. Dolore officia proident ex esse quis aliquip voluptate elit officia dolore. Mollit culpa ullamco ex ipsum quis pariatur tempor voluptate et. Nulla et nisi est cillum proident sit minim.
+                        Un site web sur-mesure va permettre de booster votre présence sur le web. Que ce soit en matière de design, de référencement ou encore d’ergonomie, tout est personnalisable pour créer un outil ajusté à vos besoins.
+                        <br/>
+                        Nous étudions avec vous les fonctionnalités à développer selon votre activité, vos objectifs et votre cible, et vous proposons un accompagnement tout au long du projet, en veillant à utiliser une communication efficace et accessible. 
+                        <br/>
+                        <a href='# '>En savoir plus…</a>
                         </p>
                     </div>
                 </div>

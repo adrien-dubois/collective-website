@@ -235,15 +235,36 @@ main {
       align-items: flex-start;
       margin-bottom: 3rem;
       p {
-        font-family: var(--font-2);
         font-size: .9rem;
         line-height: 28px;
-        font-weight: 600;
-        width: 800px;
+        font-weight: 500;
+        width: 590px;
         position: relative;
 
-        
+          br{
+            display: block;
+            content: '';
+            margin-top: 10px;
+            line-height: 22px;
+          }
+
+          a{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            color: var(--light-chocolate);
+            padding: 6px 8px;
+            border-radius: 25px;
+            transition: all .4s ease-in-out;
+            width: 40%;
+
+            &:hover{
+              background: var(--black-chocolate);
+              color: var(--almond-bg);
+            }
+          }
       }
+
       .stack-title{
         p{
             font-family: var(--poppins-font);
@@ -252,7 +273,7 @@ main {
             font-style: italic;
             font-size: 1.8rem;
             font-weight: 700;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             &::before{
               position: absolute;
               content: 'collectif';
@@ -267,8 +288,11 @@ main {
             }
         }
         h2{
-            font-size: 1.4rem;
-            font-weight: 200;
+          margin-bottom: 2rem;
+          font-weight: 500;
+          font-family: var(--poppins-font);
+          font-style: italic;
+          font-size: 1.5rem;
         }
       }
       

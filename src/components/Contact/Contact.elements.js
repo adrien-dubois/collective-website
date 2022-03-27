@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-    overflow-x: hidden;
+    overflow: hidden;
     position: absolute;
     width: 100vw;
     height: 95vh;
@@ -10,7 +10,7 @@ export const Div = styled.div`
       position: relative;
       width: 80%;
       margin: 0 auto;
-      right: 15%;
+      right: 40%;
       
       svg{
           color: var(--almond-dark);

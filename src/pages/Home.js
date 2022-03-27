@@ -39,7 +39,7 @@ const Home = ({ imageDetails, image }) => {
                 transition={transition}
                 className='information'
               >
-                <div className='title'>The Square.</div>
+                <div className='title'>Collective freelance</div>
                 <div className='location'>
                   <span>48.9184694</span>
                   <span>2.23679406</span>
