@@ -14,6 +14,11 @@ export const Section = styled.section`
         &__service{
             padding: 2rem;
             height: 780px;
+            position: relative;
+            /* border: 2px solid #D0AF8F; */
+            /* background-color: var(--opaque-bg); */
+
+            border-radius: 4px;
             &:nth-of-type(3){
                 background-color: #D0AF8F;
                 border-radius: 4px;
@@ -25,6 +30,10 @@ export const Section = styled.section`
                 .services__service__description{
                     color: var(--white-alabaster);
                 }
+            }
+            .play{
+                position: absolute;
+                bottom: 36px;
             }
             &__image{
                 margin-bottom: 3rem;

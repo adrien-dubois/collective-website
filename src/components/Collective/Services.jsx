@@ -41,7 +41,9 @@ function Services() {
                 <div className="services__service__description">
                   {text}  
                 </div>
-                <img src={Play} alt='Play'/>
+                <div className="play">
+                  <img src={Play} alt='Play'/>
+                </div>
               </motion.div>
             )
           })

@@ -78,23 +78,23 @@ const Home = () => {
       
       <Div id="contains">
 
-          <SectionProject className='section'>
+          <SectionProject className='section' id='section_0' >
             <Projects projectNumber={0} />
           </SectionProject>
 
-          <SectionProject className='section'>
+          <SectionProject className='section' id='section_1' >
             <Projects projectNumber={1} />
           </SectionProject>
 
-          <SectionProject className='section'>
+          <SectionProject className='section' id='section_2' >
             <Projects projectNumber={2} />
           </SectionProject>
 
-          <SectionProject className='section'>
+          <SectionProject className='section' id='section_3' >
             <Projects projectNumber={3} />
           </SectionProject>
 
-          <SectionProject className='section'>
+          <SectionProject className='section' id='section_4' >
             <Projects projectNumber={4} />
           </SectionProject>
 

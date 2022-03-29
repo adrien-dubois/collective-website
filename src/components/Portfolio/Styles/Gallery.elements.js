@@ -102,6 +102,27 @@ export const Div = styled.section`
                 /* text-shadow: 4px 4px 6px rgba(0, 0, 0, .4); */
                 -webkit-font-smoothing: antialiased;
             }
+            &__link{
+                position: relative;
+                bottom: -2rem;
+                left: 5rem;
+                span{
+                    color: var(--black-chocolate);
+                    background: var(--marigold-bg);
+                    text-transform: uppercase;
+                    padding: 10px 16px;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    transition: all .3s ease-in;
+
+                    &:hover{
+                        color: var(--marigold-bg);
+                        background: var(--black-chocolate);
+                        letter-spacing: 1px;
+                    }
+                }
+
+            }
         }
 
         .gallery-item-wrapper{

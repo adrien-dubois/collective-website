@@ -8,13 +8,15 @@ export const servicesData = [
       type: "Site web",
       text: <p>
         Au travers de ce service, nous vous proposerons divers types de sites web, mais tous comprendrons au moins ces caractéristiques :
-        <ul>
-          <li>Site Responsive & Mobile first</li>
-          <li>Accompagnement personnalisé</li>
-          <li>SEO Friendly</li>
-          <li>Interface d'aministration personnalisable</li>
-          <li>Hébergement & Support</li>
-        </ul>
+        <i>
+          <ul>
+            <li>Site Responsive & Mobile first</li>
+            <li>Accompagnement personnalisé</li>
+            <li>SEO Friendly</li>
+            <li>Interface d'aministration personnalisable</li>
+            <li>Hébergement & Support</li>
+          </ul>
+        </i>
       </p>,
       image: service1,
     },
@@ -32,14 +34,16 @@ export const servicesData = [
       text: <p>
         Notre collectif utilise la méthodologie Agile <i>(on ne fera pas la blague - méthode à Gilles - non non non)</i> sur le modèle Scrum. C'est à dire que vous serez profondément impliqué dans le projet en plus d'en être une partie prenante.<br/>
         Cette méthode passera par diverses étapes :
-        <ol>
-          <li>Définition des besoins</li>
-          <li>Wireframe</li>
-          <li>Maquettage graphique</li>
-          <li>Développement / tests</li>
-          <li>Mise en ligne</li>
-          <li>Assistance & maintenance</li>
-        </ol>
+        <i>
+          <ol>
+            <li>Définition des besoins</li>
+            <li>Wireframe</li>
+            <li>Maquettage graphique</li>
+            <li>Développement / tests</li>
+            <li>Mise en ligne</li>
+            <li>Assistance & maintenance</li>
+          </ol>
+        </i>
       </p>,
       image: service3,
     },
