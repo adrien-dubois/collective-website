@@ -7,7 +7,7 @@ export const Section = styled.section`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
-        margin: 5rem 20rem;
+        margin: 5rem;
         .blog{
             display: flex;
             flex-direction: column;
@@ -127,22 +127,33 @@ export const Section = styled.section`
             grid-template-columns: 1fr;
             margin: 0 1rem;
             padding: 0 2rem;
-            .title{
-                h3{
-                    font-size: 1.2rem;
+            .blog{
+                padding: 0;
+                background: initial;
+                .image{
+                    width: auto;
+                    height: auto;
                 }
-            }
-            .type{
-                margin: 1rem 0;
-            }
-            .description{
-                font-size: .8rem;
-            }
-            .more{
-                margin-top: 1rem;
-                span{
-                    padding-top: 1rem;
-                    font-size: .9rem;
+                .title{
+                    h3{
+                        font-size: 1.2rem;
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+                .type{
+                    margin: 1rem 0;
+                }
+                .description{
+                    font-size: .8rem;
+                }
+                .more{
+                    margin-top: 1rem;
+                    span{
+                        padding-top: 1rem;
+                        font-size: .9rem;
+                    }
                 }
             }
         }

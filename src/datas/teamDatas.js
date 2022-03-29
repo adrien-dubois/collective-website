@@ -43,7 +43,7 @@ export const teamDatas = [
         UI / Web design</h4>,
         text:<h4>
             Autant développeur que UI/UX designer, Adrien est le Mc Gyver de la team, à l'aise "from scratch" de même que sur frameworks.<br/>
-            <span>Identitée culturelle :</span><br/>
+            <span>Identité culturelle :</span><br/>
 
             Arts visuels,<br/>
             Culture urbaine

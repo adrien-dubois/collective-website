@@ -36,8 +36,8 @@ export const CARD = styled.div`
      @media screen and (min-width: 280px) and (max-width: 1080px){
         box-shadow: none;
         margin: 0 -2rem;
-        height: 466px;
-        width: 333px; 
+        width: 350px; 
+        height: 500px;
         
         &:hover ${Image}{
             transform: scale(0.5 , 0.35) translateY(-700px);
@@ -64,7 +64,8 @@ export const Name = styled.h3`
     letter-spacing: 2px;
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
-        top: 3.9rem;
+         font-weight: bolder;
+        top: 5.5rem;
     }
 `;
 
@@ -76,7 +77,7 @@ export const Subtitle = styled.div`
     text-align: center;
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
-        top: 6.2rem;   
+        top: 8rem;   
     }
 `;
 
@@ -117,7 +118,10 @@ export const Text = styled.div`
     }
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
-        top: 8.7rem;   
+        top:12rem;  
+        br{
+            margin-top: 2px;
+        } 
     }
 `;
 
