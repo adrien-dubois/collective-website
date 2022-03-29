@@ -94,15 +94,27 @@ export const Divider = styled.div`
     }
 `;
 
-export const Text = styled.h4`
+export const Text = styled.div`
     position: absolute;
     top: 15.7rem;
     color: var(--light-chocolate);
     line-height: 1.75rem;
     font-size: 1.3rem;
-    font-style: italic;
     text-align: center;
     margin: 0 .8rem;
+
+    br{
+        display: block;
+        content: '';
+        margin-top: 10px;
+        line-height: 22px;
+    }
+
+    span{
+        font-style: italic;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+    }
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
         top: 8.7rem;   

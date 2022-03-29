@@ -38,16 +38,16 @@ function Blog() {
                   />
                 </div> 
                 <div className="title">
-                  <h3>{titre}</h3>  
+                  <h3 data-text={titre} >{titre}</h3>
                 </div>
                 <span className="type">{type}</span>
                 <div className="description">
                   {description}  
                 </div>
-                {/* <div className="more">
+                <div className="more">
                   <BsArrowRightCircle width={40} />
-                  <span>Lire plus...</span>
-                </div> */}
+                  <span>Voir le site...</span>
+                </div>
               </motion.div>
             );
           })

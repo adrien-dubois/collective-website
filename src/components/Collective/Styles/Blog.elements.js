@@ -12,6 +12,9 @@ export const Section = styled.section`
             display: flex;
             flex-direction: column;
             grid-template: 1rem;
+            padding: 16px 20px;
+            border-radius: 25px;
+            background: var(--opaque-bg);
             .image{
                 width: 450px;
                 height: 275px;
@@ -31,8 +34,19 @@ export const Section = styled.section`
                 h3{
                     color: var(--light-chocolate);
                     font-size: 1.8rem;
-                    font-family: var(--ubuntu-font);
-                    font-weight: 500;
+                    font-family: var(--poppins-font);
+                    text-transform: uppercase;
+                    font-weight: 700;
+
+                    &::before{
+                        content: attr(data-text);
+                        display: block;
+                        font-size: 2rem;
+                        opacity: .1;
+                        position: absolute;
+                        top: 18.7rem;
+                        margin-left: 1rem;
+                    }
                 }
             }
             .type{
@@ -70,11 +84,14 @@ export const Section = styled.section`
                 align-items: center;
                 gap: 1rem;
                 cursor: pointer;
+                transition: all .4s ease-in;
                 span{
                     letter-spacing: 0.1rem;
                     text-transform: uppercase;
-                     
                 }
+                &:hover{
+                        filter: brightness(5);
+                     }
             }
         }
     }

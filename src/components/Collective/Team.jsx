@@ -9,6 +9,7 @@ import Cards from './Cards';
 import { useScroll } from './useScroll'
 import { motion } from 'framer-motion'
 import { teamAnimations } from 'Animation';
+import { teamDatas } from 'datas/teamDatas';
 
 
 const Team = () => {
@@ -31,7 +32,7 @@ const Team = () => {
       </div>
         <TeamTitle>
           <p>Les membres de The Square.</p>
-          <h2>Découvrez l'équipe de freelances du collectif</h2>
+          <h2>Découvrez l'équipe full-stack du collectif</h2>
         </TeamTitle>
       <motion.div 
         className="container"
@@ -45,41 +46,20 @@ const Team = () => {
       >
         <Carousel>
           <Slider {...settings}>
-                <Cards
-                    text="Sit id exercitation enim ipsum voluptate esse laborum sunt esse quis sint. Incididunt magna sunt amet commodo laborum tempor sint quis occaecat fugiat mollit qui fugiat incididunt. "
-                    name="Gaëlle Ruf"
-                    subtitle="Tech Lead"
-                    image="gaelle"
-                    email="https://cropup.fr"
-                />
-                
-                <Cards
-                    text="Sit id exercitation enim ipsum voluptate esse laborum sunt esse quis sint. Incididunt magna sunt amet commodo laborum tempor sint quis occaecat fugiat mollit qui fugiat incididunt. "
-                    name="Nathan Guyard"
-                    subtitle="Responsable commercial"
-                    image="nathan"
-                    email="nathan@the-square.net"
-                />
-                
-                <Cards
-                    text="Sit id exercitation enim ipsum voluptate esse laborum sunt esse quis sint. Incididunt magna sunt amet commodo laborum tempor sint quis occaecat fugiat mollit qui fugiat incididunt. "
-                    name="Mehdi Mosteghami"
-                    subtitle="Scrum Master"
-                    image="mehdi"
-                    email="mehdi@the-square.net"
-                />
-                
-                <Cards
-                    text="Sit id exercitation enim ipsum voluptate esse laborum sunt esse quis sint. Incididunt magna sunt amet commodo laborum tempor sint quis occaecat fugiat mollit qui fugiat incididunt. "
-                    name="Adrien Dubois"
-                    subtitle={
-                      <h4>Spécialisé UX Design<br/> 
-                      UI / Web design</h4>
-                    }
-                    image="adrien"
-                    email="https://white-umbrella.fr"
-                    lastone
-                />
+
+              {teamDatas.map(({name, subtitle, text, image, website, lastone}) =>{
+                return(
+                 <Cards
+                    text={text}
+                    name={name}
+                    subtitle={subtitle}
+                    image={image}
+                    website={website}
+                    lastone={lastone}
+                /> 
+                );
+              })}
+
                 
           </Slider>
         </Carousel>

@@ -31,7 +31,7 @@ export const blogsData = [
     },
     {
       titre:"Certification OPQUAST",
-      type:"Accéssibilité du Web",
+      type:"Accessibilité du Web",
       image: "opquast.jpg",
       description: <p>
         Chaque membre du collectif a obtenu la certification Opquast “Maîtrise de la qualité en projet Web”.

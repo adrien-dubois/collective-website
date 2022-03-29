@@ -19,7 +19,7 @@ const Cards = ({
     subtitle, 
     text, 
     image,
-    email, 
+    website, 
     lastone
 }) => {
     const Avatar = require(`../../assets/img/avatar/${image}.jpg`);
@@ -33,7 +33,15 @@ const Cards = ({
                 <Text>{text}</Text>
                 <Div>
                     <MdLaunch/>
-                    <ContactButton><a href={`${email}`} target="_blank" rel='noopener noreferer' >Portfolio </a></ContactButton> 
+                    <a 
+                        href={`${website}`} 
+                        target="_blank" 
+                        rel='noopener noreferer' 
+                    >
+                        <ContactButton>
+                                <a>Portfolio</a> 
+                        </ContactButton> 
+                    </a>
                 </Div>
             </Info>
                 <Image img={Avatar} />
