@@ -79,6 +79,7 @@ const GlobalStyle = createGlobalStyle`
         --black-color: #000;
         --white-alabaster: #f4f3e6;
         --white-antique: #FAECD9;
+        --opaque-bg: #ffffff60;
         /*---- MENU -----*/
         --color-text: #1D1E16;
         --color-bg: #EADBCD;

@@ -13,6 +13,7 @@ export const Section = styled.section`
         gap: 5rem;
         &__service{
             padding: 2rem;
+            height: 780px;
             &:nth-of-type(3){
                 background-color: #D0AF8F;
                 border-radius: 4px;
@@ -36,12 +37,36 @@ export const Section = styled.section`
                 h2{
                     font-size: 3rem;
                     line-height: 2.5rem;
-                    margin-bottom: 5rem;
+                    margin-bottom: 2rem;
                     color: var(--light-chocolate);
                 }
             }
             &__description{
                 margin-bottom: 2rem;
+                ul{
+                    margin-top: 1rem;
+                    li{
+                        list-style: disc;
+                        font-size: .9rem;
+                    }
+                }
+                ol{
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    li{
+                        list-style-type: decimal;
+                        display: list-item;
+                        font-size: .9rem;
+                    }
+                }
+                p{
+                    br{
+                        display: block;
+                        content: '';
+                        margin-top: 10px;
+                        line-height: 22px;
+                    }
+                }
             }
         }
     }

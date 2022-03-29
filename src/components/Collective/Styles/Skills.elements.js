@@ -86,6 +86,7 @@ export const Section = styled.section`
             gap: 2rem;
             color: var(--light-chocolate);
             z-index: 2;
+            height: auto;
             .title{
                 font-weight: bolder;
                 letter-spacing: 0.1rem;

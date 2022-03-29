@@ -41,8 +41,8 @@ const Home = ({ imageDetails, image }) => {
               >
                 <div className='title'>Collective freelance</div>
                 <div className='location'>
-                  <span>48.9184694</span>
-                  <span>2.23679406</span>
+                  <span>Website creators</span>
+                  <span></span>
                 </div>
               </motion.div>
             </div>

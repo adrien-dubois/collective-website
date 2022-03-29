@@ -97,7 +97,7 @@ main {
           font-family: var(--ubuntu-font);
           .location {
             span:nth-child(2) {
-              margin-left: 8px;
+              margin-left: .3rem;
             }
           }
         }
@@ -121,7 +121,7 @@ main {
           justify-content: space-between;
           .location {
             span:nth-child(2) {
-              margin-left: 16px;
+              margin-left: .3rem;
             }
           }
           .mua {

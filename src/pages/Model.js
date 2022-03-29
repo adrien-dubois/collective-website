@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
-import { languages, tools, design, certifs } from "../components/Pictos.js"
+import { languages, tools, design, certifs } from "../datas/Pictos.js"
 
 /*---- COMPONENT ----*/
 import ScrollForMore from '../components/ScrollForMore'

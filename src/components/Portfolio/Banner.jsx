@@ -29,18 +29,12 @@ const letterAnimation = {
 
 const Banner = () => {
 
-  const [playMarquee, setPlayMarquee] = useState(false)
-
-  useEffect(() => {
-    setPlayMarquee(true)
-  }, [])
-
   return (
     <motion.div 
       className="banner"
       variants={banner}
     >
-      <BannerRowTop title={"Gallerie"} />
+      <BannerRowTop title={"Galerie"} />
       <BannerRowCenter title={"Portfolio"}/>
       <BannerRowBottom title={"Projets"} />
     </motion.div>

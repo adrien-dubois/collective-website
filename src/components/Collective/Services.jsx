@@ -17,18 +17,41 @@ function Services() {
   const data = [
     {
       type: "Site web",
-      text: "Esse nulla sint quis incididunt do sit. Ad laboris sunt excepteur aliqua incididunt ea. Ex nisi laborum duis do nulla laboris ullamco elit. Do culpa magna laboris minim consectetur pariatur ex laborum. Elit excepteur tempor laboris aliqua cupidatat cupidatat ipsum. Ut adipisicing ea ea enim adipisicing mollit voluptate.",
+      text: <p>
+        Au travers de ce service, nous vous proposerons divers types de sites web, mais tous comprendrons au moins ces caractéristiques :
+        <ul>
+          <li>Site Responsive & Mobile first</li>
+          <li>Accompagnement personnalisé</li>
+          <li>SEO Friendly</li>
+          <li>Interface d'aministration personnalisable</li>
+          <li>Hébergement & Support</li>
+        </ul>
+      </p>,
       image: service1,
     },
     {
       type: "Design",
-      text: "Reprehenderit aliqua ea incididunt aliqua culpa nisi labore ut amet consequat Lorem nostrud ex sit. Tempor et magna elit in est pariatur eu do sit est aliquip. Eu mollit ullamco sint officia et veniam occaecat minim nulla exercitation id. Incididunt laboris ullamco dolor fugiat sunt. Est sit mollit excepteur deserunt .",
+      text: <p>
+        Nos réalisations ont toutes un design unique, reflétant votre personnalité ou celle de votre activité, afin de vous démarquer dans votre domaine et dire au revoir aux templates.<br/>
+        Nous misons également sur un UX sur mesure (User Xperience), résultant de la confrontation entre la conception et la réalité.
+      </p>,
       image: service2,
     },
 
     {
-      type: "Support",
-      text: "Ex nisi anim labore officia consequat adipisicing duis. Proident officia ut veniam amet ex Lorem deserunt nulla labore laboris dolor anim. Cillum cupidatat Lorem commodo sunt do pariatur fugiat adipisicing consectetur et pariatur ut qui. Magna irure ex culpa anim. Amet amet consequat enim enim cillum pariatur culpa irure ipsum est .",
+      type: "Agile",
+      text: <p>
+        Notre collectif utilise la méthodologie Agile <i>(on ne fera pas la blague - méthode à Gilles - non non non)</i> sur le modèle Scrum. C'est à dire que vous serez profondément impliqué dans le projet en plus d'en être une partie prenante.<br/>
+        Cette méthode passera par diverses étapes :
+        <ol>
+          <li>Définition des besoins</li>
+          <li>Wireframe</li>
+          <li>Maquettage graphique</li>
+          <li>Développement / tests</li>
+          <li>Mise en ligne</li>
+          <li>Assistance & maintenance</li>
+        </ol>
+      </p>,
       image: service3,
     },
     
@@ -58,9 +81,9 @@ function Services() {
                   <span>0{index + 1}</span>
                   <h2>{type}</h2>  
                 </div> 
-                <p className="services__service__description">
+                <div className="services__service__description">
                   {text}  
-                </p>
+                </div>
                 <img src={Play} alt='Play'/>
               </motion.div>
             )

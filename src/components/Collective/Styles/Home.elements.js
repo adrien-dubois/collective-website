@@ -43,7 +43,7 @@ export const Section = styled.section`
         width: 80%;
         padding: 14px 12px;
         border-radius: 25px;
-        background: #ffffff60;
+        background: var(--opaque-bg);
         p {
           margin-bottom: 2rem;
 

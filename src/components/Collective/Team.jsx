@@ -72,7 +72,10 @@ const Team = () => {
                 <Cards
                     text="Sit id exercitation enim ipsum voluptate esse laborum sunt esse quis sint. Incididunt magna sunt amet commodo laborum tempor sint quis occaecat fugiat mollit qui fugiat incididunt. "
                     name="Adrien Dubois"
-                    subtitle="Développeur / Webdesigner"
+                    subtitle={
+                      <h4>Spécialisé UX Design<br/> 
+                      UI / Web design</h4>
+                    }
                     image="adrien"
                     email="https://white-umbrella.fr"
                     lastone

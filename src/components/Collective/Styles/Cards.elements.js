@@ -11,6 +11,7 @@ export const Image = styled.div`
     bottom: 0;
     border-radius: 8px;
     transition: 1s;
+    filter: grayscale(100%);
 `;
 
 export const CARD = styled.div`
@@ -67,11 +68,12 @@ export const Name = styled.h3`
     }
 `;
 
-export const Subtitle = styled.h4`
+export const Subtitle = styled.div`
     font-size: 1.2rem;
     color: var(--light-chocolate);
     position: absolute;
     top: 9.2rem;
+    text-align: center;
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
         top: 6.2rem;   
@@ -85,7 +87,7 @@ export const Divider = styled.div`
     border-color: var(--light-chocolate) transparent transparent transparent;
     border-radius: 150%/60px 70px 0 0;
     position: absolute;
-    top: 12.2rem;
+    top: 13rem;
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
         display: none;   

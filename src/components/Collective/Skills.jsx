@@ -75,10 +75,10 @@ function Skills() {
           </div>
           <div className="skills__content">
             <p className="title">
-              Sit eu anim consectetur dolore amet et nisi id minim id ea non.Aliquip velit ea duis aliqua commodo laborum est incididunt.
+               Nos sites sont conçus en Responsive Web Design (RWD), c’est-à-dire offrant une expérience de navigation optimisée en fonction de l’écran utilisé par l’utilisateur : ordinateur, mobile ou tablette.
             </p>
             <div className="description">
-              Duis nostrud duis ex nisi. Ut incididunt nostrud consectetur pariatur in proident mollit sint. Fugiat sint nostrud non do est laborum officia sit. Enim tempor et minim nostrud nostrud amet aliquip. Excepteur sunt quis magna velit cillum reprehenderit tempor velit amet reprehenderit fugiat ea anim. 
+              Nous adoptons une approche Mobile First, une stratégie qui consiste à commencer la création d’un site par sa version mobile. Cette approche permet non seulement de se centrer sur les fonctionnalités essentielles à développer, mais elle est la première démarche de référencement naturel : les moteurs de recherche procèdent à une indexation prioritaire des sites orientés mobile. 
             </div>
           </div>
         </div>

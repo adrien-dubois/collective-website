@@ -13,11 +13,19 @@ export const Section = styled.section`
             flex-direction: column;
             grid-template: 1rem;
             .image{
-                height: 22rem;
+                width: 450px;
+                height: 275px;
+                overflow: hidden;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #D7C0A9;
+                img{
+                    overflow: hidden;
+                    object-fit: cover;
+                    object-position: 0%;
+                    width: 100%;
+                    height: 100%;
+                }
             }
             .title{
                 h3{
@@ -34,12 +42,30 @@ export const Section = styled.section`
                 font-size: 1rem;
                 font-style: italic;
                 text-transform: uppercase;
+                margin: .6rem 0;
             }
             .description{
-                height: 10rem;
                 color: var(--light-chocolate);
+                p{
+                    a{
+                        font-style: italic;
+                        color: var(--almond-dark);
+                        transition: color .3s ease-in;
+
+                        &:hover{
+                            color: #9B6D41;
+                        }
+                    }
+                    br{
+                        display: block;
+                        content: '';
+                        margin-top: 10px;
+                        line-height: 22px;
+                    }
+                }
             }
             .more{
+                margin-top: 1rem;
                 display: flex;
                 align-items: center;
                 gap: 1rem;
