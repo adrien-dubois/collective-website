@@ -51,6 +51,9 @@ export const Section = styled.section`
                 animation: ${transformTitle} 1.5s ease forwards;
                 transform-origin: 150%;
 
+                @media screen and (max-width: 940px){
+                    margin-bottom: 0;
+                }
                 @media screen and (max-width: 810px){
                     font-size: 2rem;
                 }
@@ -83,10 +86,13 @@ export const Section = styled.section`
                 left: 70px;
                 z-index: -10;
 
-                @media screen and (max-width: 810px){
-                height: 220px;
-                width: 220px;
-                left: -30px;
+                @media screen and (min-width: 1080px) and (max-width: 1600px){
+                    height: 220px;
+                    width: 220px;
+                    left: -30px;
+                }
+                @media screen and (max-width: 1080px){
+                    display: none;
                 }
             }
         }
@@ -101,6 +107,9 @@ export const Section = styled.section`
                 }
                 @media screen and (max-width: 400px){
                     font-size: .8rem;
+                }
+                @media screen and (min-width: 1080px) and (max-width: 1600px){
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -150,6 +159,7 @@ export const Section = styled.section`
                 transition: 0.5s ease;
                 transform: translateY(200px);
                 
+                
                 h3{
                     padding-bottom: 10px;
                     color: ${(props) => props.theme.titleColor} ;  
@@ -159,6 +169,14 @@ export const Section = styled.section`
                 p{
                     color: ${(props) => props.theme.primaryColor} ;
                     font-size: calc(0.4rem + 0.4vw);
+                }
+
+                @media screen and (max-width: 940px) {
+                    line-height: initial;
+                    padding: 0 5px;
+                    h3{
+                        font-size: .9rem;
+                    }
                 }
 
             }
@@ -217,6 +235,9 @@ export const Section = styled.section`
                     }
                 }
 
+            }
+            @media screen and (max-width: 940px) {
+                margin: 0 auto;
             }
         }
     }

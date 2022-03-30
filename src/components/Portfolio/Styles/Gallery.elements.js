@@ -6,6 +6,10 @@ export const Div = styled.section`
         height: 100vh;
         overscroll-behavior: none;
         background-color: var(--black-chocolate);
+
+        @media screen and (max-width: 960px) {
+            display: none;
+        }
     
         .gallery-counter{
             position: absolute;
@@ -28,6 +32,9 @@ export const Div = styled.section`
                 margin: 7px 10px;
                 height: 1px;
                 display: inline-block;
+            }
+            @media screen and (min-width: 960px) and (max-width: 1600px){
+                top: 14%;
             }
         }
 
@@ -59,6 +66,9 @@ export const Div = styled.section`
             background-color: var(--black-chocolate);
             display: flex;
             flex-wrap: nowrap;
+            @media screen and (min-width: 960px) and (max-width: 1600px){
+                padding: 20vh 0 10vh 0;
+            }
 
         }
         .gallery-item{
@@ -73,7 +83,7 @@ export const Div = styled.section`
             z-index: 1;
             transform: translateX(-20%);
             color: var(--almond-bg);
-            
+
             &__title{
                 /* text-shadow: 4px 4px 6px rgba(0, 0, 0, .4); */
                 line-height: 6vw;
@@ -123,6 +133,16 @@ export const Div = styled.section`
                 }
 
             }
+            @media screen and (min-width: 960px) and (max-width: 1600px){
+                &__title,
+                &__subtitle{
+                    font-size: 4.5vw;
+                }
+                &__category{
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+            }
         }
 
         .gallery-item-wrapper{
@@ -138,6 +158,9 @@ export const Div = styled.section`
                     filter: none;
                 }
             }
+            @media screen and (min-width: 960px) and (max-width: 1600px){
+                grid-template-columns: 24vw 1fr 200px;
+            }
         }
 
         .gallery-item-image{
@@ -152,6 +175,11 @@ export const Div = styled.section`
             transform: scale(0.7);
             transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
             filter: grayscale(100%) sepia(20%) brightness(80%);
+            @media screen and (min-width: 960px) and (max-width: 1600px){
+                top: 12%;
+                width: 430px;
+                right: -24%;
+            }
         }
     
 `;

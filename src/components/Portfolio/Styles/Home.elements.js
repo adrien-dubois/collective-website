@@ -17,4 +17,8 @@ export const SectionProject = styled.div`
     &:nth-child(2n+0){
         background-color: var(--black-chocolate);
     }
+
+    @media screen and (min-width: 1080px) and (max-width: 1600px){
+        padding: 4.5rem 0 max(5vh,2rem);
+    }
 `;

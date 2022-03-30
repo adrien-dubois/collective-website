@@ -20,6 +20,9 @@ const Home = () => {
     /*----  REGISTER PLUGIN ----*/
     gsap.registerPlugin(ScrollTrigger);
 
+    /*----- MEDIA QUERIES -----*/
+    const mediaQuery = window.matchMedia("(max-width: 960px)");
+
     const contains = gsap.utils.toArray('.section');
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -28,44 +31,96 @@ const Home = () => {
       // If prefers reduced motions, do nothing
       if (prefersReducedMotion.matches) return;
 
-      contains.forEach((section) => {
-        const heading = section.querySelector('.section__heading')
-        const image = section.querySelector('.section__image')
+      ScrollTrigger.matchMedia({
 
-        // set animation start state
-        gsap.set(heading, {
-          opacity: 0,
-          y: 50
-        })
-        gsap.set(image, {
-          opacity: 0,
-          rotateY: 15
-        })
+        "(min-width: 960px)": function(){
 
-        // Timeline section
-        let sectionTl = gsap.timeline({
-          scrollTrigger: {
-            trigger: section,
-            start: () => 'top center',
-            end: () => `+=${window.innerHeight}`,
-            snap: 1 / (contains.length - 1),
-            toggleActions: 'play reverse play reverse'
-          }
-        })
+          contains.forEach((section) => {
+            const heading = section.querySelector('.section__heading')
+            const image = section.querySelector('.section__image')
+    
+            // set animation start state
+            gsap.set(heading, {
+              opacity: 0,
+              y: 50
+            })
+            gsap.set(image, {
+              opacity: 0,
+              rotateY: 15
+            })
+    
+            // Timeline section
+            let sectionTl = gsap.timeline({
+              scrollTrigger: {
+                trigger: section,
+                start: () => 'top center',
+                end: () => `+=${window.innerHeight}`,
+                snap: 1 / (contains.length - 1),
+                toggleActions: 'play reverse play reverse'
+              }
+            })
+    
+            
+              // Add tween to TimeLine
+              sectionTl.to(image, {
+                opacity: 1,
+                rotateY: -5,
+                duration: 6,
+                ease: 'elastic'
+              })
+              .to(heading, {
+                opacity: 1,
+                y: 0,
+                duration: 2
+              }, 0.5)
+            
+          })
+        },
 
-        // Add tween to TimeLine
-        sectionTl.to(image, {
-          opacity: 1,
-          rotateY: -5,
-          duration: 6,
-          ease: 'elastic'
-        })
-        .to(heading, {
-          opacity: 1,
-          y: 0,
-          duration: 2
-        }, 0.5)
+        "(max-width: 979px)": function(){
+          contains.forEach((section) => {
+            const heading = section.querySelector('.section__heading')
+            const image = section.querySelector('.section__image')
+    
+            // set animation start state
+            gsap.set(heading, {
+              opacity: 0,
+              y: 50
+            })
+            gsap.set(image, {
+              opacity: 0,
+              rotateY: 15
+            })
+    
+            // Timeline section
+            let sectionTl = gsap.timeline({
+              scrollTrigger: {
+                trigger: section,
+                start: 'top center',
+                end: () => `+=${window.innerHeight}`,
+                scrub: 1,
+              }
+            })
+    
+              // Add tween to TimeLine
+              sectionTl.to(image, {
+                opacity: 1,
+                rotateY: -5,
+                duration: 6,
+                ease: 'elastic'
+              })
+              .to(heading, {
+                opacity: 1,
+                y: 0,
+                duration: 2
+              }, 0.5)
+            
+          })
+        }
+
       })
+
+     
     }
 
     initSectionAnimation();
