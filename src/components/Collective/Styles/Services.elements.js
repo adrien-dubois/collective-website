@@ -15,10 +15,6 @@ export const Section = styled.section`
             padding: 2rem;
             height: 780px;
             position: relative;
-            /* border: 2px solid #D0AF8F; */
-            /* background-color: var(--opaque-bg); */
-
-            border-radius: 4px;
             &:nth-of-type(3){
                 background-color: #D0AF8F;
                 border-radius: 4px;

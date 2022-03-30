@@ -20,6 +20,7 @@ export const servicesData = [
       </p>,
       image: service1,
     },
+
     {
       type: "Design",
       text: <p>
@@ -28,6 +29,7 @@ export const servicesData = [
       </p>,
       image: service2,
     },
+    
 
     {
       type: "Agile",

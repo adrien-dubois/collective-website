@@ -7,18 +7,14 @@ import React from 'react'
 
 
 
-const Portfolio = () => {
-
-    
+export default function Portfolio() {
   return (
-    <>
+    <div>
       <ScrollToTop/>
       <Title/>
       <Gallery/>
       <Home />
       <Footer/>
-  </>
+  </div>
   );
 }
-
-export default Portfolio

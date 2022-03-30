@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "./Styles/banner.scss"
-import { FaChevronDown } from "react-icons/fa"
 import { BsMouse, BsArrowDownShort } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
 
@@ -85,7 +84,7 @@ const BannerRowTop = ({ title }) => {
 const BannerRowBottom = ({ title }) => {
   return (
     <IconContext.Provider value={{ size: '1.8rem' }}>
-      <div className={"banner-row center"}>
+      <div className={"banner-row center bottom"}>
         <motion.div 
           className="scroll"
           initial={{scale: 0}}

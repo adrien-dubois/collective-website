@@ -22,6 +22,7 @@ export const Section = styled.section`
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin: 0 auto;
                 img{
                     overflow: hidden;
                     object-fit: cover;
@@ -77,21 +78,6 @@ export const Section = styled.section`
                         line-height: 22px;
                     }
                 }
-            }
-            .more{
-                margin-top: 1rem;
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                cursor: pointer;
-                transition: all .4s ease-in;
-                span{
-                    letter-spacing: 0.1rem;
-                    text-transform: uppercase;
-                }
-                &:hover{
-                        filter: brightness(5);
-                     }
             }
         }
     }

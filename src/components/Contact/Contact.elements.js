@@ -16,6 +16,10 @@ export const Div = styled.div`
           color: var(--almond-dark);
       }
 
+      @media screen and (max-width: 540px){
+        display: none;
+      }
+
       @media screen and (max-width: 740px){
         width: 50%;
         grid-area: d;

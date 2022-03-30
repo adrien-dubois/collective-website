@@ -2,21 +2,13 @@ import React from 'react';
 
 export const blogsData = [
     {
-      titre:"Le saviez-vous ?",
-      type:"Tech",
-      image: "first.jpg",
+      titre:"Le Responsive Web Design",
+      type:"UI / UX / SEO",
+      image: "responsive.png",
       description: <p>
-        Le premier site internet a été inventé dans les années 90 par Tim Berners-Lee. Baptisé World Wide Web, l’archive de la page est en ligne à l’adresse suivante : <br/>
-        <a 
-          href='http://info.cern.ch/hypertext/WWW/TheProject.html' 
-          target="_blank" 
-          rel='noopener noreferer' 
-        >
-          The Project
-        </a>
+        Nos sites sont conçus en Responsive Web Design (RWD), c’est-à-dire offrant une expérience de navigation optimisée en fonction de l’écran utilisé par l’utilisateur : <b>ordinateur, mobile ou tablette.</b>
         <br/>
-
-        Quelques années plus tard, l’ingénieur britannique du CERN fondera le W3C, un organisme international ayant pour vocation de définir les standards du web, et qui reste aujourd’hui une référence pour les développeurs en matière d’accessibilité universelle du web
+        Nous adoptons une approche <b>Mobile First</b>, une stratégie qui consiste à commencer la création d’un site par sa version mobile. Cette approche permet non seulement de se centrer sur les fonctionnalités essentielles à développer, mais elle est la première démarche de référencement naturel : les moteurs de recherche procèdent à une <b>indexation prioritaire</b> des sites orientés mobile.
       </p>
     },
     {

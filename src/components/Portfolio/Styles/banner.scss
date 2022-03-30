@@ -18,21 +18,27 @@ $move-final: calc(-50%);
 .banner {
     position: relative;
     top: 25%;
+    height: 100%;
     .banner-row {
       overflow: hidden;
       display: flex;
       align-items: center;
-      @media (max-width: $layout-breakpoint-medium) {
-        &:first-child {
-          margin-top: 48px;
+
+      &.bottom{
+        .row-title{
+          @media screen and (min-width: 1080px) and (max-width: 1600px){
+            margin-left: 12rem;
+          }
         }
       }
+
       &.center {
         justify-content: center;
         text-align: center;
         .row-letter {
           left: 0;
         }
+       
       }
       &.right {
         justify-content: flex-end;
@@ -46,7 +52,11 @@ $move-final: calc(-50%);
         letter-spacing: -0.2rem;
         display: inline-block;
         white-space: nowrap;
+
         @media (max-width: $layout-breakpoint-xsmall) {
+          font-size: 6rem;
+        }
+        @media screen and (min-width: 1080px) and (max-width: 1600px){
           font-size: 6rem;
         }
       }
@@ -72,6 +82,9 @@ $move-final: calc(-50%);
           font-size: 1rem;
           line-height: 2.6rem;
           width: 420px;
+          @media screen and (min-width: 1080px) and (max-width: 1600px){
+            font-size: .9rem;
+          }
         } 
       }
       .scroll {
