@@ -56,6 +56,10 @@ export const tools = [
         src: 'vscode.png',
         alt: 'VsCode',
     },
+    {
+        src: 'insomnia.png',
+        alt: 'Insomnia'
+    }
 ]
 
 export const design = [

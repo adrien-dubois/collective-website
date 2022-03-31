@@ -21,7 +21,7 @@ const Home = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     /*----- MEDIA QUERIES -----*/
-    const mediaQuery = window.matchMedia("(max-width: 960px)");
+    const mediaQuery = window.matchMedia("(max-width: 979px)");
 
     const contains = gsap.utils.toArray('.section');
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -29,7 +29,7 @@ const Home = () => {
     const initSectionAnimation = () => {
       
       // If prefers reduced motions, do nothing
-      if (prefersReducedMotion.matches) return;
+      if (prefersReducedMotion.matches || mediaQuery.matches ) return;
 
       ScrollTrigger.matchMedia({
 
@@ -77,46 +77,45 @@ const Home = () => {
           })
         },
 
-        "(max-width: 979px)": function(){
-          contains.forEach((section) => {
-            const heading = section.querySelector('.section__heading')
-            const image = section.querySelector('.section__image')
+        // "(max-width: 979px)": function(){
+        //   contains.forEach((section) => {
+        //     const heading = section.querySelector('.section__heading')
+        //     const image = section.querySelector('.section__image')
     
-            // set animation start state
-            gsap.set(heading, {
-              opacity: 0,
-              y: 50
-            })
-            gsap.set(image, {
-              opacity: 0,
-              rotateY: 15
-            })
+        //     // set animation start state
+        //     gsap.set(heading, {
+        //       opacity: 1,
+        //       y: 0
+        //     })
+        //     gsap.set(image, {
+        //       opacity: 1,
+        //     })
     
-            // Timeline section
-            let sectionTl = gsap.timeline({
-              scrollTrigger: {
-                trigger: section,
-                start: 'top center',
-                end: () => `+=${window.innerHeight}`,
-                scrub: 1,
-              }
-            })
+        //     // Timeline section
+        //     let sectionTl = gsap.timeline({
+        //       scrollTrigger: {
+        //         trigger: section,
+        //         start: 'top center',
+        //         end: () => `+=${window.innerHeight}`,
+        //         scrub: 1,
+        //       }
+        //     })
     
-              // Add tween to TimeLine
-              sectionTl.to(image, {
-                opacity: 1,
-                rotateY: -5,
-                duration: 6,
-                ease: 'elastic'
-              })
-              .to(heading, {
-                opacity: 1,
-                y: 0,
-                duration: 2
-              }, 0.5)
+        //       // Add tween to TimeLine
+        //       sectionTl.to(image, {
+        //         opacity: 1,
+        //         rotateY: -5,
+        //         duration: 6,
+        //         ease: 'elastic'
+        //       })
+        //       .to(heading, {
+        //         opacity: 1,
+        //         y: 0,
+        //         duration: 2
+        //       }, 0.5)
             
-          })
-        }
+        //   })
+        // }
 
       })
 

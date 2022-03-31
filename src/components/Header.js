@@ -5,23 +5,25 @@ import Menu from "./Menu";
 import styled from 'styled-components'
 import { keyframes } from "styled-components";
 
-
 const Header = () => {
 
   const [click, setClick] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
+  const currentRoute = window.location.pathname;
+
   const handleClick = () => setClick(!click);
 
-  const changeBackground = () => {
-    if(window.scrollY >= 80) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
+  if(currentRoute !== "/portfolio"){
+    const changeBackground = () => {
+      if(window.scrollY >= 80) {
+        setNavbar(true)
+      } else {
+        setNavbar(false)
+      }
     }
+    window.addEventListener('scroll', changeBackground)
   }
-
-  window.addEventListener('scroll', changeBackground)
 
   return (
     <>

@@ -106,6 +106,7 @@ export const Section = styled.section`
                     display: flex;
                     flex-direction: column;
                     gap: 0.6rem;
+                    
                     .line {
                         display: none;
                     }

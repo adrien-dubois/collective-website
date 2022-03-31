@@ -20,6 +20,7 @@ import Contact from 'pages/Contact';
 
 /*---- STYLE ----*/
 import "./App.scss";
+import MainLayout from 'components/MainLayout';
 
 function App() {
 
@@ -28,11 +29,13 @@ function App() {
     height: 600,
   };
 
+
   return (
       <Router>
+        <MainLayout>
         <GlobalStyle/>
         <GoToTop/>
-        <Header/>
+        
         {window.innerWidth > 1100 ? 
         (<Route
           render={({ location }) => (
@@ -89,7 +92,8 @@ function App() {
           path='/contact'
           component={Contact}
         />
-        
+
+      </MainLayout>
       </Router>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components';
-import { projectsDatas } from './projectsDatas'
+import { projectsDatas } from '../../datas/projectsDatas'
 import { 
     darkTheme,   
     lightTheme,  
