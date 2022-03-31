@@ -26,6 +26,10 @@ $move-final: calc(-50%);
 
       &.bottom{
         margin-top: 2rem;
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          margin-top: 0;
+        }
         .row-title{
           @media screen and (min-width: 1080px) and (max-width: 1600px){
             margin-left: 12rem;
@@ -50,12 +54,12 @@ $move-final: calc(-50%);
         font-family: var(--maragsa-font);
         font-weight: 500;
         position: relative;
-        letter-spacing: -0.2rem;
+        letter-spacing: -0.1rem;
         display: inline-block;
         white-space: nowrap;
 
         @media (max-width: $layout-breakpoint-xsmall) {
-          font-size: 6rem;
+          font-size: 4rem;
         }
         @media screen and (min-width: 1080px) and (max-width: 1600px){
           font-size: 6rem;
@@ -100,10 +104,14 @@ $move-final: calc(-50%);
         flex-direction: column;
         left: 160px;
         @media (max-width: $layout-breakpoint-medium) {
-          left: 60px;
+          left: 60%;
+          bottom: 43%;
         }
-        @media (max-width: 1240px) {
-          display: none;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          left: 37%;
+          bottom: 30%;
+          height: 80px;
+          width: 80px;
         }
         span {
           display: flex;
@@ -112,6 +120,7 @@ $move-final: calc(-50%);
           font-weight: 600;
           margin: 2px 0;
           animation: jump 2.5s ease infinite;
+
           @media (max-width: $layout-breakpoint-xsmall) {
             font-size: 10px;
             margin: 2px 0;

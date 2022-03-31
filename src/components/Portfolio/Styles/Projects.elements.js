@@ -143,8 +143,8 @@ export const Section = styled.section`
                 width: 370px;
             }
             @media screen and (max-width: 400px){
-                height: 150px;
-                width: 280px
+                height: 200px;
+                width: 350px
             }
 
             span{
