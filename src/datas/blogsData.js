@@ -16,9 +16,20 @@ export const blogsData = [
       type:"Étude de cas",
       image: "80flix.png",
       description: <p>
-        Duis in ex eu officia veniam do irure qui irure voluptate mollit et. Veniam cillum aliquip reprehenderit eiusmod Lorem. Ut laboris est cillum aliquip ipsum minim quis non esse sunt est. Anim reprehenderit et deserunt qui adipisicing proident ut aute eu labore in amet quis.
+        <strong>Infos générales</strong>
         <br/>
-        Officia velit aliquip sunt ad velit fugiat labore est incididunt reprehenderit deserunt veniam veniam mollit. Incididunt in sint id excepteur. Aute nostrud sint pariatur aliquip sunt dolor culpa officia labore velit Lorem in ipsum consectetur. Consequat nisi id ut sit aute voluptate ad minim velit aute reprehenderit.
+        <ul>
+          <li><span className="websiteTitle">80's Flix</span><i> (titre du site)</i></li>
+          <li>Réalisé par Gaëlle, pour The Square.</li>
+          <li>Ce site web a été réalisé en side project pour notre collectif, afin de servir d'exemple sur le FrameWork Symfony, pour lequel nous avons une affection particulière.</li>
+        </ul>
+        <strong>Contexte du projet</strong>
+        <br/>
+        <ul>
+          <li>L'idée est partie d'un projet réalisé durant la formation, qui était le mix entre une base de donnée filmographique comme IMDDB et un service de streaming comme Netflix.</li>
+          <li>Le but a été de se servir de cette base pour ensuite y apporter une atmosphère personnelle, tant sur la partie principale que sur l'interface d'administration.</li>
+          <li>Le gros du travail a été effectué surtout sur la partie CSS et sur le backoffice.</li>
+        </ul>
       </p>
     },
     {

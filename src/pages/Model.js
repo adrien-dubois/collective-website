@@ -134,7 +134,7 @@ const Model = ({imageDetails}) => {
                             className='thumbnail-single'>
                             <div className='frame-single'>
                                 <motion.img
-                                    src={require("../assets/img/home.jpg")} 
+                                    src={require("../assets/img/home.png")} 
                                     alt='The Square'
                                     style={{ 
                                         scale: scale,
@@ -143,7 +143,8 @@ const Model = ({imageDetails}) => {
                                     initial={{ scale: 1.1 }}
                                     animate={{
                                         transition: {delay: 0.2, ...transition},
-                                        y: window.innerWidth > 1440 ? -600 : -300,
+                                        y: -280,
+                                        // y: window.innerWidth > 1440 ? -600 : -300,
                                     }} 
                                 />
                             </div>

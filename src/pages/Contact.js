@@ -16,8 +16,8 @@ const Contact = () => {
                 <div className="adress">
                     <div className="content">
                         <h4>adresse</h4>
-                        <p>42, rue du code</p>
-                        <p>42000 CodeCity</p>
+                        <p>164, avenue des graviers</p>
+                        <p>03200 Abrest</p>
                     </div>
                 </div>
 

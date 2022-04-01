@@ -64,13 +64,16 @@ function Home() {
           </div>  
 
           <div className="col">
-            <strong>Adresse</strong>
-            <p>Quelque part en France</p>
+            <strong>Localisation</strong>
+            <p>Un carré dans l'Hexagone entre</p>
+            <p>le Nord, le Jura, l'Auvergne</p>
+            <p>& le Bassin Parisien</p>
           </div>
 
           <div className="col">
             <strong>Services</strong>
             <p>Sites vitrine</p>
+            <p>E-Commerce</p>
             <p>Sites web sur mesure</p>
           </div>
 

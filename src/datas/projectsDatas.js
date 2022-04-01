@@ -47,7 +47,7 @@ export const projectsDatas = [
         date: "janvier 22",
         languages: ["HTML", "Bootstrap", "PHP", "Symfony"],
         infos: "Base de donnée de séries TV à mi-chemin entre IMDDB & Netflix, répertoriant les séries TV, réalisé avec Symfony & Bootstrap. Affichage des dernières séries ajoutées sur la page d'accueil, option de likes, liste de favoris, compte utilisateur, interface d'administration permettant de gérer les séries, ajouter des personnages, des images, des saisons, des catégories, ainsi que la gestion des utilisateurs du site web.",
-        img: "./assets/img/projet-5.jpg",
+        img: "./assets/img/80flix.png",
         link: "https://the-square.net",
     }
 ]

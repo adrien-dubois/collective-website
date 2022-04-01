@@ -40,7 +40,7 @@ export const images = [
         title: "Imddb Like",
         subtitle: "80's Flix",
         url: "http://oflix.white-umbrella.fr/",
-        src: "full-flix2.png",
+        src: "80flix.png",
         full: "full-flix.png",
         category: 'Symfony'
     }

@@ -77,6 +77,15 @@ export const Section = styled.section`
                         margin-top: 10px;
                         line-height: 22px;
                     }
+                    ul>li{
+                        margin-left: .8rem;
+                        list-style: disc;
+                        margin-bottom: .3rem;
+                    }
+                    .websiteTitle{
+                        font-style: italic;
+                        font-weight: bolder;
+                    }
                 }
             }
         }

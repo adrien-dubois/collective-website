@@ -61,11 +61,11 @@ export const Section = styled.section`
     right: 0;
     background-color: #D0AF8F;
     border-radius: 15px 0 0 15px;
-    padding: 2.5rem;
+    padding: 2rem;
     .grid{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 4rem;
+      gap: 3.2rem;
     }
   }
 

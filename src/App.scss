@@ -199,19 +199,23 @@ main {
         bottom: 200px;
         left: 200px;
         z-index: 20;
+        
         .icon {
-          margin-left: 2.2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           svg {
             height: auto;
             width: 28px;
           }
-        }
-        .text {
-          margin-top: 8px;
-          color: var(--white-antique);
-          text-transform: uppercase;
-          text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.699);
-          text-align: center;
+          .text {
+            margin-top: 8px;
+            color: var(--black-chocolate);
+            font-weight: bolder;
+            text-transform: uppercase;
+            text-align: center;
+          }
         }
 
         @media screen and (max-width: 1215px){

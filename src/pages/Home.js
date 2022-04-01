@@ -23,7 +23,7 @@ const Home = ({ imageDetails, image }) => {
                 <div className='frame'>
                   <Link to={`/model/the-square`}>
                      <ProgressiveImage
-                      src={require("../assets/img/home.jpg")}>
+                      src={require("../assets/img/home.png")}>
                       {(src) => <motion.img 
                       whileHover={{ scale: 1.1 }}
                       transition={transition}
