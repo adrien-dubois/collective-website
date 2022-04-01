@@ -17,12 +17,12 @@ export const Background = styled.div`
 
 export const ModalWrapper = styled.div`
     width: 800px;
-    height: 500px;
+    height: 750px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, .2);
     background: var(--almond-bg);
     color: var(--black-chocolate);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     position: relative;
     z-index: 10;
     border-radius: 10px;
@@ -64,6 +64,35 @@ export const ModalContent = styled.div`
 
     ul{
         margin-bottom: .8rem;
+        text-align: center;
+        counter-reset: index;
+        padding: 0;
+
+        li {
+            counter-increment: index;
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            box-sizing: border-box;
+
+            &::before{
+                content: counters(index, ".", decimal-leading-zero);
+                font-size: 1.5rem;
+                text-align: right;
+                font-weight: bold;
+                min-width: 50px;
+                padding-right: 12px;
+                font-variant-numeric: tabular-nums;
+                align-self: flex-start;
+                background-image: linear-gradient(to bottom, aquamarine, orangered);
+                background-attachment: fixed;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        li + li{
+            border-top: 1px solid rgba(0, 0, 0, .2);
+        }
     }
 
     button{

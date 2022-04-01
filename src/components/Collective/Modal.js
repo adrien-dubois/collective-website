@@ -52,17 +52,46 @@ export const Modal = ({showModal, setShowModal}) => {
                 <Background ref={modalRef} onClick={closeModal} >
                     <animated.div style={animation}>
                         <ModalWrapper showModal={showModal}>
-                            <ModalImage src={require('../../assets/img/modal.png')} alt="Astro Modal"/>
+                            {/* <ModalImage src={require('../../assets/img/modal.png')} alt="Astro Modal"/> */}
                             <ModalContent>
                                 <h2>Services fournis</h2>
                                 <p>Toutes nos prestations auront cette liste de services fournies dès le départ</p>
                                 <ul>
-                                    <li>feature fournie</li>
-                                    <li>feature fournie</li>
-                                    <li>feature fournie</li>
-                                    <li>feature fournie</li>
-                                    <li>feature fournie</li>
-                                    <li>feature fournie</li>
+                                    <li>Nom de domaine & hébergement</li>
+
+                                    <li>
+                                       Identité visuelle: 
+                                       Logo (3 propositions) + Charte graphique
+
+                                    </li>
+
+                                    <li>
+                                        Responsive design (Mobile & tablette)
+                                    </li>
+
+                                    <li>
+                                        Rédaction de contenu
+
+                                    </li>
+
+                                    <li>
+                                        Formulaire de contact & E-Mail au nom de votre entreprise
+                                    </li>
+
+                                    <li>
+                                        Liaison du site avec vos réseaux sociaux
+                                    </li>
+
+                                    <li>
+                                        Formation ½ journée à distance ou dans vos locaux
+
+                                    </li>
+
+                                    <li>
+                                        Maintenance : mises à jour, sauvegardes
+
+                                    </li>
+
                                 </ul>
                                 {/* <button>retour</button> */}
                             </ModalContent>

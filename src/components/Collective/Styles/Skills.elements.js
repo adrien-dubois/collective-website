@@ -38,7 +38,7 @@ export const Section = styled.section`
     }
     .skills{
         display: flex;
-        padding: 0 20rem;
+        padding: 0 14rem;
         gap: 10rem;
         &__bars{
             transform: rotate(-90deg);
@@ -90,6 +90,12 @@ export const Section = styled.section`
             .title{
                 font-weight: bolder;
                 letter-spacing: 0.1rem;
+            }
+            .title2{
+                font-weight: bolder;
+                letter-spacing: 0.1rem;
+                text-transform: uppercase;
+                font-style: italic;
             }
         }
     }

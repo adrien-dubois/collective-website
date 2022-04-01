@@ -6,34 +6,13 @@ import Title from './Title'
 import { useScroll } from './useScroll'
 import { motion } from 'framer-motion'
 import { skillsBarAnimations } from 'Animation'
-
+import { skillsData } from '../../datas/skillsData'
 
 function Skills() {
 
   const [element, controls] = useScroll();
 
-  const skillsData = [
-    {
-      name: "From Scratch",
-      amount: "95"
-    },
-    {
-      name: "Symfony & PHP",
-      amount: "80"
-    },
-    {
-      name: "React & JS",
-      amount: "70"
-    },
-    {
-      name: "Webdesign",
-      amount: "70"
-    },
-    {
-      name: "Sécurité",
-      amount: "95"
-    },
-  ]
+  
   return (
     <Section id="skills" ref={element}>
       <Title value="skills"/>
@@ -75,10 +54,19 @@ function Skills() {
           </div>
           <div className="skills__content">
             <p className="title">
-               Nos sites sont conçus en Responsive Web Design (RWD), c’est-à-dire offrant une expérience de navigation optimisée en fonction de l’écran utilisé par l’utilisateur : ordinateur, mobile ou tablette.
+               Parce que le domaine est en constante évolution, nous sommes en veille permanente sur les évolutions de notre métier : nouvelles technologies, outils, frameworks, librairies, méthodes de travail… il y a toujours quelque chose à apprendre et c’est l’une des raisons pour lesquelles nous sommes passionnés par notre métier !
             </p>
             <div className="description">
-              Nous adoptons une approche Mobile First, une stratégie qui consiste à commencer la création d’un site par sa version mobile. Cette approche permet non seulement de se centrer sur les fonctionnalités essentielles à développer, mais elle est la première démarche de référencement naturel : les moteurs de recherche procèdent à une indexation prioritaire des sites orientés mobile. 
+               Spécialisés PHP et Javascript, notamment sur les frameworks Symfony et React, nous n’en délaissons pas pour autant les autres langages de programmation et CMS, afin d’être en mesure de vous proposer des solutions modernes qui répondront tant à vos besoins qu’à ceux de vos internautes.
+            </div>
+            <p className="title2">
+              L’API REST, ou comment universaliser l’accès aux données.
+            </p>
+            <div className="description">
+            Base de toute interaction entre différentes applications, une API est une sorte de vitrine sur les données stockées sur un serveur. L’internaute va pouvoir accéder à ce que vous lui proposez de voir ou de savoir, à condition qu’il soit autorisé à le faire.  
+            <br/>
+            Sécurisées et codées selon les standards REST, l’API offre une grande flexibilité en termes d’utilisation et d’évolutivité. 
+
             </div>
           </div>
         </div>
