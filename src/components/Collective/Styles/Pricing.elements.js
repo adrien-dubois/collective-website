@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     min-height: 100vh;
-    padding: 5rem 0;
-    position: relative;
+    padding-bottom: 5rem;
+    /* position: relative; */
     overflow: hidden;
     background: var(--white-antique);
     .background{
@@ -21,8 +21,8 @@ export const Section = styled.section`
     }
     .pricing__title{
         position: relative;
-        z-index: 10;
-        margin: 6rem 10rem;
+        z-index: 1;
+        margin: 2rem 10rem -6rem 10rem;
         p{
             color: var(--black-chocolate);
             text-transform: uppercase;
@@ -31,10 +31,45 @@ export const Section = styled.section`
         h2{
             font-size: 1.8rem;
         }
+        .bubble{
+            position: relative;
+            bottom: 5rem;
+            left: 83rem;
+            width: 17rem;
+            height: 17rem;
+            border-radius: 50%;
+            background: var(--opaque-bg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .bubbleTitle{
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+                font-style: italic;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            h3{
+                margin-top: 1rem;
+                margin-bottom: 1.3rem;
+                font-weight: 500;
+                font-size: 1rem;
+                font-family: var(--ubuntu-font);
+                text-align: center;
+                width: 80%;
+                i{
+                    font-weight: lighter;
+                }
+    
+            }
+        }
     }
     .pricing{
         position: relative;
-        z-index: 10;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0 10rem;
@@ -109,6 +144,10 @@ export const Section = styled.section`
                     
                     .line {
                         display: none;
+                    }
+                    svg{
+                        width: 20px;
+                        height: 20px;
                     }
                     margin-bottom: 2rem;
                 }

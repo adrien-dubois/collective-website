@@ -47,7 +47,7 @@ const Team = () => {
         <Carousel>
           <Slider {...settings}>
 
-              {teamDatas.map(({name, subtitle, text, image, website, lastone}) =>{
+              {teamDatas.map(({name, subtitle, text, image, website, lastone}, index) =>{
                 return(
                  <Cards
                     text={text}
@@ -56,6 +56,7 @@ const Team = () => {
                     image={image}
                     website={website}
                     lastone={lastone}
+                    key={index}
                 /> 
                 );
               })}

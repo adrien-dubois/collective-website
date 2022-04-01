@@ -1,3 +1,7 @@
+import React from 'react';
+import { BiLock } from 'react-icons/bi'
+
+
 export const datas = [
     {value: "Design & Intégration", type: "Site vitrine"},
     {value: "Responsive design (Mobile & tablette)", type: "Site vitrine"},
@@ -5,7 +9,7 @@ export const datas = [
     {value: "Formulaire de contact", type: "Site vitrine"},
     {value: "Conformité RGPD", type: "Site vitrine"},
     {value: "Mise en ligne, nom de domaine & hébergement (12mois)", type: "Site vitrine"},
-    {value: "Certificat SSL (https://)", type: "Site vitrine"},
+    {value: <p>Certificat SSL <BiLock/> <i>(https://)</i></p>  , type: "Site vitrine"},
     {value: "Support de votre site web", type: "Site vitrine"},
 
     {value: "Base de donnée de produits", type: "E-Commerce"},
@@ -14,7 +18,7 @@ export const datas = [
 
     {value: "Accompagnement personnalisé", type: "Sur-Mesure"},
     {value: "Méthode Agile (SCRUM)", type: "Sur-Mesure"},
-    {value: "Stack Symfony & React", type: "Sur-Mesure"},
+    {value: "Stack Symfony / React & API dédiée", type: "Sur-Mesure"},
   ];
 
   export const plans = [

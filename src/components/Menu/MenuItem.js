@@ -123,9 +123,10 @@ const MenuItem = ({ link, marquee }) => {
             {[...marquee, ...marquee].map((item, index) => {
               return (
                 <>
-                  <span>{item.name}</span>
+                  <span key={index}>{item.name}</span>
                   <S.MarqueeImg
                     src={ require(`../../assets/img/${item.url}`) }
+                    
                   />
                 </>
               );

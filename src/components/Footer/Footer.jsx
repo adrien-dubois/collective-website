@@ -34,7 +34,7 @@ const Footer = () => {
       </CenterText>
       <RightText>
         <p>Dites nous tout</p>
-        <a href='# '>Contact</a>
+        <a href='/contact'>Contact</a>
       </RightText>
     </FooterContainer>
   );
