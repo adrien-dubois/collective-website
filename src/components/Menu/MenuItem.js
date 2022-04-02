@@ -90,8 +90,8 @@ S.MarqueeImg = styled.img`
   height: 70%;
   margin: 0 2vw;
   border-radius: 5vw;
-  background-size: cover;
-  background-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
 `;
 
 const MenuItem = ({ link, marquee }) => {
