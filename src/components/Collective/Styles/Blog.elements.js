@@ -94,6 +94,7 @@ export const Section = styled.section`
     @media screen and (min-width: 1080px) and (max-width: 1600px) {
         .blogs{
             margin: 5rem 10rem;
+            grid-template-columns: repeat(2, 1fr);
             .blog{
                 .title{
                    h3{

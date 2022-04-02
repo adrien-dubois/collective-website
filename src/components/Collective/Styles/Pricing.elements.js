@@ -66,6 +66,10 @@ export const Section = styled.section`
                 }
     
             }
+            
+            @media screen and (min-width: 1080px) and (max-width: 1600px){
+                left: 55rem;
+            }
         }
     }
     .pricing{

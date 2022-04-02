@@ -75,7 +75,19 @@ export const Section = styled.section`
             }
         }
     }
+    @media screen and (min-width: 1080px) and (max-width: 1600px) {
+        .services{
+            gap: 0rem;
 
+            &__service{
+                padding: 1rem;
+
+                .play{
+                    display: none;
+                }
+            }
+        }
+    }
 
     @media screen and (min-width: 280px) and (max-width: 1080px) {
         .services{

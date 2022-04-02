@@ -78,7 +78,7 @@ export const Section = styled.section`
     }
     .info {
         position: absolute;
-        bottom: -12rem;
+        bottom: -6rem;
         right: 7.5rem;
         padding: 1.5rem;
         border-radius: 15px;

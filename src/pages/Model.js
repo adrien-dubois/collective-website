@@ -170,7 +170,7 @@ const Model = ({imageDetails}) => {
                         <br/>
                         Nous étudions avec vous les fonctionnalités à développer selon votre activité, vos objectifs et votre cible, et vous proposons un accompagnement tout au long du projet, en veillant à utiliser une communication efficace et accessible. 
                         <br/>
-                        <a href='# '>En savoir plus…</a>
+                        <a href='/collectif'>En savoir plus…</a>
                         </p>
                     </div>
                 </div>

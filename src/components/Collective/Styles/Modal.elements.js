@@ -22,10 +22,14 @@ export const ModalWrapper = styled.div`
     background: var(--almond-bg);
     color: var(--black-chocolate);
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     position: relative;
     z-index: 10;
     border-radius: 10px;
+
+    @media screen and (min-width: 1080px) and (max-width: 1600px) {
+        width: 650px;
+        height: 550px;
+    }
 `;
 
 export const ModalImage = styled.img`
@@ -101,6 +105,24 @@ export const ModalContent = styled.div`
         color: var(--white-antique);
         border: none;
         text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 1080px) and (max-width: 1600px){
+        
+        h2{
+            font-size: 1.5rem;
+        }
+        
+        ul{
+            columns: 2;
+
+            li{
+                font-size: .8rem;
+                &::before{
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 `;
 
