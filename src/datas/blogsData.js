@@ -12,24 +12,17 @@ export const blogsData = [
       </p>
     },
     {
-      titre:"Nouvelle réalisation",
-      type:"Étude de cas",
-      image: "80flix.png",
+      titre:"API Restfull",
+      type:"Échange de données sécurisées",
+      image: "api.jpg",
       description: <p>
-        <strong>Infos générales</strong>
+        <strong>L’API REST, ou comment universaliser l’accès aux données.</strong>
         <br/>
-        <ul>
-          <li><span className="websiteTitle">80's Flix</span><i> (titre du site)</i></li>
-          <li>Réalisé par Gaëlle, pour The Square.</li>
-          <li>Ce site web a été réalisé en side project pour notre collectif, afin de servir d'exemple sur le FrameWork Symfony, pour lequel nous avons une affection particulière.</li>
-        </ul>
-        <strong>Contexte du projet</strong>
+        Base de toute interaction entre différentes applications, une API est une sorte de vitrine sur les données stockées sur un serveur. L’internaute va pouvoir accéder à ce que vous lui proposez de voir ou de savoir, à condition qu’il soit autorisé à le faire.  
         <br/>
-        <ul>
-          <li>L'idée est partie d'un projet réalisé durant la formation, qui était le mix entre une base de donnée filmographique comme IMDDB et un service de streaming comme Netflix.</li>
-          <li>Le but a été de se servir de cette base pour ensuite y apporter une atmosphère personnelle, tant sur la partie principale que sur l'interface d'administration.</li>
-          <li>Le gros du travail a été effectué surtout sur la partie CSS et sur le backoffice.</li>
-        </ul>
+        Sécurisées et codées selon les standards REST, l’API offre une grande flexibilité en termes d’utilisation et d’évolutivité. 
+        <br/>
+        C'est pourquoi notre équipe est partisante de créer des API pour vos projets professionnels, afin de garantir cette sécurisation d'accès aux données.
       </p>
     },
     {

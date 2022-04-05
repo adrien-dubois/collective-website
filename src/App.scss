@@ -244,6 +244,7 @@ main {
         font-weight: 500;
         width: 590px;
         position: relative;
+        // font-family: var(--poppins-font);
 
           br{
             display: block;
@@ -271,17 +272,15 @@ main {
 
       .stack-title{
         p{
-            font-family: var(--poppins-font);
             text-transform: uppercase;
             letter-spacing: 1px;
             font-style: italic;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 3rem;
             &::before{
               position: absolute;
               content: 'collectif';
-              font-family: var(--font-2);
               font-size: 3rem;
               line-height: 28px;
               font-weight: 600;
@@ -294,9 +293,8 @@ main {
         h2{
           margin-bottom: 2rem;
           font-weight: 500;
-          font-family: var(--poppins-font);
           font-style: italic;
-          font-size: 1.5rem;
+          font-size: 1.1rem;
         }
       }
       

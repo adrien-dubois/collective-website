@@ -44,7 +44,7 @@ const Cards = ({
                     </a>
                 </Div>
             </Info>
-                <Image img={Avatar} />
+                <Image src={Avatar} alt={name}  />
         </CARD>
     </IconContext.Provider>
   );

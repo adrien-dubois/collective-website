@@ -59,15 +59,6 @@ function Skills() {
             <div className="description">
                Spécialisés PHP et Javascript, notamment sur les frameworks Symfony et React, nous n’en délaissons pas pour autant les autres langages de programmation et CMS, afin d’être en mesure de vous proposer des solutions modernes qui répondront tant à vos besoins qu’à ceux de vos internautes.
             </div>
-            <p className="title2">
-              L’API REST, ou comment universaliser l’accès aux données.
-            </p>
-            <div className="description">
-            Base de toute interaction entre différentes applications, une API est une sorte de vitrine sur les données stockées sur un serveur. L’internaute va pouvoir accéder à ce que vous lui proposez de voir ou de savoir, à condition qu’il soit autorisé à le faire.  
-            <br/>
-            Sécurisées et codées selon les standards REST, l’API offre une grande flexibilité en termes d’utilisation et d’évolutivité. 
-
-            </div>
           </div>
         </div>
     </Section>

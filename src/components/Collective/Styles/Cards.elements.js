@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
 
-export const Image = styled.div`
+export const Image = styled.img`
     width: 100%;
     height: 100%;
-    background: url(${(props) => props.img});
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    object-fit: cover;
     position: absolute;
     bottom: 0;
     border-radius: 8px;
     transition: 1s;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 `;
 
 export const CARD = styled.div`
@@ -22,11 +20,13 @@ export const CARD = styled.div`
     border-radius: 8px;
     box-shadow: 0 0 80px 1px rgba(0, 0, 0, 0.8);
     font-family: var(--poppins-font);
+    
     &:hover ${Image}{
-        transform: scale(0.5 , 0.35) translateY(-865px);
+        transform: scale(0.42 ,0.35) translateY(-865px);
         border-radius: 50%;
-        background-size: 100% 150%;
-        background-position: ${({lastone}) => (lastone ? '0 -230px' : '0 -25px')} ;
+        object-fit: cover;
+        height: 85%;
+        top: 8%;
     }
 
     @media screen and (min-width: 1080px) and (max-width: 1600px){

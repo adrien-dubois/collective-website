@@ -28,7 +28,8 @@ S.Link = styled(animated.a)`
   position: relative;
   cursor: pointer;
   text-decoration: none;
-
+  font-family: var(--maragsa-font);
+  letter-spacing: 5px;
   white-space: nowrap;
   font-size: 6vw;
   line-height: 1.2;
@@ -74,6 +75,8 @@ S.MarqueeInner = styled.div`
   animation: ${marqueeAn} 15s linear infinite;
 
   span {
+    font-family: var(--maragsa-font);
+  letter-spacing: 5px;
     color: var(--marquee-text);
     text-align: center;
     font-weight: 400;

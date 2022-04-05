@@ -6,6 +6,22 @@ export const Div = styled.div`
     width: 100vw;
     height: 95vh;
 
+    h1 {
+        position: relative;
+        top: 9%;
+        left: 24%;
+        text-transform: uppercase;
+
+        &::before{
+            content: 'Formulaire de contact';
+            position: absolute;
+            opacity: .1;
+            text-transform: uppercase;
+            top: 24%;
+            left: 1%;
+        }
+    }
+
     .social-network {
       position: relative;
       width: 80%;

@@ -62,7 +62,6 @@ export const Modal = ({showModal, setShowModal}) => {
                                     <li>
                                        Identité visuelle: 
                                        Logo (3 propositions) + Charte graphique
-
                                     </li>
 
                                     <li>

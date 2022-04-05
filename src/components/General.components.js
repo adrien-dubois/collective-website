@@ -68,6 +68,8 @@ export const Main = styled.main`
           justify-content: space-between;
           margin-top: 20px;
           font-family: var(--ubuntu-font);
+          font-weight: bolder;
+          font-size: 1.1rem;
           .location {
             span:nth-child(2) {
               margin-left: 8px;

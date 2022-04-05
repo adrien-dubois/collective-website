@@ -86,8 +86,8 @@ const Model = ({imageDetails}) => {
                     >
                         {/* COORDINATES */}
                         <div className='location'>
-                            <span>48.9184694</span>
-                            <span>2.23679406</span>
+                            <span>59.9</span>
+                            <span>17.633333</span>
                         </div>
                         {/* TT TAG */}
                         <div className='mua'>TT: @squarelikekorea</div>

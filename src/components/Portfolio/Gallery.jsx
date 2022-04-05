@@ -86,6 +86,12 @@ export default function Gallery({ src }) {
                x: (i, target) => ScrollTrigger.maxScroll(window) * target.dataset.speed ,
                ease: 'none'
            });
+
+           gsap.to('progress', {
+            value: 100,
+            ease: 'none',
+            scrollTrigger: { scrub: 0.3 }
+            });
         
         ScrollTrigger.refresh();
    
@@ -128,6 +134,8 @@ export default function Gallery({ src }) {
             />
           ))}
         </div>
+
+        <progress max="100" value="0"></progress>
       </Div>
     </>
   );

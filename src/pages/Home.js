@@ -3,6 +3,7 @@ import ProgressiveImage from 'react-progressive-image'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Container, Main, Row } from '../components/General.components';
+import { BsArrow90DegUp } from 'react-icons/bs'
 
 const transition = { duration: .6, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -39,10 +40,10 @@ const Home = ({ imageDetails, image }) => {
                 transition={transition}
                 className='information'
               >
-                <div className='title'>Collective freelance</div>
+                <div className='title'>Website creators</div>
                 <div className='location'>
-                  <span>Website creators</span>
-                  <span></span>
+                  <span><BsArrow90DegUp size={30}/></span>
+                  <span>Cliquez pour entrer</span>
                 </div>
               </motion.div>
             </div>
