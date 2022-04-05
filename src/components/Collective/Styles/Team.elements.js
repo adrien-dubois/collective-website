@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
+
+const swipe = keyframes`
+  0% { transform:translateX(-5px) translateY(0); }
+  50% { transform:translateX(5px) translateY(-5px); }
+  100% { transform:translateX(-5px) translateY(0); }
+`;
 
 export const Section = styled.section`
     overflow: hidden;
@@ -21,6 +28,27 @@ export const Section = styled.section`
         flex-direction: column;
         align-items: center;
         padding: 5rem 0;
+
+    }
+    .swipe-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1rem;
+        &__text{
+            font-size: 2.5rem;
+            font-family: var(--poppins-font);
+            font-weight: 600;
+            color: var(--black-chocolate);
+
+        }
+        svg{
+            width: 2.4rem;
+            height: 2.4rem;
+            color: var(--black-chocolate);
+            animation: ${swipe} 3.5s ease infinite;
+        }
     }
 
     @media screen and (min-width: 1080px) and (max-width: 1600px) {
@@ -74,11 +102,18 @@ export const TeamTitle = styled.div`
 `;
 
 export const Carousel = styled.div`
-    width: 50vw;
+    width: 25vw;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     margin-top: -5rem;
     z-index: 5;
+
+    .swiper{
+        width: 100%;
+        height: 100%;
+    }
+
 
     @media screen and (min-width: 280px) and (max-width: 1080px){
         width: 80vw;

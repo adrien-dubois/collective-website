@@ -18,15 +18,6 @@ export const teamDatas = [
         website: "https://cropup.fr",
     },
     {
-        name: "Nathan Guyard",
-        subtitle: <h4>
-        Responsable commercial
-      </h4>,
-        text:<h4>Enim eu non magna sint tempor enim nulla sit cillum occaecat ullamco velit mollit. Aliqua cupidatat nisi dolore sunt. Fugiat ut anim ex consectetur veniam id esse quis do ipsum consectetur.</h4>,
-        image:"nathan" ,
-        website: "https://the-square.net",
-    },
-    {
         name: "Mehdi Mosteghami",
         subtitle: <h4>
             Scrum Master
@@ -36,6 +27,7 @@ export const teamDatas = [
         </h4>,
         image: "mehdi",
         website: "https://the-square.net",
+        space: "space"
     },
     {
         name: "Adrien Dubois",
@@ -50,6 +42,5 @@ export const teamDatas = [
         </h4>,
         image: "adrien",
         website: "https://white-umbrella.fr",
-        lastone: "lastone"
     },
 ]

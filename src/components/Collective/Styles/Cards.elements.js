@@ -9,49 +9,31 @@ export const Image = styled.img`
     bottom: 0;
     border-radius: 8px;
     transition: 1s;
-    /* filter: grayscale(100%); */
 `;
 
-export const CARD = styled.div`
-    width: 413px;
-    height: 600px;
-    transform: scale(0.7);
-    background-color: var(--almond-bg);
+export const ContainerSingle = styled.div`
+    width: 100%;
+    height: 100%;
+    background: #DDC4AC;
     border-radius: 8px;
-    box-shadow: 0 0 80px 1px rgba(0, 0, 0, 0.8);
-    font-family: var(--poppins-font);
     
     &:hover ${Image}{
-        transform: scale(0.42 ,0.35) translateY(-865px);
+        transform: scale(0.42 ,0.35) translateY(-830px) translateX(-174px);
         border-radius: 50%;
         object-fit: cover;
-        height: 85%;
-        top: 8%;
+        height: 50%;
+        top: 30%;
+        width: 61%;
     }
-
-    @media screen and (min-width: 1080px) and (max-width: 1600px){
-
-    }
-
-     @media screen and (min-width: 280px) and (max-width: 1080px){
-        box-shadow: none;
-        margin: 0 -2rem;
-        width: 350px; 
-        height: 500px;
-        
-        &:hover ${Image}{
-            transform: scale(0.5 , 0.35) translateY(-700px);
-        }
-    }
- 
 `;
 
 export const Info = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `;
 
 
@@ -59,26 +41,19 @@ export const Name = styled.h3`
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--black-chocolate);
-    position: absolute;
-    top: 6.5rem;
     letter-spacing: 2px;
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
          font-weight: bolder;
-        top: 5.5rem;
     }
 `;
 
 export const Subtitle = styled.div`
-    font-size: 1.2rem;
-    color: var(--light-chocolate);
-    position: absolute;
-    top: 9.2rem;
+    font-size: 1.3rem;
+    color: var(--black-chocolate);
     text-align: center;
+    margin-bottom: .6rem;
 
-     @media screen and (min-width: 280px) and (max-width: 1080px){
-        top: 8rem;   
-    }
 `;
 
 export const Divider = styled.div`
@@ -87,8 +62,6 @@ export const Divider = styled.div`
     border: 5px solid var(--light-chocolate);
     border-color: var(--light-chocolate) transparent transparent transparent;
     border-radius: 150%/60px 70px 0 0;
-    position: absolute;
-    top: 13rem;
 
      @media screen and (min-width: 280px) and (max-width: 1080px){
         display: none;   
@@ -96,13 +69,12 @@ export const Divider = styled.div`
 `;
 
 export const Text = styled.div`
-    position: absolute;
-    top: 15.7rem;
     color: var(--light-chocolate);
     line-height: 1.75rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     margin: 0 .8rem;
+    width: 90%;
 
     br{
         display: block;
@@ -117,8 +89,7 @@ export const Text = styled.div`
         margin-bottom: 1rem;
     }
 
-     @media screen and (min-width: 280px) and (max-width: 1080px){
-        top:12rem;  
+     @media screen and (min-width: 280px) and (max-width: 1080px){ 
         br{
             margin-top: 2px;
         } 
@@ -129,8 +100,6 @@ export const Text = styled.div`
 export const Div = styled.div`
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* height: 3rem; */
     position: absolute;
     bottom:  4rem;
     svg { 
@@ -140,9 +109,6 @@ export const Div = styled.div`
         right: -40px;
     }
 
-     @media screen and (min-width: 280px) and (max-width: 1080px){
-        bottom: .5rem;   
-    }
 `;
 
 export const ContactButton = styled.button`
@@ -168,6 +134,5 @@ export const ContactButton = styled.button`
 
      @media screen and (min-width: 280px) and (max-width: 1080px) {
         padding: .8rem 1.4rem;
-        bottom: 5rem;
     }
 `;
