@@ -54,7 +54,7 @@ const Projects = (props) => {
                     <img src={project.img} alt={project.title} />
                 </div>
                 <div className="section__title__button">
-                    <a href={project.link} target='_blank' rel='noopener noreferer'>
+                    <a href={project.link} target='_blank' rel='noopener noreferrer'>
                         <span>
                             Voir le site
                         </span>

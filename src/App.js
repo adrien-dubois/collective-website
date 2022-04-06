@@ -9,7 +9,6 @@ import { AnimatePresence } from 'framer-motion';
 /*---- Components ----*/
 import GlobalStyle from './GlobalStyle';
 import GoToTop from './GoToTop';
-import Header from './components/Header';
 
 /*---- PAGES ----*/
 import Home from './pages/Home';

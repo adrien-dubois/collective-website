@@ -10,8 +10,7 @@ import {
 import { 
     Background, 
     CloseModalButton,
-    ModalContent, 
-    ModalImage, 
+    ModalContent,  
     ModalWrapper 
 } from './Styles/Modal.elements'
 
@@ -52,7 +51,6 @@ export const Modal = ({showModal, setShowModal}) => {
                 <Background ref={modalRef} onClick={closeModal} >
                     <animated.div style={animation}>
                         <ModalWrapper showModal={showModal}>
-                            {/* <ModalImage src={require('../../assets/img/modal.png')} alt="Astro Modal"/> */}
                             <ModalContent>
                                 <h2>Services fournis</h2>
                                 <p>Toutes nos prestations auront cette liste de services fournies dès le départ</p>

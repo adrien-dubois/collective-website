@@ -119,7 +119,7 @@ export const ContactButton = styled.button`
     border-radius: 10px;
     cursor: pointer;
     transition: all .4s ease-in-out;
-    a{
+    span{
         color: var(--white-antique);
         text-transform: uppercase;
         font-family: var(--ubuntu-font);

@@ -58,15 +58,16 @@ function GalleryItem({
 export default function Gallery({ src }) {
     const [activeImage, setActiveImage] = useState(1);
     const ref = useRef(null);
+
+    const [progress, setProgress] = useState(0)
     
     useEffect(() => {
         
         gsap.registerPlugin(ScrollTrigger);
 
         let sections = gsap.utils.toArray('.gallery-item-wrapper')
-        
 
-           gsap.to(sections, {
+        let tween = gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: 'none',
             scrollTrigger:{
@@ -76,8 +77,11 @@ export default function Gallery({ src }) {
                 scrub: 1,
                 snap: 1 / (sections.length - 1),
                 end: "+=3500",
-            },
-           });
+                onUpdate: updateFunction
+            }
+        });
+
+        
 
            gsap.to("[data-speed]", {
             scrollTrigger: {
@@ -89,17 +93,27 @@ export default function Gallery({ src }) {
 
            gsap.to('progress', {
             value: 100,
-            ease: 'none',
-            scrollTrigger: { scrub: 0.3 }
+            ease: 'linear',
+            scrollTrigger: { 
+                scrub: 0.3,
+            }
             });
-        
+
+            function updateFunction() {
+              const tweenProgress = Math.round((tween.progress() * 100))
+              setProgress(tweenProgress)
+            //   console.log(tweenProgress);
+            }
         ScrollTrigger.refresh();
-   
+
+        
     }, []);
 
     const handleUpdateActiveImage = (index) => {
         setActiveImage(index + 1);
-      };
+    };
+
+    
 
   return (
     <>
@@ -135,9 +149,39 @@ export default function Gallery({ src }) {
           ))}
         </div>
 
-        <progress max="100" value="0"></progress>
+
+        <progress max="50" value="0"></progress>
+        <div className="progress">
+            <span>Progress</span>
+            <Progress value={progress}/>
+        </div>
       </Div>
     </>
   );
 }
 
+const Progress = ({ value = 0, symbol = "%" }) => {
+    const oldValue = useRef(value)
+    const interval = useRef(null)
+    const [display, setDisplay] = useState(oldValue.current)
+
+    useEffect(() => {
+        interval.current && clearInterval(interval.current);
+        interval.current = setInterval(() => {
+            setDisplay((val) => {
+                console.log(val);
+                if(val >= value) {
+                    oldValue.current = value;
+                    clearInterval(interval.current);
+                    return val - 1;
+                }
+                return val + 1
+            }) ;
+        }, 50);
+
+        return () => clearInterval(interval.current);
+    }, [value])
+    
+
+    return <span>{display}{symbol}</span>
+}

@@ -14,12 +14,12 @@ import React from 'react'
 export default function Collectif() {
   return ( 
     <motion.div initial="hidden" animate="visible" >
-        {/* <ScrollToTop/>
+        <ScrollToTop/>
         <Home/>
         <Services/>
         <Milestones/>
         <Blog/>
-        <Pricing/> */}
+        <Pricing/>
         <Team/>
         <Skills/>
         <Footer/>

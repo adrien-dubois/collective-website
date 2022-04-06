@@ -91,10 +91,10 @@ const Team = () => {
                         <a 
                             href={`${website}`} 
                             target="_blank" 
-                            rel='noopener noreferer' 
+                            rel='noopener noreferrer' 
                         >
                             <ContactButton>
-                                    <a>Portfolio</a> 
+                                    <span>Portfolio</span> 
                             </ContactButton> 
                         </a>
                     </Div>

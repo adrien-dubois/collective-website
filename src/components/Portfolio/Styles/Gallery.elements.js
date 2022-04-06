@@ -181,5 +181,47 @@ export const Div = styled.section`
                 right: -24%;
             }
         }
+
+        progress{
+            position: relative;
+            left: 10%;
+            bottom: -6%;
+            width: 500px;
+            height: 14px;
+        }
+
+        progress[value]::-webkit-progress-bar{
+            background: rgba(255,255,255,0.1);
+            border-radius: 100px;
+        }
+
+        progress[value]::-webkit-progress-value{
+            border-radius: 100px;
+            height: 14px;
+            box-shadow: 0 10px 40px -3px var(--marigold-bg);
+            background: var(--marigold-bg);
+        }
+
+            /* progress::after{
+                content: '0%';
+                position: absolute;
+                bottom: -1.5rem;
+                left: 25rem;
+                color: var(--marigold-bg);
+            } */
+
+        .progress{ 
+            position: absolute;
+            bottom: 9%;
+            left: 11%;
+            color: var(--marigold-bg);
+            span{
+                &:last-child{
+                    position: absolute;
+                    left: 26rem;
+                }
+            }
+        }
+        
     
 `;
