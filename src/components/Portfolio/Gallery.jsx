@@ -177,7 +177,7 @@ const Progress = ({ value = 0, symbol = "%" }) => {
                 }
                 return val + 1
             }) ;
-        }, 50);
+        }, 1);
 
         return () => clearInterval(interval.current);
     }, [value])

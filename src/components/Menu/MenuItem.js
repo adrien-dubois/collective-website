@@ -97,7 +97,7 @@ S.MarqueeImg = styled.img`
   object-position: 50% 50%;
 `;
 
-const MenuItem = ({ link, marquee }) => {
+const MenuItem = React.memo (({ link, marquee }) => {
   const [{ y }, api] = useSpring(() => ({
     y: 101
   }));
@@ -139,6 +139,6 @@ const MenuItem = ({ link, marquee }) => {
       </S.Marquee>
     </S.Item>
   );
-};
+});
 
 export default MenuItem;

@@ -5,7 +5,7 @@ import Menu from "./Menu";
 import styled from 'styled-components'
 import { keyframes } from "styled-components";
 
-const Header = () => {
+const Header = React.memo (() => {
 
   const [click, setClick] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -52,7 +52,7 @@ const Header = () => {
       </IconContext.Provider>
     </>
   );
-};
+});
 
 const smooth = keyframes`
   0% { opacity: 0; }
@@ -64,7 +64,7 @@ const Container = styled.div`
   flex-grow: 1;
   margin: 0 auto;
   padding: 0 32px;
-  position: relative;
+  /* position: relative; */
   width: auto;
   height: 100%;
 
@@ -157,17 +157,13 @@ const NavMenu = styled.div`
     z-index: 1000;
     position: absolute;
     top: 0;
-    left: ${({click}) => (click ? '-12%' : '-135%')};
-    opacity: ${({click}) =>(click ? '1' : 0)};
+    left: ${({click}) => (click ? 0 : '-100%')};
+    opacity: 1;
     transition: all 0.5s ease;
     background: var(--almond-bg);
 
     @media screen and (max-width: 1280px){
       width: 110vw;
-    }
-
-    @media screen and (max-width: 1024px) {
-      left: ${({click}) => (click ? '-5%' : '-135%')};
     }
 
 `;

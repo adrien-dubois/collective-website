@@ -6,7 +6,7 @@ import { menus } from '../../datas/menusData'
 
 
 
-const Menu = () => {
+const Menu = React.memo (() => {
     return (
       <MenuWrapper>
         <nav className="menu">
@@ -16,6 +16,6 @@ const Menu = () => {
         </nav>
       </MenuWrapper>
     );
-  };
+  });
   
   export default Menu;
