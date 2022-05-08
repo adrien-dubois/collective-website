@@ -90,7 +90,7 @@ const Model = ({imageDetails}) => {
                             <span>17.633333</span>
                         </div>
                         {/* TT TAG */}
-                        <div className='mua'>TT: @squarelikekorea</div>
+                        <div className='mua'>contact@the-square.net</div>
                     </motion.div>
 
                     {/* BIG TITLE */}
@@ -166,7 +166,7 @@ const Model = ({imageDetails}) => {
                              Un site web sur-mesure permet un déploiement digital à fort potentiel." </h2>
                         </div>
                         <p>
-                        Un site web sur-mesure va permettre de booster votre présence sur le web. Que ce soit en matière de design, de référencement ou encore d’ergonomie, tout est personnalisable pour créer un outil ajusté à vos besoins.
+                        Un site web sur mesure va permettre de booster votre présence sur le web. Que ce soit en matière de design, de référencement ou encore d’ergonomie, tout est personnalisable pour créer un outil ajusté à vos besoins.
                         <br/>
                         Nous étudions avec vous les fonctionnalités à développer selon votre activité, vos objectifs et votre cible, et vous proposons un accompagnement tout au long du projet, en veillant à utiliser une communication efficace et accessible. 
                         <br/>

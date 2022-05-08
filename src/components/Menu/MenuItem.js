@@ -56,13 +56,13 @@ S.Marquee = styled(animated.div)`
   height: 100%;
   pointer-events: none;
   background: var(--marquee-bg);
-  transform: translate3d(0, 101%, 0);
+  /* transform: translate3d(0, 101%, 0); */
 `;
 
 S.MarqueeInnerWrapper = styled(animated.div)`
   width: 100%;
   height: 100%;
-  transform: translate3d(0, -101%, 0);
+  /* transform: translate3d(0, -101%, 0); */
 `;
 
 S.MarqueeInner = styled.div`
@@ -74,17 +74,20 @@ S.MarqueeInner = styled.div`
   will-change: transform;
   animation: ${marqueeAn} 15s linear infinite;
 
-  span {
-    font-family: var(--maragsa-font);
-  letter-spacing: 5px;
-    color: var(--marquee-text);
-    text-align: center;
-    font-weight: 400;
-    white-space: nowrap;
-    font-size: 6vw;
-    line-height: 1.2;
-    padding: 1vh 1vw 0;
-    text-transform: uppercase;
+ 
+
+    span {
+      font-family: var(--maragsa-font);
+      letter-spacing: 5px;
+      color: var(--marquee-text);
+      text-align: center;
+      font-weight: 400;
+      white-space: nowrap;
+      font-size: 6vw;
+      line-height: 1.2;
+      padding: 1vh 1vw 0;
+      text-transform: uppercase;
+    
   }
 `;
 
@@ -97,13 +100,13 @@ S.MarqueeImg = styled.img`
   object-position: 50% 50%;
 `;
 
-const MenuItem = React.memo (({ link, marquee }) => {
+const MenuItem = React.memo (({ link, marquee, index }) => {
   const [{ y }, api] = useSpring(() => ({
     y: 101
   }));
   const bind = useHover((state) => {
     const {
-      type,
+      
       hovering,
       movement: [, my]
     } = state;
@@ -116,7 +119,7 @@ const MenuItem = React.memo (({ link, marquee }) => {
   });
 
   return (
-    <S.Item>
+    <S.Item key={index}>
       <S.Link href={link.url} {...bind()}>
         {link.name}
       </S.Link>
@@ -126,7 +129,7 @@ const MenuItem = React.memo (({ link, marquee }) => {
             {[...marquee, ...marquee].map((item, index) => {
               return (
                 <>
-                  <span key={index}>{item.name}</span>
+                  <span>{item.name}</span>
                   <S.MarqueeImg
                     src={ require(`../../assets/img/${item.url}`) }
                     

@@ -74,7 +74,7 @@ const BannerRowTop = ({ title }) => {
         }}
       >
         <span className="row-message">
-          Voici une séléction de nos divers projets, qui pourront vous donner un apercu de notre travail en tant que Freelances.
+        Voici une sélection de quelques-uns de nos projets afin de vous permettre de visualiser les différents types de sites que nous pouvons créer.
         </span>
       </motion.div>
     </div>

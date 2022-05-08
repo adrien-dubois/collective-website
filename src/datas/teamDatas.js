@@ -8,22 +8,28 @@ export const teamDatas = [
         Rédaction de contenus
         </h4>,
         text:<h4>
-            La touche féminine du collectif, qui manie aussi bien les mots que son code, en particulier sur Symfony, son framework de prédiléction.<br/>
+            La touche féminine du collectif, qui manie aussi bien les mots que son code, en particulier sur Symfony, son framework de prédilection.<br/>
             <span>Identité culturelle :</span><br/>
             
-            Sciences & innovation,<br/>
+            Sciences & innovation<br/>
             Pop Culture
         </h4>,
         image: "gaelle",
         website: "https://cropup.fr",
     },
     {
-        name: "Mehdi Mosteghami",
+        name: "Mehdi Mosteghanemi",
         subtitle: <h4>
-            Scrum Master
+            Spécialisé sécurisation & bases de données
         </h4>,
         text: <h4>
-            Incididunt tempor irure aliqua qui. Irure consequat fugiat aliqua proident non culpa esse magna ad voluptate quis reprehenderit.
+            Mehdi conçoit la partie immergée de l’iceberg, l’épine dorsale de l’application, qui permettra à l’utilisateur d’interagir avec les données du site.
+            <br/>
+            <span>Identité culturelle :</span><br/>
+            
+            Gaming<br/>
+            Culture Urban Funk
+
         </h4>,
         image: "mehdi",
         website: "https://the-square.net",
@@ -34,10 +40,10 @@ export const teamDatas = [
         subtitle: <h4>Spécialisé UX Design<br/> 
         UI / Web design</h4>,
         text:<h4>
-            Autant développeur que UI/UX designer, Adrien est le Mc Gyver de la team, à l'aise "from scratch" de même que sur frameworks.<br/>
+            Développeur et UX/UI Designer, Adrien est le Mac Gyver de la team, aussi à l’aise “from scratch” que sur frameworks.<br/>
             <span>Identité culturelle :</span><br/>
 
-            Arts visuels,<br/>
+            Arts visuels<br/>
             Culture urbaine
         </h4>,
         image: "adrien",

@@ -77,45 +77,6 @@ const Home = () => {
           })
         },
 
-        // "(max-width: 979px)": function(){
-        //   contains.forEach((section) => {
-        //     const heading = section.querySelector('.section__heading')
-        //     const image = section.querySelector('.section__image')
-    
-        //     // set animation start state
-        //     gsap.set(heading, {
-        //       opacity: 1,
-        //       y: 0
-        //     })
-        //     gsap.set(image, {
-        //       opacity: 1,
-        //     })
-    
-        //     // Timeline section
-        //     let sectionTl = gsap.timeline({
-        //       scrollTrigger: {
-        //         trigger: section,
-        //         start: 'top center',
-        //         end: () => `+=${window.innerHeight}`,
-        //         scrub: 1,
-        //       }
-        //     })
-    
-        //       // Add tween to TimeLine
-        //       sectionTl.to(image, {
-        //         opacity: 1,
-        //         rotateY: -5,
-        //         duration: 6,
-        //         ease: 'elastic'
-        //       })
-        //       .to(heading, {
-        //         opacity: 1,
-        //         y: 0,
-        //         duration: 2
-        //       }, 0.5)
-            
-        //   })
-        // }
 
       })
 

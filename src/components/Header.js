@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaTimes } from 'react-icons/fa';
 import { IconContext } from "react-icons/lib";
 import Menu from "./Menu";
 import styled from 'styled-components'
 import { keyframes } from "styled-components";
+import gsap from "gsap";
 
 const Header = React.memo (() => {
 
@@ -25,6 +26,48 @@ const Header = React.memo (() => {
     window.addEventListener('scroll', changeBackground)
   }
 
+  if(click){
+    document.body.style.overflowY = 'hidden';
+  } 
+  if(!click){
+    document.body.style.overflowY = 'unset';
+  } 
+
+  // GSAP PART
+
+  useEffect(() => {
+    
+    let navmenu = document.getElementById("navmenu")
+  
+    gsap.set(navmenu, {
+      xPercent: 0, 
+      yPercent: 0, 
+      opacity: 0
+    })
+  
+    var menu = gsap.timeline({paused: true, reversed: true})
+    .from(navmenu, {
+      xPercent:-100,
+      opacity: 1,
+      duration: 0.5, 
+      ease: 'power2.inOut'
+  })
+    .from(navmenu, 0.2, {
+      autoAlpha:0, 
+      x:-25, 
+      duration:0.2,
+      opacity: 1, 
+      stagger:0.1
+    })
+  
+    document.querySelector(".clickable").addEventListener("click", toggleMenu);
+  
+    function toggleMenu() {
+      menu.reversed() ? menu.timeScale(1).play() : menu.timeScale(2).reverse()
+    }
+  }, [])
+  
+
   return (
     <>
     	{/* PROPERTIES OF REACT ICONS */}
@@ -38,11 +81,11 @@ const Header = React.memo (() => {
                 </a>
               </div>
 
-              <MenuIcon onClick={handleClick}>
+              <MenuIcon className="clickable" onClick={handleClick}>
                   {click ? <FaTimes /> : 'MENU' }
               </MenuIcon>
 
-              <NavMenu onClick={handleClick} click={click} >
+              <NavMenu id="navmenu">
                 <Menu/>
               </NavMenu>
 
@@ -157,8 +200,8 @@ const NavMenu = styled.div`
     z-index: 1000;
     position: absolute;
     top: 0;
-    left: ${({click}) => (click ? 0 : '-100%')};
-    opacity: 1;
+    left: 0;
+    opacity: 0;
     transition: all 0.5s ease;
     background: var(--almond-bg);
 

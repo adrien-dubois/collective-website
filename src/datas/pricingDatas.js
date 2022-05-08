@@ -12,7 +12,7 @@ export const datas = [
     {value: <p>Certificat SSL <BiLock/> <i>(https://)</i></p>  , type: "Site vitrine"},
     {value: "Support de votre site web", type: "Site vitrine"},
 
-    {value: "Base de donnée de produits", type: "E-Commerce"},
+    {value: "Base de données de produits", type: "E-Commerce"},
     {value: "Comptes clients", type: "E-Commerce"},
     {value: "Accès à un backoffice de gestion", type: "E-Commerce"},
 

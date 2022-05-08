@@ -111,7 +111,7 @@ function Pricing() {
           })
         } 
         <div className="btn-cta-price">
-          <a href='/contact'>Contactez nous</a>  
+          <a href='/contact'>Contactez-nous</a>  
         </div> 
       </div>
     </Section>

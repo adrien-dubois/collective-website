@@ -54,7 +54,7 @@ function Skills() {
           </div>
           <div className="skills__content">
             <p className="title">
-               Parce que le domaine est en constante évolution, nous sommes en veille permanente sur les évolutions de notre métier : nouvelles technologies, outils, frameworks, librairies, méthodes de travail… il y a toujours quelque chose à apprendre et c’est l’une des raisons pour lesquelles nous sommes passionnés par notre métier !
+               Parce que le domaine est en mouvement perpétuel, nous sommes en veille constante sur les évolutions de notre métier : nouvelles technologies, outils, frameworks, librairies, méthodes de travail… il y a toujours quelque chose à apprendre et c’est l’une des raisons pour lesquelles nous sommes passionnés par notre métier !
             </p>
             <div className="description">
                Spécialisés PHP et Javascript, notamment sur les frameworks Symfony et React, nous n’en délaissons pas pour autant les autres langages de programmation et CMS, afin d’être en mesure de vous proposer des solutions modernes qui répondront tant à vos besoins qu’à ceux de vos internautes.

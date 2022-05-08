@@ -33,7 +33,7 @@ const Footer = () => {
             <SocialNetwork/>
       </CenterText>
       <RightText>
-        <p>Dites nous tout</p>
+        <p>Dites-nous tout</p>
         <a href='/contact'>Contact</a>
       </RightText>
     </FooterContainer>

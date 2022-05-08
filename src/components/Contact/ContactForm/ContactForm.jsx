@@ -154,7 +154,7 @@ const ContactForm = () => {
             <ButtonForm 
             type="submit" 
             className="button hover" 
-            value="envoyer"
+            value="Envoyer"
             onClick={handleSubmit}
             />
             

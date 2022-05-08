@@ -26,7 +26,7 @@ export const projectsDatas = [
         title: "Foodtruck",
         date: "janvier 22",
         languages: ["HTML", "CSS3", "PHP", "Symfony"],
-        infos: "Landing page pour un foodtruck sur le thème de KFC réalisé avec Symfony pour la structure, mais en CSS from scratch pour le web design et un peu de JavaScript, pour quelques fonctionnalités. Possibilité de mettre en avant des menus sur un caroussel, articles de blog, lien vers app smartphone, récupération du feed Facebook ou Instagram pour mettre en avant certains posts / commentaires clients, vidéo B-Roll de présentation du foodtruck, lien vers réseaux sociaux.",
+        infos: "Landing page pour un foodtruck sur le thème de KFC réalisé avec Symfony pour la structure, mais en CSS from scratch pour le web design et un peu de JavaScript, pour quelques fonctionnalités. Possibilité de mettre en avant des menus sur un carousel, articles de blog, lien vers app smartphone, récupération du feed Facebook ou Instagram pour mettre en avant certains posts / commentaires clients, vidéo B-Roll de présentation du foodtruck, lien vers réseaux sociaux.",
         img: "./assets/img/projet-1.jpg",
         link: "http://foodtruck.white-umbrella.fr/",
     },
@@ -46,8 +46,8 @@ export const projectsDatas = [
         title: "80's Flix",
         date: "janvier 22",
         languages: ["HTML", "Bootstrap", "PHP", "Symfony"],
-        infos: "Base de donnée de séries TV à mi-chemin entre IMDDB & Netflix, répertoriant les séries TV, réalisé avec Symfony & Bootstrap. Affichage des dernières séries ajoutées sur la page d'accueil, option de likes, liste de favoris, compte utilisateur, interface d'administration permettant de gérer les séries, ajouter des personnages, des images, des saisons, des catégories, ainsi que la gestion des utilisateurs du site web.",
+        infos: "Base de données de séries TV à mi-chemin entre IMDDB & Netflix, répertoriant les séries TV, réalisé avec Symfony & Bootstrap. Affichage des dernières séries ajoutées sur la page d'accueil, option de likes, liste de favoris, compte utilisateur, interface d'administration permettant de gérer les séries, ajout de personnages, des images, des saisons, des catégories, et gestion des utilisateurs du site web.",
         img: "./assets/img/80flix.png",
-        link: "https://the-square.net",
+        link: "http://80flix.cropup.fr/",
     }
 ]

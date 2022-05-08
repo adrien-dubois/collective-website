@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Div = styled.div`
     position: relative;
-    z-index: 500;
+    z-index: 50;
     h1 {
         position: absolute;
         transform: translateX(-47%) translateY(20vw) rotate(-90deg);

@@ -102,7 +102,6 @@ export const Section = styled.section`
             gap: 2rem;
             &:nth-child(2){
                 .pricing__plan__content{
-                    padding: 0 5rem;
                     border-left: 0.2rem solid var(--black-chocolate);
                     border-right: 0.2rem solid var(--black-chocolate);
                 }
@@ -143,6 +142,7 @@ export const Section = styled.section`
                     text-align: center;
                     color: var(--light-chocolate);
                     display: flex;
+                    font-weight: 600;
                     flex-direction: column;
                     gap: 0.6rem;
                     

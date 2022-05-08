@@ -15,9 +15,9 @@ const Contact = () => {
                 {/* ADRESS PART */}
                 <div className="adress">
                     <div className="content">
-                        <h4>adresse</h4>
-                        <p>164, avenue des graviers</p>
-                        <p>03200 Abrest</p>
+                        <h4>Nos Coordonnées</h4>
+                        <p></p>
+                        <p></p>
                     </div>
                 </div>
 
@@ -25,7 +25,7 @@ const Contact = () => {
                 <div className="phone">
                     <div className="content">
                         <h4>téléphone</h4>
-                        <CopyToClipboard text='0665354481' className='hover'>
+                        <CopyToClipboard text='0672696562' className='hover'>
                             <p
                                 style={{ cursor: "pointer" }}
                                 className="clipboard"
@@ -33,7 +33,7 @@ const Contact = () => {
                                     alert("Numéro de téléphone copié!");
                                 }}
                             >
-                                (+33)6 653 544 81
+                                (+33)6 726 965 62
                             </p>
                         </CopyToClipboard>
                     </div>

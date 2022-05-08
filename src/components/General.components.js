@@ -88,6 +88,7 @@ export const MenuWrapper = styled.div`
     height: calc(100vh - 13rem);
     position: relative;
     justify-content: center;
+    z-index: 1000;
 
     @media screen and (min-width: 53em) {
       height: 100vh;

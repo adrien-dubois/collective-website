@@ -27,10 +27,10 @@ function Home() {
           </div>
           <div className="subtitle">
             <p>  
-            Combinaison entre freelance et entreprise, un collectif concentre des compétences variées et complémentaires au sein d’une seule et même entité : c’est le cas de The Square., formation de 4 développeurs aux parcours différents, issus de la même école de développement.
+            Combinaison entre freelance et entreprise, un collectif concentre des compétences variées et complémentaires au sein d’une seule et même entité : c’est le cas de The Square., formation de 3 développeurs aux parcours différents, issus de la même école de développement.
             </p>
             <span> 
-              “ Conscients que la technicité de notre métier n’a de sens que si elle est fondée sur une approche humaine, nous basons notre travail sur une écoute active et attentive des besoins, avec pour objectifs performance du site et qualité de l’expérience utilisateur (UX design) ”.
+              “ Conscients que la technicité de notre métier n’a de sens que si elle est fondée sur une approche humaine, nous basons notre travail sur une écoute active et attentive des besoins, avec pour objectifs performance du site et qualité de l’expérience utilisateur (UX design). ”
             </span>
             
           </div>
@@ -65,15 +65,15 @@ function Home() {
 
           <div className="col">
             <strong>Localisation</strong>
-            <p>Un carré dans l'Hexagone entre</p>
-            <p>le Nord, le Jura, l'Auvergne</p>
-            <p>& le Bassin Parisien</p>
+            <p>Un carré dans l'Hexagone </p>
+            <p>entre le Nord, le Doubs</p>
+            <p>& l’Auvergne</p>
           </div>
 
           <div className="col">
             <strong>Services</strong>
             <p>Sites vitrine</p>
-            <p>E-Commerce</p>
+            <p>Sites E-Commerce</p>
             <p>Sites web sur mesure</p>
           </div>
 
